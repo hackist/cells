@@ -1,0 +1,41 @@
+# -*- mode: org -*-
+# -*- coding: utf-8 -*-
+
+* FAQ (基本问提)
+*** 文档本身的维护
+***** 联系这个文档的作者
+      | 姓名   | 邮件              | 即时工具 |        电话 |
+      | 周海涛 | bartuer@gmail.com |          | 13439600330 |
+***** 查看文档的HTML版本
+      - 地址
+      - 由本文档自动生成,不要直接修改HTML
+*** 数据表格
+    - CSV 下载地址
+    - CSV 上传地址
+    - CSV 在线修改
+    - SQLite 数据库下载地址
+*** 项目版本仓库
+    - github
+    - git 图形工具
+* 数据
+*** Apple 教程
+*** Youtube 频道
+*** TED
+    www.ted.com
+*** how to site 收集 
+* development
+*** UI design
+***** TODO video meaning editor UI
+***** TODO video tag selector UI
+***** TODO image stream viewer
+*** audio 
+***** TODO combine audio track to video file
+***** TODO split audio track out of video
+***** TODO make lion tts output audio file
+*** image
+***** TODO convert video to image stream
+***** TODO empty image stream
+      for audio only case
+*** project maintain
+***** TODO github repository
+***** TODO site server data and document
