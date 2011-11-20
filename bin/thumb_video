@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir thumb-$1 
+ffmpeg -i $1 -r 1 -s qqvga -f image2 thumb-$1/thumb-$1-%04d.png
+for f in thumb-$1/*.png; do
+ convert -quality 80 $f thumb-$1/`basename -s .png $f`.jpg && rm $f
+done

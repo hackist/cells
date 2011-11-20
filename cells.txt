@@ -1,7 +1,7 @@
 # -*- mode: org -*-
 # -*- coding: utf-8 -*-
 
-* FAQ (基本问提)
+* FAQ (基本问题)
 *** 文档本身的维护
 ***** 联系这个文档的作者
       | 姓名   | 邮件              | 即时工具 |        电话 |
@@ -29,12 +29,35 @@
 ***** TODO video tag selector UI
 ***** TODO image stream viewer
 *** audio 
-***** TODO combine audio track to video file
-***** TODO split audio track out of video
-***** TODO make lion tts output audio file
+***** HALT combine audio track to video file
+      ffmpeg has serious lost frames problem, it could combine sound,
+      but video quality is damaged
+***** DONE split audio track out of video
+      #!/bin/bash
+      ffmpeg -i $1 -vn -acodec copy $1.`afinfo /tmp/sound |head -2|tail -1|cut -d ':' -f 2|sed -e 's/ //g;s+f$++g;s+WAVE+wav+g;s+MPG3+mp3+g;s+ac-3+ac3+g;s+AIFF+aif+g;s+3gpp+3gp+g'`
+      - only extract audio file out is very fast, but convert format
+        will be very slow, need aac -> wav -> mp3, is there any fast
+        mp3 encoder?
+      - only mp3 can be stream from web
+        afconvert -v -f AIFF $1 --data BEI16@44100 $1.aif && lame
+        $1.aif $1.mp3
+***** DONE make lion tts output audio file
+      #!/bin/sh
+      say -o /tmp/h.aif -f $1 && afconvert -v -f m4af -d aac -b 64000 /tmp/h.aif $1.m4a  && afinfo $1.m4a
+      1s sound, 20ms generate and compress time, 8k bandwidth
 *** image
-***** TODO convert video to image stream
-***** TODO empty image stream
+***** DONE convert video to image stream
+        #!/bin/bash
+        mkdir thumb-$1 
+        ffmpeg -i $1 -r 1 -s qqvga -f image2 thumb-$1/thumb-$1-%04d.png
+        for f in thumb-$1/*.png; do
+          convert -quality 80 $f thumb-$1/`basename -s .png $f`.jpg && rm $f
+        done
+      - take look at handbrake
+        it build own encoder? clone github
+      - image sample quality
+***** DONE empty image stream
+      just draw some rectangle on client
       for audio only case
 *** project maintain
 ***** TODO github repository

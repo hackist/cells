@@ -1,0 +1,2 @@
+#!/bin/sh
+afconvert -v -f AIFF $1 --data BEI16@44100 $1.aif && lame $1.aif $1.mp3

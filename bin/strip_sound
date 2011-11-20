@@ -1,0 +1,2 @@
+#!/bin/sh
+ffmpeg -i $1 -sameq -an -vcodec copy soundstriped.$1

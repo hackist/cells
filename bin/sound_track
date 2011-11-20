@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -i $1 -vn -acodec copy $1.`afinfo /tmp/sound |head -2|tail -1|cut -d ':' -f 2|sed -e 's/ //g;s+f$++g;s+WAVE+wav+g;s+MPG3+mp3+g;s+ac-3+ac3+g;s+AIFF+aif+g;s+3gpp+3gp+g'`
