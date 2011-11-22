@@ -45,6 +45,16 @@
       #!/bin/sh
       say -o /tmp/h.aif -f $1 && afconvert -v -f m4af -d aac -b 64000 /tmp/h.aif $1.m4a  && afinfo $1.m4a
       1s sound, 20ms generate and compress time, 8k bandwidth
+***** TODO tts service [1/7]
+      - [X] basic idea
+        (shell-command "qlmanage -p 2>/dev/null ./doc/bonjour.ting-ting.emlx")
+      - [ ] http service first
+            use Safari test it
+      - [ ] compare install Node.js and uki gems
+      - [ ] daemon it
+      - [ ] package it
+      - [ ] embedded VPN connection?
+      - [ ] why not make it available on Mac App store?
 *** image
 ***** DONE convert video to image stream
         #!/bin/bash
@@ -54,7 +64,10 @@
           convert -quality 80 $f thumb-$1/`basename -s .png $f`.jpg && rm $f
         done
       - take look at handbrake
-        it build own encoder? clone github
+        it build own encoder? 
+        - clone github keep failed
+          svn mirror?
+        - just download the tarball
       - image sample quality
 ***** DONE empty image stream
       just draw some rectangle on client
