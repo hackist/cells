@@ -8,7 +8,7 @@
       | 周海涛 | bartuer@gmail.com | iChat in Bonjour | 13439600330 |
 ***** 查看文档的HTML版本
       - 地址
-      - 由本文档自动生成,不要直接修改HTML
+      - 自动生成,不要在HTML做修改
 *** 数据表格
     - CSV 下载地址
     - CSV 上传地址
@@ -23,8 +23,9 @@
 *** iTunes U
 *** TED
     http://www.ted.com
-*** how to site 收集 
-    - http://www.maclearning.com
+*** TODO how to site 收集  [0/1]
+    SCHEDULED: <2011-11-27 Sun 16:00>
+    - [ ] http://www.maclearning.com
 * development
 *** UI design
 ***** TODO video meaning editor UI
@@ -83,8 +84,9 @@
       - [ ] extend transition library
       - [ ] stream video on demand
 *** video
-***** TODO workflow  [0/2]                                         :research:
-      - [ ] take look at podcast producer
+***** TODO workflow  [1/2]                                         :research:
+      SCHEDULED: <2011-11-27 Sun 12:00>
+      - [X] take look at podcast producer
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
 ***** TODO huge file upload and download [0/4]
@@ -98,9 +100,10 @@
       - [ ] encoder in Handbrake
       - [ ] hardware accelerated encoder library
       - [ ] commercial encoder
-***** TODO reference movie [0/4]
-      - [ ] take look at QuickTime export format
-      - [ ] javascript control
+***** TODO reference movie [2/4]
+      SCHEDULED: <2011-11-27 Sun 14:00>
+      - [X] take look at QuickTime export format
+      - [X] javascript control
       - [ ] browser native control
       - [ ] page structure
 ***** TODO setup http streaming server [0/3]
@@ -117,6 +120,7 @@
       - [ ] quartz composer make video transition
 *** project maintain
 ***** TODO github repository [0/2]
+      SCHEDULED: <2011-11-27 Sun 18:00>
       - [ ] make commit right
       - [ ] pull request
 ***** TODO site server data and document [1/1]
@@ -130,8 +134,10 @@
       #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
       :END:
       - [X] automatically convert this document
-***** TODO setup working network environment [0/5]
-      - [ ] storage
+***** TODO setup working network environment [2/6]
+      SCHEDULED: <2011-11-27 Sun 10:00>
+      - [X] fast network
+      - [X] storage
       - [ ] service finding
             - DNS configure
             - bonjour name convention
