@@ -4,8 +4,8 @@
 * FAQ (基本问题)
 *** 文档本身的维护
 ***** 联系这个文档的作者
-      | 姓名   | 邮件              | 即时工具 |        电话 |
-      | 周海涛 | bartuer@gmail.com |          | 13439600330 |
+      | 姓名   | 邮件              | 即时工具         |        电话 |
+      | 周海涛 | bartuer@gmail.com | iChat in Bonjour | 13439600330 |
 ***** 查看文档的HTML版本
       - 地址
       - 由本文档自动生成,不要直接修改HTML
@@ -20,14 +20,17 @@
 * 数据
 *** Apple 教程
 *** Youtube 频道
+*** iTunes U
 *** TED
-    www.ted.com
+    http://www.ted.com
 *** how to site 收集 
+    - http://www.maclearning.com
 * development
 *** UI design
 ***** TODO video meaning editor UI
 ***** TODO video tag selector UI
 ***** TODO image stream viewer
+***** TODO build desktop application link parts by transition to try video Editor UI
 *** audio 
 ***** HALT combine audio track to video file
       ffmpeg has serious lost frames problem, it could combine sound,
@@ -53,6 +56,8 @@
       - [ ] compare install Node.js and uki gems
       - [ ] daemon it
       - [ ] package it
+            - check OS
+            - voice dependency
       - [ ] embedded VPN connection?
       - [ ] why not make it available on Mac App store?
 *** image
@@ -72,6 +77,63 @@
 ***** DONE empty image stream
       just draw some rectangle on client
       for audio only case
+***** TODO automatic slideshow video making [0/4]
+      - [ ] image pool
+      - [ ] music pool
+      - [ ] extend transition library
+      - [ ] stream video on demand
+*** video
+***** TODO workflow  [0/1]
+      - [ ] take look at podcast producer
+            it has document and tutorial
+***** TODO huge file upload and download [0/4]
+      - [ ] mongrel2 solution
+      - [ ] node.js solution
+      - [ ] upload client
+      - [ ] server configure support break recover
+***** TODO encode according to bandwidth and screen size settings [0/5]
+      - [ ] x264
+      - [ ] encoder in Final Cut
+      - [ ] encoder in Handbrake
+      - [ ] hardware accelerated encoder library
+      - [ ] commercial encoder
+***** TODO reference movie [0/4]
+      - [ ] take look at QuickTime export format
+      - [ ] javascript control
+      - [ ] browser native control
+      - [ ] page structure
+***** TODO setup http streaming server [0/3]
+      - [ ] migrate my server from SF to Tokyo
+      - [ ] benchmark local and VPS
+      - [ ] stream audio first
+***** TODO automatically script driven capture [0/2]
+      - [ ] is it possible use script driven capture
+            - can make that script downloadable
+      - [ ] programming API of QuickTime or Capture software
+            - macruby as glue language?
+***** TODO video effect and transitions [0/2]
+      - [ ] filter matrixs in CoreImage library
+      - [ ] quartz composer make video transition
 *** project maintain
-***** TODO github repository
-***** TODO site server data and document
+***** TODO github repository [0/2]
+      - [ ] make commit right
+      - [ ] pull request
+***** TODO site server data and document [1/1]
+      SCHEDULED: <2011-11-26 Sat 13:30>
+      CLOCK: [2011-11-26 Sat 13:18]--[2011-11-26 Sat 14:05] =>  0:47
+      :PROPERTIES:
+      :Effort:   0:30
+      :Clockhistory: 1
+      | :Clock1: | [2011-11-26 Sat 13:18]--[2011-11-26 Sat 14:05] =>  0:47 | init |   47 |
+      |          |                                                         |      | 0.78 |
+      #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
+      :END:
+      - [X] automatically convert this document
+***** TODO setup working network environment [0/5]
+      - [ ] storage
+      - [ ] service finding
+            - DNS configure
+            - bonjour name convention
+      - [ ] document browser
+      - [ ] document edit
+      - [ ] notification

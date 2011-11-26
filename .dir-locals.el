@@ -1,0 +1,1 @@
+((org-mode . ((after-save-hook . (lambda () (org-export-as-html 4))))))
