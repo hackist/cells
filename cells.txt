@@ -83,9 +83,10 @@
       - [ ] extend transition library
       - [ ] stream video on demand
 *** video
-***** TODO workflow  [0/1]
+***** TODO workflow  [0/2]                                         :research:
       - [ ] take look at podcast producer
             it has document and tutorial
+      - [ ] need make video tutorial for self work flow?
 ***** TODO huge file upload and download [0/4]
       - [ ] mongrel2 solution
       - [ ] node.js solution
@@ -106,7 +107,7 @@
       - [ ] migrate my server from SF to Tokyo
       - [ ] benchmark local and VPS
       - [ ] stream audio first
-***** TODO automatically script driven capture [0/2]
+***** TODO automatically script driven capture [0/2]               :research:
       - [ ] is it possible use script driven capture
             - can make that script downloadable
       - [ ] programming API of QuickTime or Capture software
