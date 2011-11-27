@@ -1,7 +1,7 @@
 # -*- mode: org -*-
 # -*- coding: utf-8 -*-
 
-* FAQ (基本问题)
+* FAQ (基本问题?)
 *** 文档本身的维护
 ***** 联系这个文档的作者
       | 姓名   | 邮件              | 即时工具         |        电话 |
@@ -119,10 +119,11 @@
       - [ ] filter matrixs in CoreImage library
       - [ ] quartz composer make video transition
 *** project maintain
-***** TODO github repository [0/2]
+***** TODO github repository [1/3]
       SCHEDULED: <2011-11-27 Sun 18:00>
       - [ ] make commit right
-      - [ ] pull request
+      - [ ] branch based process
+      - [X] not pull request
 ***** TODO site server data and document [1/1]
       SCHEDULED: <2011-11-26 Sat 13:30>
       CLOCK: [2011-11-26 Sat 13:18]--[2011-11-26 Sat 14:05] =>  0:47
