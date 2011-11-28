@@ -95,11 +95,22 @@
       - [ ] upload client
       - [ ] server configure support break recover
 ***** TODO encode according to bandwidth and screen size settings [0/5]
+      - [ ] profile
+            (link "doc/encoders.eml" 1)
+            - standard specification
+            - profile database 
+            - tweak profile for screen capture
       - [ ] x264
+            encoder in Handbrake
       - [ ] encoder in Final Cut
-      - [ ] encoder in Handbrake
+            compressor
       - [ ] hardware accelerated encoder library
+            - CUDA
+            - video sync
+            - GPGPU
       - [ ] commercial encoder
+            - Main Concept
+            - Squeeze
 ***** TODO reference movie [2/4]
       SCHEDULED: <2011-11-27 Sun 14:00>
       - [X] take look at QuickTime export format
