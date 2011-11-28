@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>cells</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-11-27 15:14:34 CST"/>
+<meta name="author" content="bartuer"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">cells</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 FAQ (基本问题?) </a>
+<ul>
+<li><a href="#sec-1_1">1.1 文档本身的维护 </a>
+<ul>
+<li><a href="#sec-1_1_1">1.1.1 联系这个文档的作者 </a></li>
+<li><a href="#sec-1_1_2">1.1.2 查看文档的HTML版本 </a></li>
+</ul>
+</li>
+<li><a href="#sec-1_2">1.2 数据表格 </a></li>
+<li><a href="#sec-1_3">1.3 项目版本仓库 </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 数据 </a>
+<ul>
+<li><a href="#sec-2_1">2.1 Apple 教程 </a></li>
+<li><a href="#sec-2_2">2.2 Youtube 频道 </a></li>
+<li><a href="#sec-2_3">2.3 iTunes U </a></li>
+<li><a href="#sec-2_4">2.4 TED </a></li>
+<li><a href="#sec-2_5">2.5 how to site 收集  [0/1] </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 development </a>
+<ul>
+<li><a href="#sec-3_1">3.1 UI design </a>
+<ul>
+<li><a href="#sec-3_1_1">3.1.1 video meaning editor UI </a></li>
+<li><a href="#sec-3_1_2">3.1.2 video tag selector UI </a></li>
+<li><a href="#sec-3_1_3">3.1.3 image stream viewer </a></li>
+<li><a href="#sec-3_1_4">3.1.4 build desktop application link parts by transition to try video Editor UI </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_2">3.2 audio </a>
+<ul>
+<li><a href="#sec-3_2_1">3.2.1 combine audio track to video file </a></li>
+<li><a href="#sec-3_2_2">3.2.2 split audio track out of video </a></li>
+<li><a href="#sec-3_2_3">3.2.3 make lion tts output audio file </a></li>
+<li><a href="#sec-3_2_4">3.2.4 tts service [1/7] </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_3">3.3 image </a>
+<ul>
+<li><a href="#sec-3_3_1">3.3.1 convert video to image stream </a></li>
+<li><a href="#sec-3_3_2">3.3.2 empty image stream </a></li>
+<li><a href="#sec-3_3_3">3.3.3 automatic slideshow video making [0/4] </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_4">3.4 video </a>
+<ul>
+<li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
+<li><a href="#sec-3_4_2">3.4.2 huge file upload and download [0/4] </a></li>
+<li><a href="#sec-3_4_3">3.4.3 encode according to bandwidth and screen size settings [0/5] </a></li>
+<li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
+<li><a href="#sec-3_4_5">3.4.5 setup http streaming server [0/3] </a></li>
+<li><a href="#sec-3_4_6">3.4.6 automatically script driven capture [0/2]</a></li>
+<li><a href="#sec-3_4_7">3.4.7 video effect and transitions [0/2] </a></li>
+</ul>
+</li>
+<li><a href="#sec-3_5">3.5 project maintain </a>
+<ul>
+<li><a href="#sec-3_5_1">3.5.1 github repository [1/3] </a></li>
+<li><a href="#sec-3_5_2">3.5.2 site server data and document [1/1] </a></li>
+<li><a href="#sec-3_5_3">3.5.3 setup working network environment [2/6] </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> FAQ (基本问题?) </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1_1" class="outline-3">
+<h3 id="sec-1_1"><span class="section-number-3">1.1</span> 文档本身的维护 </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+</div>
+
+<div id="outline-container-1_1_1" class="outline-4">
+<h4 id="sec-1_1_1"><span class="section-number-4">1.1.1</span> 联系这个文档的作者 </h4>
+<div class="outline-text-4" id="text-1_1_1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<tbody>
+<tr><td>姓名</td><td>邮件</td><td>即时工具</td><td>电话</td></tr>
+<tr><td>周海涛</td><td>bartuer@gmail.com</td><td>iChat in Bonjour</td><td>13439600330</td></tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div id="outline-container-1_1_2" class="outline-4">
+<h4 id="sec-1_1_2"><span class="section-number-4">1.1.2</span> 查看文档的HTML版本 </h4>
+<div class="outline-text-4" id="text-1_1_2">
+
+<ul>
+<li>
+地址
+</li>
+<li>
+自动生成,不要在HTML做修改
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1_2" class="outline-3">
+<h3 id="sec-1_2"><span class="section-number-3">1.2</span> 数据表格 </h3>
+<div class="outline-text-3" id="text-1_2">
+
+<ul>
+<li>
+CSV 下载地址
+</li>
+<li>
+CSV 上传地址
+</li>
+<li>
+CSV 在线修改
+</li>
+<li>
+SQLite 数据库下载地址
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1_3" class="outline-3">
+<h3 id="sec-1_3"><span class="section-number-3">1.3</span> 项目版本仓库 </h3>
+<div class="outline-text-3" id="text-1_3">
+
+<ul>
+<li>
+github
+</li>
+<li>
+git 图形工具
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 数据 </h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2_1" class="outline-3">
+<h3 id="sec-2_1"><span class="section-number-3">2.1</span> Apple 教程 </h3>
+<div class="outline-text-3" id="text-2_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2_2" class="outline-3">
+<h3 id="sec-2_2"><span class="section-number-3">2.2</span> Youtube 频道 </h3>
+<div class="outline-text-3" id="text-2_2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2_3" class="outline-3">
+<h3 id="sec-2_3"><span class="section-number-3">2.3</span> iTunes U </h3>
+<div class="outline-text-3" id="text-2_3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2_4" class="outline-3">
+<h3 id="sec-2_4"><span class="section-number-3">2.4</span> TED </h3>
+<div class="outline-text-3" id="text-2_4">
+
+<p><a href="http://www.ted.com">http://www.ted.com</a>
+</p></div>
+
+</div>
+
+<div id="outline-container-2_5" class="outline-3">
+<h3 id="sec-2_5"><span class="section-number-3">2.5</span> <span class="todo TODO"> TODO</span> how to site 收集  [0/1] </h3>
+<div class="outline-text-3" id="text-2_5">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 16:00</span></span><br/>
+</p><ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> <a href="http://www.maclearning.com">http://www.maclearning.com</a>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> development </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3_1" class="outline-3">
+<h3 id="sec-3_1"><span class="section-number-3">3.1</span> UI design </h3>
+<div class="outline-text-3" id="text-3_1">
+
+
+</div>
+
+<div id="outline-container-3_1_1" class="outline-4">
+<h4 id="sec-3_1_1"><span class="section-number-4">3.1.1</span> <span class="todo TODO"> TODO</span> video meaning editor UI </h4>
+<div class="outline-text-4" id="text-3_1_1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3_1_2" class="outline-4">
+<h4 id="sec-3_1_2"><span class="section-number-4">3.1.2</span> <span class="todo TODO"> TODO</span> video tag selector UI </h4>
+<div class="outline-text-4" id="text-3_1_2">
+
+</div>
+
+</div>
+
+<div id="outline-container-3_1_3" class="outline-4">
+<h4 id="sec-3_1_3"><span class="section-number-4">3.1.3</span> <span class="todo TODO"> TODO</span> image stream viewer </h4>
+<div class="outline-text-4" id="text-3_1_3">
+
+</div>
+
+</div>
+
+<div id="outline-container-3_1_4" class="outline-4">
+<h4 id="sec-3_1_4"><span class="section-number-4">3.1.4</span> <span class="todo TODO"> TODO</span> build desktop application link parts by transition to try video Editor UI </h4>
+<div class="outline-text-4" id="text-3_1_4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_2" class="outline-3">
+<h3 id="sec-3_2"><span class="section-number-3">3.2</span> audio </h3>
+<div class="outline-text-3" id="text-3_2">
+
+
+</div>
+
+<div id="outline-container-3_2_1" class="outline-4">
+<h4 id="sec-3_2_1"><span class="section-number-4">3.2.1</span> <span class="todo HALT"> HALT</span> combine audio track to video file </h4>
+<div class="outline-text-4" id="text-3_2_1">
+
+<p>ffmpeg has serious lost frames problem, it could combine sound,
+but video quality is damaged
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_2" class="outline-4">
+<h4 id="sec-3_2_2"><span class="section-number-4">3.2.2</span> <span class="done DONE"> DONE</span> split audio track out of video </h4>
+<div class="outline-text-4" id="text-3_2_2">
+
+<p>#!/bin/bash
+ffmpeg -i $1 -vn -acodec copy $1.`afinfo <i>tmp/sound |head -2|tail -1|cut -d ':' -f 2|sed -e 's</i> //g;s+f$++g;s+WAVE+wav+g;s+MPG3+mp3+g;s+ac-3+ac3+g;s+AIFF+aif+g;s+3gpp+3gp+g'`
+</p><ul>
+<li>
+only extract audio file out is very fast, but convert format
+will be very slow, need aac -&gt; wav -&gt; mp3, is there any fast
+mp3 encoder?
+</li>
+<li>
+only mp3 can be stream from web
+afconvert -v -f AIFF $1 &ndash;data BEI16@44100 $1.aif &amp;&amp; lame
+$1.aif $1.mp3
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_2_3" class="outline-4">
+<h4 id="sec-3_2_3"><span class="section-number-4">3.2.3</span> <span class="done DONE"> DONE</span> make lion tts output audio file </h4>
+<div class="outline-text-4" id="text-3_2_3">
+
+<p>#!/bin/sh
+say -o /tmp/h.aif -f $1 &amp;&amp; afconvert -v -f m4af -d aac -b 64000 /tmp/h.aif $1.m4a  &amp;&amp; afinfo $1.m4a
+1s sound, 20ms generate and compress time, 8k bandwidth
+</p></div>
+
+</div>
+
+<div id="outline-container-3_2_4" class="outline-4">
+<h4 id="sec-3_2_4"><span class="section-number-4">3.2.4</span> <span class="todo TODO"> TODO</span> tts service [1/7] </h4>
+<div class="outline-text-4" id="text-3_2_4">
+
+<ul>
+<li>
+<b>[X]</b> basic idea
+(shell-command "qlmanage -p 2&gt;/dev/null ./doc/bonjour.ting-ting.emlx")
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> http service first
+use Safari test it
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> compare install Node.js and uki gems
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> daemon it
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> package it
+<ul>
+<li>
+check OS
+</li>
+<li>
+voice dependency
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> embedded VPN connection?
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> why not make it available on Mac App store?
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_3" class="outline-3">
+<h3 id="sec-3_3"><span class="section-number-3">3.3</span> image </h3>
+<div class="outline-text-3" id="text-3_3">
+
+
+</div>
+
+<div id="outline-container-3_3_1" class="outline-4">
+<h4 id="sec-3_3_1"><span class="section-number-4">3.3.1</span> <span class="done DONE"> DONE</span> convert video to image stream </h4>
+<div class="outline-text-4" id="text-3_3_1">
+
+<p>#!/bin/bash
+mkdir thumb-$1 
+ffmpeg -i $1 -r 1 -s qqvga -f image2 thumb-$1/thumb-$1-%04d.png
+for f in thumb-$1/*.png; do
+convert -quality 80 $f thumb-$1/`basename -s .png $f`.jpg &amp;&amp; rm $f
+done
+</p><ul>
+<li>
+take look at handbrake
+it build own encoder? 
+<ul>
+<li>
+clone github keep failed
+svn mirror?
+</li>
+<li>
+just download the tarball
+</li>
+</ul>
+</li>
+<li>
+image sample quality
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_3_2" class="outline-4">
+<h4 id="sec-3_3_2"><span class="section-number-4">3.3.2</span> <span class="done DONE"> DONE</span> empty image stream </h4>
+<div class="outline-text-4" id="text-3_3_2">
+
+<p>just draw some rectangle on client
+for audio only case
+</p></div>
+
+</div>
+
+<div id="outline-container-3_3_3" class="outline-4">
+<h4 id="sec-3_3_3"><span class="section-number-4">3.3.3</span> <span class="todo TODO"> TODO</span> automatic slideshow video making [0/4] </h4>
+<div class="outline-text-4" id="text-3_3_3">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> image pool
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> music pool
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> extend transition library
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> stream video on demand
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_4" class="outline-3">
+<h3 id="sec-3_4"><span class="section-number-3">3.4</span> video </h3>
+<div class="outline-text-3" id="text-3_4">
+
+
+</div>
+
+<div id="outline-container-3_4_1" class="outline-4">
+<h4 id="sec-3_4_1"><span class="section-number-4">3.4.1</span> <span class="todo TODO"> TODO</span> workflow  [1/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
+<div class="outline-text-4" id="text-3_4_1">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 12:00</span></span><br/>
+</p><ul>
+<li>
+<b>[X]</b> take look at podcast producer
+it has document and tutorial
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> need make video tutorial for self work flow?
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_2" class="outline-4">
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/4] </h4>
+<div class="outline-text-4" id="text-3_4_2">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> mongrel2 solution
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> node.js solution
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> upload client
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> server configure support break recover
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_3" class="outline-4">
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> encode according to bandwidth and screen size settings [0/5] </h4>
+<div class="outline-text-4" id="text-3_4_3">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> x264
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> encoder in Final Cut
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> encoder in Handbrake
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> hardware accelerated encoder library
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> commercial encoder
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_4" class="outline-4">
+<h4 id="sec-3_4_4"><span class="section-number-4">3.4.4</span> <span class="todo TODO"> TODO</span> reference movie [2/4] </h4>
+<div class="outline-text-4" id="text-3_4_4">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 14:00</span></span><br/>
+</p><ul>
+<li>
+<b>[X]</b> take look at QuickTime export format
+</li>
+<li>
+<b>[X]</b> javascript control
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> browser native control
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> page structure
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_5" class="outline-4">
+<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> setup http streaming server [0/3] </h4>
+<div class="outline-text-4" id="text-3_4_5">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> migrate my server from SF to Tokyo
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> benchmark local and VPS
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> stream audio first
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_6" class="outline-4">
+<h4 id="sec-3_4_6"><span class="section-number-4">3.4.6</span> <span class="todo TODO"> TODO</span> automatically script driven capture [0/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
+<div class="outline-text-4" id="text-3_4_6">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> is it possible use script driven capture
+<ul>
+<li>
+can make that script downloadable
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> programming API of QuickTime or Capture software
+<ul>
+<li>
+macruby as glue language?
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_7" class="outline-4">
+<h4 id="sec-3_4_7"><span class="section-number-4">3.4.7</span> <span class="todo TODO"> TODO</span> video effect and transitions [0/2] </h4>
+<div class="outline-text-4" id="text-3_4_7">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> filter matrixs in CoreImage library
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> quartz composer make video transition
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3_5" class="outline-3">
+<h3 id="sec-3_5"><span class="section-number-3">3.5</span> project maintain </h3>
+<div class="outline-text-3" id="text-3_5">
+
+
+</div>
+
+<div id="outline-container-3_5_1" class="outline-4">
+<h4 id="sec-3_5_1"><span class="section-number-4">3.5.1</span> <span class="todo TODO"> TODO</span> github repository [1/3] </h4>
+<div class="outline-text-4" id="text-3_5_1">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 18:00</span></span><br/>
+</p><ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> make commit right
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> branch based process
+</li>
+<li>
+<b>[X]</b> not pull request
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_5_2" class="outline-4">
+<h4 id="sec-3_5_2"><span class="section-number-4">3.5.2</span> <span class="todo TODO"> TODO</span> site server data and document [1/1] </h4>
+<div class="outline-text-4" id="text-3_5_2">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-26 Sat 13:30</span></span><br/>
+</p><ul>
+<li>
+<b>[X]</b> automatically convert this document
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_5_3" class="outline-4">
+<h4 id="sec-3_5_3"><span class="section-number-4">3.5.3</span> <span class="todo TODO"> TODO</span> setup working network environment [2/6] </h4>
+<div class="outline-text-4" id="text-3_5_3">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 10:00</span></span><br/>
+</p><ul>
+<li>
+<b>[X]</b> fast network
+</li>
+<li>
+<b>[X]</b> storage
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> service finding
+<ul>
+<li>
+DNS configure
+</li>
+<li>
+bonjour name convention
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> document browser
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> document edit
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> notification
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: bartuer
+</p>
+<p class="date"> Date: 2011-11-27 15:14:34 CST</p>
+<p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
