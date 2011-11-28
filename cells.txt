@@ -100,14 +100,22 @@
             - standard specification
             - profile database 
             - tweak profile for screen capture
+            - collect high quality movie's profile
+              - like earthtouch or Apple trailers
+              - Final cut has such feature
+            - export sample profile from popular transcoder
       - [ ] x264
-            encoder in Handbrake
+            - encoder in Handbrake
+            - learn it's algorithm
+            - there is H.264 CUDA
+            - it can be used in ffmpeg
       - [ ] encoder in Final Cut
-            compressor
+            - compressor
+            - QuickTime Framework in general
       - [ ] hardware accelerated encoder library
             - CUDA
-            - video sync
-            - GPGPU
+            - video sync of Intel
+            - GPGPU of AMD
       - [ ] commercial encoder
             - Main Concept
             - Squeeze
