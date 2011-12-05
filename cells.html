@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-11-28 23:00:54 CST"/>
+<meta name="generated" content="2011-12-05 16:50:39 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -128,12 +128,13 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_4">3.4 video </a>
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
-<li><a href="#sec-3_4_2">3.4.2 huge file upload and download [0/4] </a></li>
-<li><a href="#sec-3_4_3">3.4.3 encode according to bandwidth and screen size settings [0/5] </a></li>
+<li><a href="#sec-3_4_2">3.4.2 huge file upload and download [0/6] </a></li>
+<li><a href="#sec-3_4_3">3.4.3 encode according to bandwidth and screen size settings [3/5] </a></li>
 <li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
-<li><a href="#sec-3_4_5">3.4.5 setup http streaming server [0/3] </a></li>
+<li><a href="#sec-3_4_5">3.4.5 setup http streaming server [0/4] </a></li>
 <li><a href="#sec-3_4_6">3.4.6 automatically script driven capture [0/2]</a></li>
 <li><a href="#sec-3_4_7">3.4.7 video effect and transitions [0/2] </a></li>
+<li><a href="#sec-3_4_8">3.4.8 profile collection [0/2] </a></li>
 </ul>
 </li>
 <li><a href="#sec-3_5">3.5 project maintain </a>
@@ -465,6 +466,11 @@ just download the tarball
 <li>
 image sample quality
 </li>
+<li>
+it is possible to embedded images into audio stream, it seems
+pretty cool bandwidth saving method
+<a href="http://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/HTTP_Live_Streaming_Metadata_Spec/2/2.html#//apple_ref/doc/uid/TP40010435-CH2-DontLinkElementID_2">http://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/HTTP_Live_Streaming_Metadata_Spec/2/2.html#//apple_ref/doc/uid/TP40010435-CH2-DontLinkElementID_2</a>
+</li>
 </ul>
 </div>
 
@@ -522,6 +528,11 @@ it has document and tutorial
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> need make video tutorial for self work flow?
+<ul>
+<li>
+should make it as automatically as possible
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -529,7 +540,7 @@ it has document and tutorial
 </div>
 
 <div id="outline-container-3_4_2" class="outline-4">
-<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/4] </h4>
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h4>
 <div class="outline-text-4" id="text-3_4_2">
 
 <ul>
@@ -545,13 +556,19 @@ it has document and tutorial
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> server configure support break recover
 </li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> try cloudfront AWS
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> try new location of linode
+</li>
 </ul>
 </div>
 
 </div>
 
 <div id="outline-container-3_4_3" class="outline-4">
-<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> encode according to bandwidth and screen size settings [0/5] </h4>
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> encode according to bandwidth and screen size settings [3/5] </h4>
 <div class="outline-text-4" id="text-3_4_3">
 
 <ul>
@@ -568,38 +585,95 @@ profile database
 <li>
 tweak profile for screen capture
 </li>
+<li>
+collect high quality movie's profile
+<ul>
+<li>
+like earthtouch or Apple trailers
+</li>
+<li>
+Final cut has such feature
+</li>
+</ul>
+</li>
+<li>
+export sample profile from popular transcoder
+</li>
 </ul>
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> x264
-encoder in Handbrake
-</li>
-<li>
-<b>[<span style="visibility:hidden;">X</span>]</b> encoder in Final Cut
-compressor
-</li>
-<li>
-<b>[<span style="visibility:hidden;">X</span>]</b> hardware accelerated encoder library
 <ul>
 <li>
-CUDA
+encoder in Handbrake
+I think it's result seems much better than MC
 </li>
 <li>
-video sync
+learn it's algorithm
 </li>
 <li>
-GPGPU
+there is H.264 CUDA
+</li>
+<li>
+it can be used in ffmpeg
 </li>
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> commercial encoder
+<b>[X]</b> encoder in Final Cut
+<ul>
+<li>
+compressor
+<ul>
+<li>
+AIC -&gt; ResPro
+</li>
+<li>
+they use Main Concept before
+</li>
+</ul>
+</li>
+<li>
+QuickTime Framework in general
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> hardware accelerated encoder library
+<ul>
+<li>
+CUDA
+it is most available now
+</li>
+<li>
+video sync of Intel
+</li>
+<li>
+GPGPU of AMD
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> commercial encoder
 <ul>
 <li>
 Main Concept
+it support CUDA, but my card only has 253M memory, that
+need at least 512M
 </li>
 <li>
 Squeeze
+<ul>
+<li>
+how to remove 3.6M video's water mark ?
+do not need that
+</li>
+<li>
+how could encoder know video should choose static or
+motion profile?
+indeed there is no such significant difference there
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -632,7 +706,7 @@ Squeeze
 </div>
 
 <div id="outline-container-3_4_5" class="outline-4">
-<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> setup http streaming server [0/3] </h4>
+<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> setup http streaming server [0/4] </h4>
 <div class="outline-text-4" id="text-3_4_5">
 
 <ul>
@@ -644,6 +718,9 @@ Squeeze
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> stream audio first
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> http segment
 </li>
 </ul>
 </div>
@@ -686,6 +763,43 @@ macruby as glue language?
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> quartz composer make video transition
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3_4_8" class="outline-4">
+<h4 id="sec-3_4_8"><span class="section-number-4">3.4.8</span> <span class="todo TODO"> TODO</span> profile collection [0/2] </h4>
+<div class="outline-text-4" id="text-3_4_8">
+
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> from software
+<ul>
+<li>
+squeeze
+</li>
+<li>
+handbrake
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> from code
+<ul>
+<li>
+http stream
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> from document
+<ul>
+<li>
+stream media guide
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -774,7 +888,7 @@ bonjour name convention
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-11-28 23:00:54 CST</p>
+<p class="date"> Date: 2011-12-05 16:50:39 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>

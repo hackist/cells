@@ -75,6 +75,9 @@
           svn mirror?
         - just download the tarball
       - image sample quality
+      - it is possible to embedded images into audio stream, it seems
+        pretty cool bandwidth saving method
+        http://developer.apple.com/library/ios/#documentation/AudioVideo/Conceptual/HTTP_Live_Streaming_Metadata_Spec/2/2.html#//apple_ref/doc/uid/TP40010435-CH2-DontLinkElementID_2
 ***** DONE empty image stream
       just draw some rectangle on client
       for audio only case
@@ -89,12 +92,15 @@
       - [X] take look at podcast producer
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
-***** TODO huge file upload and download [0/4]
+            - should make it as automatically as possible
+***** TODO huge file upload and download [0/6]
       - [ ] mongrel2 solution
       - [ ] node.js solution
       - [ ] upload client
       - [ ] server configure support break recover
-***** TODO encode according to bandwidth and screen size settings [0/5]
+      - [ ] try cloudfront AWS
+      - [ ] try new location of linode
+***** TODO encode according to bandwidth and screen size settings [3/5]
       - [ ] profile
             (link "doc/encoders.eml" 1)
             - standard specification
@@ -106,29 +112,41 @@
             - export sample profile from popular transcoder
       - [ ] x264
             - encoder in Handbrake
+              I think it's result seems much better than MC
             - learn it's algorithm
             - there is H.264 CUDA
             - it can be used in ffmpeg
-      - [ ] encoder in Final Cut
+      - [X] encoder in Final Cut
             - compressor
+              - AIC -> ResPro
+              - they use Main Concept before
             - QuickTime Framework in general
-      - [ ] hardware accelerated encoder library
+      - [X] hardware accelerated encoder library
             - CUDA
+              it is most available now
             - video sync of Intel
             - GPGPU of AMD
-      - [ ] commercial encoder
+      - [X] commercial encoder
             - Main Concept
+              it support CUDA, but my card only has 253M memory, that
+              need at least 512M
             - Squeeze
+              - how to remove 3.6M video's water mark ?
+                do not need that
+              - how could encoder know video should choose static or
+                motion profile?
+                indeed there is no such significant difference there
 ***** TODO reference movie [2/4]
       SCHEDULED: <2011-11-27 Sun 14:00>
       - [X] take look at QuickTime export format
       - [X] javascript control
       - [ ] browser native control
       - [ ] page structure
-***** TODO setup http streaming server [0/3]
+***** TODO setup http streaming server [0/4]
       - [ ] migrate my server from SF to Tokyo
       - [ ] benchmark local and VPS
       - [ ] stream audio first
+      - [ ] http segment
 ***** TODO automatically script driven capture [0/2]               :research:
       - [ ] is it possible use script driven capture
             - can make that script downloadable
@@ -137,6 +155,14 @@
 ***** TODO video effect and transitions [0/2]
       - [ ] filter matrixs in CoreImage library
       - [ ] quartz composer make video transition
+***** TODO profile collection [0/2] 
+      - [ ] from software
+            - squeeze
+            - handbrake
+      - [ ] from code
+            - http stream
+      - [ ] from document
+            - stream media guide
 *** project maintain
 ***** TODO github repository [1/3]
       SCHEDULED: <2011-11-27 Sun 18:00>
