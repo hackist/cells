@@ -1,0 +1,50 @@
+Message-Id: <99385D2D-5BA6-444A-BF81-F9E9BE3E9690@gmail.com>
+From: "bartuer[gmail]" <bartuer@gmail.com>
+To: Mars Yao <mars@don-goal.com>
+Content-Type: text/plain;
+	charset=US-ASCII;
+	format=flowed;
+	delsp=yes
+Content-Transfer-Encoding: 7bit
+X-Smtp-Server: smtp.gmail.com:bartuer
+Mime-Version: 1.0 (Apple Message framework v936)
+Subject: xbmc
+Date: Tue, 6 Dec 2011 01:07:20 +0800
+
+XBMC, XBox Media Center, other consoles also has similar projects, PS3  
+media server, GeeXBox (it is not for XBox, but for Wii), all of such  
+three typical projects indeed all come from game consoles, now, it  
+coming to AppleTV, AwkwardTV is such a project, these project's  
+initial protocol are all UPnP.
+
+The purpose here is just playing movie stored on other place,  
+streaming via home network and show it on TV, why they prefer consoles  
+and Apple TV ? It looks more clean and neat than HTPC, not making  
+noise, and they already have one, they have payed for such devices.
+
+I guess your NAS has already been UPnP capable. UPnP is a bit like  
+Bonjour, the client can automatically find available service.
+
+So, if grab Youtube videos and transcode (maybe do not needed) them  
+and saved on NAS (or any cloud storage), Apple TV should be able to  
+play files in iTunes libraries if home sharing opened, create new user  
+and configure iTunes point to such network folder, that's done, you  
+can watch YouTube on TV via Front Row on Apple TV!
+
+I don't believe the real problem here is how to play, Apple's Front  
+Row is nice and we can do encoding remotely, people shouldn't waste  
+huge time on that, the real problem is how could you select the  
+content, deliver your favorite stuff, satisfy your taste, meet your  
+purpose, that is the real hard problem we should invest our time to  
+solve.
+
+So We shouldn't hack another ugly UI, yet another media server on  
+Apple TV, or plug-in or add-ons on those hacked platforms. I feel most  
+people just can not figure out how to setup these ssh and debian  
+packages, it's enough hard for them. We should provide valuable  
+service, instead of jailbreak some platform even we disagree with  
+them, for if we keep politely obey their rule, there will be no  
+struggle abstract our energy to serve users on their platform, if we  
+are unfortunately drop into such jailbreak trap, things will become  
+ironical seems we just want to show we can. User do not want to watch  
+such show, they want to watch something else, interesting, useful.
