@@ -1,0 +1,104 @@
+system /System/Library/Filesystems/NetFSPlugins/afp.bundle/Contents/MacOS/afp
+system /System/Library/Frameworks/AppleShareClientCore.framework/Versions/A/AppleShareClientCore
+system /System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/Resources/com.apple.datadetectorscore.cache.urlifier.system
+system /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/OggVorbis Mach-O.ibrary/Extensions/AudioIPCDriver.kext/Contents/Resources/AudioIPCPlugIn.bundle/Contents/MacOS/AudioIPCPlugIn
+system /System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAHALPlugIn.bundle/Contents/MacOS/AppleHDAHALPlugIn
+
+base /usr/lib/dyld
+base /usr/lib/libmx.A.dylib
+base /Applications/SqzTrial/Squeeze.app/Contents/Auxiliaries/libboost_date_time-mt.dylib
+base /Applications/SqzTrial/Squeeze.app/Contents/Auxiliaries/libboost_thread-mt.dylib
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/Qt3Support.framework/Versions/4/Qt3Support
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtCore.framework/Versions/4/QtCore
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtGui.framework/Versions/4/QtGui
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtNetwork.framework/Versions/4/QtNetwork
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtSql.framework/Versions/4/QtSql
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtSvg.framework/Versions/4/QtSvg
+base /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/QtXml.framework/Versions/4/QtXml
+base /System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/Resources/ArtFile.bin
+base /System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/Resources/SArtFile.bin
+
+opengl /System/Library/Extensions/GeForceGLDriver.bundle/Contents/MacOS/GeForceGLDriver
+opengl /System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_bgra.dylib
+opengl /System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/libcldcpuengine.dylib
+opengl /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreFSCache.dylib
+opengl /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLProgrammability.dylib
+opengl /System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine
+opengl /System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLRendererFloat.bundle/GLRendererFloat
+
+opencl /Users/bartuer/Library/Caches/com.sorenson.Squeeze/com.apple.opencl/com.apple.ocl.32.data
+opencl /Users/bartuer/Library/Caches/com.sorenson.Squeeze/com.apple.opencl/com.apple.ocl.32.maps
+
+CUDA /Library/Frameworks/CUDA.framework/Versions/A/CUDA
+CUDA /Library/Frameworks/CUDA.framework/Versions/A/Libraries/libcuda_270.05.10.dylib
+CUDA /Library/Frameworks/CUDA.framework/Versions/A/Libraries/libgpgpucomp.dylib
+
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqgif.dylib
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqico.dylib
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqjpeg.dylib
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqmng.dylib
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqsvg.dylib
+image /Applications/SqzTrial/Squeeze.app/Contents/MacOS/imageformats/libqtiff.dylib
+color profile /System/Library/ColorSync/Profiles/sRGB Profile.icc
+
+audio base /System/Library/Components/CoreAudio.component/Contents/MacOS/CoreAudio
+audio base /System/Library/Components/SoundManagerComponents.component/Contents/MacOS/SoundManagerComponents
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_bc_dec_avc.framework/Versions/9/mc_bc_dec_avc
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_avc.framework/Versions/9/mc_dec_avc
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_mp2v.framework/Versions/9/mc_dec_mp2v
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_mp3.framework/Versions/9/mc_dec_mp3
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_mpa.framework/Versions/9/mc_dec_mpa
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_vc1.framework/Versions/9/mc_dec_vc1
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_dec_wma.framework/Versions/9/mc_dec_wma
+audio decoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_mfimport.framework/Versions/9/mc_mfimport
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_aac.framework/Versions/9/mc_enc_aac
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_avc.framework/Versions/9/mc_enc_avc
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_ddc.framework/Versions/7.5/mc_enc_ddc
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_ddpp.framework/Versions/7.5/mc_enc_ddpp
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_mp2v.framework/Versions/9/mc_enc_mp2v
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_mpa.framework/Versions/9/mc_enc_mpa
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_pcm.framework/Versions/9/mc_enc_pcm
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_vc1.framework/Versions/9/mc_enc_vc1
+audio encoder /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_enc_wma.framework/Versions/9/mc_enc_wma
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_demux_asf.framework/Versions/9/mc_demux_asf
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_demux_mp2.framework/Versions/9/mc_demux_mp2
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_demux_mxf.framework/Versions/9/mc_demux_mxf
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_mux_asf.framework/Versions/9/mc_mux_asf
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_mux_mp2.framework/Versions/9/mc_mux_mp2
+audio mux/demux /Applications/SqzTrial/Squeeze.app/Contents/Frameworks/mc_mux_mp4.framework/Versions/9/mc_mux_mp4
+audio codec /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/AACPlugin.sc/Contents/MacOS/AACPlugin
+audio codec /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/AC3H264 Mach-O.sc/Contents/MacOS/AC3H264 Mach-O
+audio codec /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/M4AFormatter.sc/Contents/MacOS/M4AFormatter
+audio codec /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/MP3 Mach-O.sc/Contents/MacOS/MP3 Mach-O
+
+video codec /Applications/SqzTrial/Squeeze.app/Contents/Resources/QuickTimeComponents/AppleProResCodec.component/Contents/MacOS/AppleProResCodec
+video codec /Library/QuickTime/AppleIntermediateCodec.component/Contents/MacOS/AppleIntermediateCodec
+video codec /System/Library/QuickTime/ApplePixletVideo.component/Contents/MacOS/ApplePixletVideo
+video codec /Library/QuickTime/AppleMPEG2Codec.component/Contents/MacOS/AppleMPEG2Codec
+
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/Apple AVC Mach-O.sc/Contents/MacOS/Apple AVC Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/FlashFormatter Mach-O.sc/Contents/MacOS/FlashFormatter Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/FlvReader Mach-O.sc/Contents/MacOS/FlvReader Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/LegacyFormatter Mach-O.sc/Contents/MacOS/LegacyFormatter Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/MainConceptAVC Mach-O.sc/Contents/MacOS/MainConceptAVC Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/MainConceptVC1 Mach-O.sc/Contents/MacOS/MainConceptVC1 Mach-O
+container /Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/MatroskaFormatter.sc/Contents/MacOS/MatroskaFormatter
+
+/Applications/SqzTrial/Squeeze.app/Contents/Frameworks/SMCaptureAndPlayback.framework/Versions/A/SMCaptureAndPlayback
+/Applications/SqzTrial/Squeeze.app/Contents/Frameworks/SMITSL.framework/Versions/A/SMITSL
+/System/Library/QuickTime/QuickTimeFireWireDV.component/Contents/MacOS/QuickTimeFireWireDV
+/System/Library/PrivateFrameworks/AppleSRP.framework/Versions/A/AppleSRP
+/System/Library/PrivateFrameworks/AppleGVA.framework/Versions/A/AppleGVA
+/System/Library/QuickTime/AppleGVAHW.component/Contents/MacOS/AppleGVAHW
+/System/Library/QuickTime/AppleVAH264HW.component/Contents/MacOS/AppleVAH264HW
+/System/Library/QuickTime/QuickTimeH264.component/Contents/Resources/QuickTimeH264.scalar
+
+configure /Users/bartuer/Library/Preferences/.System Config 80/..namedfork/rsrc
+configure /Users/bartuer/Library/Preferences/com.sorensonmedia.Squeeze
+
+cache /private/var/db/dyld/dyld_shared_cache_i386
+cache /private/var/folders/lq/mgp8d3dj41zcm5pf13lb5tkr0000gp/C/com.apple.IntlDataCache.le.kbdx
+cache /private/var/folders/lq/mgp8d3dj41zcm5pf13lb5tkr0000gp/C/com.apple.LaunchServices-034502.csstore
+cache /private/var/folders/lq/mgp8d3dj41zcm5pf13lb5tkr0000gp/C/com.apple.scriptmanager.le.cache
+
+/Applications/SqzTrial/Squeeze.app/Contents/Plug-ins/Watermark.sc/Versions/1/Watermark

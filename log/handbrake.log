@@ -1,0 +1,1545 @@
+[11:24:59] hb_init: checking cpu count
+[11:24:59] hb_init: starting libhb thread
+[11:24:59] thread b00bc000 started ("libhb")
+[11:24:59] macgui: Handbrake Version: 0.9.5 i386 (2011010300)
+[11:24:59] hb_init: checking cpu count
+[11:24:59] hb_init: starting libhb thread
+[11:24:59] thread b0147000 started ("libhb")
+[11:24:59] hb_init: checking cpu count
+[11:24:59] hb_init: starting libhb thread
+[11:24:59] thread b01c9000 started ("libhb")
+[11:25:02] macgui: hbInstances path to this instance: /Applications/HandBrake.app
+[11:25:02] macgui: hbInstance found instance pidnum:8188 at path: /Applications/HandBrake.app
+[11:25:02] macgui: hbInstance MATCH FOUND, our pidnum is:8188
+[11:25:02] macgui: Pid for this instance:8188
+[11:25:02] macgui: HBQueueController : My Pidnum is 8188
+[11:25:27] macgui: trying to open video_ts folder (parent directory chosen)
+[11:25:27] macgui: Preview: Disabling HUD Controls
+[11:25:27] macgui: Minimum length of title for scan: 900000
+[11:25:27] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=0
+[11:25:27] thread b099f000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x197bc00)
+[11:25:27] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:25:27] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:25:27] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:25:27] Got an MP4 input, read the metadata
+[11:25:27] scan: decoding previews for title 1
+[11:25:27] scan: preview 1
+[11:25:27] scan: preview 2
+[11:25:27] scan: preview 3
+[11:25:27] scan: preview 4
+[11:25:27] scan: preview 5
+[11:25:27] scan: preview 6
+[11:25:27] scan: preview 7
+[11:25:27] scan: preview 8
+[11:25:27] scan: preview 9
+[11:25:28] scan: preview 10
+[11:25:28] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:25:28] scan: title (0) job->width:864, job->height:464
+[11:25:28] thread b099f000 exited ("scan")
+[11:25:28] thread b099f000 joined ("scan")
+[11:25:28] libhb: scan thread found 1 valid title(s)
+[11:25:28] macgui: showNewScan: This is a new source item scan
+[11:25:28] macgui: Preview: Enabling HUD Controls
+[11:26:55] macgui: Rip: Pending queue count is 0
+[11:26:55] macgui: getNextPendingQueueIndex next pending encode index is:0
+[11:26:55] macgui: scanning specifically for title: 1
+[11:26:55] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[11:26:55] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x1a27c00)
+[11:26:55] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:26:55] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:26:55] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:26:55] Got an MP4 input, read the metadata
+[11:26:55] scan: decoding previews for title 1
+[11:26:55] scan: preview 1
+[11:26:55] scan: preview 2
+[11:26:55] scan: preview 3
+[11:26:55] scan: preview 4
+[11:26:55] scan: preview 5
+[11:26:55] scan: preview 6
+[11:26:56] scan: preview 7
+[11:26:56] scan: preview 8
+[11:26:56] scan: preview 9
+[11:26:56] scan: preview 10
+[11:26:56] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:26:56] scan: title (0) job->width:864, job->height:464
+[11:26:56] thread b0749000 exited ("scan")
+[11:26:56] thread b0749000 joined ("scan")
+[11:26:56] libhb: scan thread found 1 valid title(s)
+[11:26:56] macgui: ScanDone state received from fQueueEncodeLibhb
+[11:26:56] macgui: Preset: Custom
+[11:26:56] macgui: processNewQueueEncode number of passes expected is: 1
+[11:26:56] macgui: Start / Stop set to chapters
+[11:26:56] macgui: prepareJob exiting
+[11:26:56] thread b0749000 started ("work")
+[11:26:56] 1 job(s) to process
+[11:26:56] starting job
+[11:26:56] sync: expecting 2427 video frames
+[11:26:56] job configuration:
+[11:26:56]  * source
+[11:26:56]    + /Users/bartuer/Movies/Rec.mov
+[11:26:56]    + title 1, chapter(s) 1 to 1
+[11:26:56]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:26:56]    + data rate: 2684 kbps
+[11:26:56]  * destination
+[11:26:56]    + /Users/bartuer/Movies/Rec_hb.m4v
+[11:26:56]    + container: MPEG-4 (.mp4 and .m4v)
+[11:26:56]      + 64-bit formatting
+[11:26:56]  * video track
+[11:26:56]    + decoder: h264
+[11:26:56]      + bitrate 2666 kbps
+[11:26:56]    + frame rate: same as source (around 38.972 fps)
+[11:26:56]    + loose anamorphic
+[11:26:56]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:26:56]      + pixel aspect ratio: 2968 / 2977
+[11:26:56]      + display dimensions: 829 * 448
+[11:26:56]    + encoder: x264
+[11:26:56]      + quality: 20.00 (RF)
+[11:26:56] thread b089b000 started ("reader")
+[11:26:56] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:26:56] thread b0a21000 started ("Renderer")
+[11:26:56] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:26:56] reader: first SCR 0 id 0 DTS -39000
+[11:26:56] encx264: min-keyint: auto (38), keyint: 390
+[11:26:56] encx264: encoding with stored aspect 2968/2977
+[11:26:56] encx264: Encoding at constant RF 20.000000
+[11:26:56] encx264: opening libx264 (pass 0)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile High, level 3.1
+[11:26:56] thread b0d92000 started ("H.264/AVC encoder (libx264)")
+[11:26:56] thread b0e14000 started ("Video Synchronization")
+[11:26:56] muxmp4: using 64-bit MP4 formatting.
+[11:26:56] muxmp4: track 0, chunk duration 9238
+[11:28:07] reader: done. 1 scr changes
+[11:28:07] thread b089b000 exited ("reader")
+[11:28:12] work: average encoding speed for job is 32.096634 fps
+[11:28:12] Writing Metadata to output file...
+[11:28:12] mux: file size, 10788125 bytes
+[11:28:12] mux: track 0, 2359 frames, 10741293 bytes, 1417.22 kbps, fifo 8
+[11:28:12] mux: video bitrate error, +10741293 bytes
+[11:28:12] mux: overhead, 19.85 bytes per frame
+[11:28:12] thread b0a21000 exited ("Renderer")
+[11:28:12] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:28:12] thread b0e14000 exited ("Video Synchronization")
+[11:28:12] thread b0e14000 joined ("Video Synchronization")
+[11:28:12] sync: got 2359 frames, 2427 expected
+[11:28:12] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:28:12] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:28:12] thread b0d92000 exited ("H.264/AVC encoder (libx264)")
+[11:28:12] thread b0a21000 joined ("Renderer")
+[11:28:12] render: lost time: 0 (0 frames)
+[11:28:12] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] thread b0d92000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:19    Avg QP:17.03  size: 36842  PSNR Mean Y:46.66 U:51.41 V:51.20 Avg:47.71 Global:47.18
+x264 [info]: frame P:1155  Avg QP:19.92  size:  7779  PSNR Mean Y:44.72 U:49.16 V:49.14 Avg:45.73 Global:44.94
+x264 [info]: frame B:1185  Avg QP:23.39  size:   892  PSNR Mean Y:45.72 U:49.95 V:50.05 Avg:46.70 Global:45.81
+x264 [info]: consecutive B-frames: 27.3% 12.3% 10.0% 50.4%
+x264 [info]: mb I  I16..4: 27.1% 34.8% 38.1%
+x264 [info]: mb P  I16..4:  6.3%  4.9%  3.3%  P16..4: 19.4%  9.4%  5.2%  0.0%  0.0%    skip:51.5%
+x264 [info]: mb B  I16..4:  0.4%  0.2%  0.1%  B16..8: 14.9%  1.8%  0.4%  direct: 1.0%  skip:81.1%  L0:39.5% L1:52.7% BI: 7.8%
+x264 [info]: 8x8 transform intra:33.5% inter:62.9%
+x264 [info]: coded y,uvDC,uvAC intra: 45.4% 57.5% 30.3% inter: 9.1% 10.4% 1.5%
+x264 [info]: i16 v,h,dc,p: 25% 67%  2%  6%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 33% 17%  4%  5%  5%  6%  5%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 40% 12%  3%  5%  4%  5%  4%  5%
+x264 [info]: i8c dc,h,v,p: 41% 39% 15%  5%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 71.7% 13.3% 10.7%  4.2%  0.0%
+x264 [info]: ref B L0: 90.6%  8.1%  1.3%
+x264 [info]: ref B L1: 96.2%  3.8%
+x264 [info]: SSIM Mean Y:0.9918441 (20.885db)
+x264 [info]: PSNR Mean Y:45.222 U:49.565 V:49.605 Avg:46.220 Global:45.359 kb/s:1417.68
+[11:28:12] thread b089b000 joined ("reader")
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] fifo_close: trashing 0 buffer(s)
+[11:28:12] Freed 32 buffers of size 32768
+[11:28:12] Freed 3 buffers of size 65536
+[11:28:12] Freed 32 buffers of size 131072
+[11:28:12] Freed 32 buffers of size 1048576
+[11:28:12] Allocated 38993920 bytes of buffers on this pass and Freed 38993920 bytes, 0 bytes leaked
+[11:28:12] thread b0749000 exited ("work")
+[11:28:12] thread b0749000 joined ("work")
+[11:28:12] libhb: work result = 0
+[11:28:13] macgui: incrementQueueItemDone there are no more pending encodes
+[11:33:30] macgui: Rip: Pending queue count is 0
+[11:33:30] macgui: getNextPendingQueueIndex next pending encode index is:1
+[11:33:30] macgui: scanning specifically for title: 1
+[11:33:30] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[11:33:30] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x22037000)
+[11:33:30] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:33:30] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:33:30] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:33:30] Got an MP4 input, read the metadata
+[11:33:30] scan: decoding previews for title 1
+[11:33:30] scan: preview 1
+[11:33:30] scan: preview 2
+[11:33:30] scan: preview 3
+[11:33:30] scan: preview 4
+[11:33:30] scan: preview 5
+[11:33:30] scan: preview 6
+[11:33:30] scan: preview 7
+[11:33:30] scan: preview 8
+[11:33:30] scan: preview 9
+[11:33:30] scan: preview 10
+[11:33:30] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:33:30] scan: title (0) job->width:864, job->height:464
+[11:33:30] thread b0749000 exited ("scan")
+[11:33:30] thread b0749000 joined ("scan")
+[11:33:30] libhb: scan thread found 1 valid title(s)
+[11:33:31] macgui: ScanDone state received from fQueueEncodeLibhb
+[11:33:31] macgui: Preset: Custom
+[11:33:31] macgui: processNewQueueEncode number of passes expected is: 1
+[11:33:31] macgui: Start / Stop set to chapters
+[11:33:31] macgui: prepareJob exiting
+[11:33:31] thread b0749000 started ("work")
+[11:33:31] 1 job(s) to process
+[11:33:31] starting job
+[11:33:31] sync: expecting 2427 video frames
+[11:33:31] job configuration:
+[11:33:31]  * source
+[11:33:31]    + /Users/bartuer/Movies/Rec.mov
+[11:33:31]    + title 1, chapter(s) 1 to 1
+[11:33:31]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:33:31]    + data rate: 2684 kbps
+[11:33:31]  * destination
+[11:33:31]    + /Users/bartuer/Movies/Rec_hb_1.2kbps.m4v
+[11:33:31]    + container: MPEG-4 (.mp4 and .m4v)
+[11:33:31]      + optimized for progressive web downloads
+[11:33:31]  * video track
+[11:33:31]    + decoder: h264
+[11:33:31]      + bitrate 2666 kbps
+[11:33:31]    + frame rate: same as source (around 38.972 fps)
+[11:33:31]    + loose anamorphic
+[11:33:31]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:33:31]      + pixel aspect ratio: 2968 / 2977
+[11:33:31]      + display dimensions: 829 * 448
+[11:33:31]    + encoder: x264
+[11:33:31]      + bitrate: 1200 kbps, pass: 0
+[11:33:31] thread b089b000 started ("reader")
+[11:33:31] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:33:31] thread b0a21000 started ("Renderer")
+[11:33:31] encx264: min-keyint: auto (38), keyint: 390
+[11:33:31] encx264: encoding with stored aspect 2968/2977
+[11:33:31] encx264: opening libx264 (pass 0)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[11:33:31] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:33:31] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile High, level 3.1
+[11:33:31] thread b0d10000 started ("H.264/AVC encoder (libx264)")
+[11:33:31] thread b0d92000 started ("Video Synchronization")
+[11:33:31] muxmp4: track 0, chunk duration 9238
+[11:34:40] reader: done. 1 scr changes
+[11:34:40] thread b089b000 exited ("reader")
+[11:34:44] work: average encoding speed for job is 33.432125 fps
+[11:34:44] Writing Metadata to output file...
+[11:34:44] thread b0d92000 exited ("Video Synchronization")
+[11:34:44] thread b0a21000 exited ("Renderer")
+[11:34:44] muxmp4: optimizing file
+[11:34:44] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:34:44] thread b0d10000 exited ("H.264/AVC encoder (libx264)")
+[11:34:44] mux: file size, 9930910 bytes
+[11:34:44] mux: track 0, 2359 frames, 9886251 bytes, 1304.41 kbps, fifo 8
+[11:34:44] mux: video bitrate error, +791326 bytes
+[11:34:44] mux: overhead, 18.93 bytes per frame
+[11:34:44] thread b0d92000 joined ("Video Synchronization")
+[11:34:44] sync: got 2359 frames, 2427 expected
+[11:34:44] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:34:44] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:34:44] thread b0a21000 joined ("Renderer")
+[11:34:44] render: lost time: 0 (0 frames)
+[11:34:44] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] thread b0d10000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:19    Avg QP:19.10  size: 30757  PSNR Mean Y:45.54 U:50.69 V:50.48 Avg:46.66 Global:45.63
+x264 [info]: frame P:1155  Avg QP:20.10  size:  7082  PSNR Mean Y:44.25 U:49.18 V:49.19 Avg:45.33 Global:43.19
+x264 [info]: frame B:1185  Avg QP:22.29  size:   947  PSNR Mean Y:46.49 U:51.09 V:51.24 Avg:47.52 Global:44.44
+x264 [info]: consecutive B-frames: 27.3% 12.3% 10.0% 50.4%
+x264 [info]: mb I  I16..4: 31.6% 33.7% 34.7%
+x264 [info]: mb P  I16..4:  6.1%  4.8%  3.2%  P16..4: 19.1%  8.5%  4.7%  0.0%  0.0%    skip:53.6%
+x264 [info]: mb B  I16..4:  0.4%  0.2%  0.1%  B16..8: 14.4%  1.8%  0.4%  direct: 1.1%  skip:81.5%  L0:40.0% L1:53.3% BI: 6.7%
+x264 [info]: final ratefactor: 21.23
+x264 [info]: 8x8 transform intra:33.4% inter:60.8%
+x264 [info]: coded y,uvDC,uvAC intra: 44.4% 54.7% 28.5% inter: 8.3% 9.1% 1.9%
+x264 [info]: i16 v,h,dc,p: 27% 65%  2%  7%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 32% 18%  4%  5%  5%  6%  5%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 39% 13%  3%  5%  4%  5%  4%  5%
+x264 [info]: i8c dc,h,v,p: 44% 36% 15%  5%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 72.3% 13.2% 10.4%  4.1%  0.0%
+x264 [info]: ref B L0: 90.8%  7.9%  1.3%
+x264 [info]: ref B L1: 96.4%  3.6%
+x264 [info]: SSIM Mean Y:0.9891685 (19.653db)
+x264 [info]: PSNR Mean Y:45.345 U:50.121 V:50.198 Avg:46.405 Global:43.774 kb/s:1304.83
+[11:34:44] thread b089b000 joined ("reader")
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] fifo_close: trashing 0 buffer(s)
+[11:34:44] Freed 32 buffers of size 32768
+[11:34:44] Freed 2 buffers of size 65536
+[11:34:44] Freed 32 buffers of size 131072
+[11:34:44] Freed 32 buffers of size 1048576
+[11:34:44] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[11:34:44] thread b0749000 exited ("work")
+[11:34:44] thread b0749000 joined ("work")
+[11:34:44] libhb: work result = 0
+[11:34:45] macgui: incrementQueueItemDone there are no more pending encodes
+[11:36:57] macgui: Rip: Pending queue count is 0
+[11:36:57] macgui: getNextPendingQueueIndex next pending encode index is:2
+[11:36:57] macgui: scanning specifically for title: 1
+[11:36:57] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[11:36:57] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x22067400)
+[11:36:57] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:36:57] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:36:57] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:36:57] Got an MP4 input, read the metadata
+[11:36:57] scan: decoding previews for title 1
+[11:36:57] scan: preview 1
+[11:36:57] scan: preview 2
+[11:36:57] scan: preview 3
+[11:36:57] scan: preview 4
+[11:36:57] scan: preview 5
+[11:36:57] scan: preview 6
+[11:36:57] scan: preview 7
+[11:36:57] scan: preview 8
+[11:36:57] scan: preview 9
+[11:36:57] scan: preview 10
+[11:36:57] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:36:57] scan: title (0) job->width:864, job->height:464
+[11:36:57] thread b0749000 exited ("scan")
+[11:36:58] thread b0749000 joined ("scan")
+[11:36:58] libhb: scan thread found 1 valid title(s)
+[11:36:58] macgui: ScanDone state received from fQueueEncodeLibhb
+[11:36:58] macgui: Preset: Custom
+[11:36:58] macgui: processNewQueueEncode number of passes expected is: 2
+[11:36:58] macgui: Start / Stop set to chapters
+[11:36:58] macgui: prepareJob exiting
+[11:36:58] thread b0749000 started ("work")
+[11:36:58] 2 job(s) to process
+[11:36:58] starting job
+[11:36:58] sync: expecting 2427 video frames
+[11:36:58] job configuration:
+[11:36:58]  * source
+[11:36:58]    + /Users/bartuer/Movies/Rec.mov
+[11:36:58]    + title 1, chapter(s) 1 to 1
+[11:36:58]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:36:58]    + data rate: 2684 kbps
+[11:36:58]  * destination
+[11:36:58]    + /Users/bartuer/Movies/Rec_hb_0.7kbps.m4v
+[11:36:58]    + container: MPEG-4 (.mp4 and .m4v)
+[11:36:58]      + optimized for progressive web downloads
+[11:36:58]  * video track
+[11:36:58]    + decoder: h264
+[11:36:58]      + bitrate 2666 kbps
+[11:36:58]    + frame rate: same as source (around 38.972 fps)
+[11:36:58]    + loose anamorphic
+[11:36:58]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:36:58]      + pixel aspect ratio: 2968 / 2977
+[11:36:58]      + display dimensions: 829 * 448
+[11:36:58]    + encoder: x264
+[11:36:58]      + options: :ref=1:subme=2:me=dia:analyse=none:trellis=0:no-fast-pskip=0:8x8dct=0:weightb=0
+[11:36:58]      + bitrate: 765 kbps, pass: 1
+[11:36:58] thread b089b000 started ("reader")
+[11:36:58] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:36:58] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:36:58] reader: first SCR 0 id 0 DTS -39000
+[11:36:58] thread b0a21000 started ("Renderer")
+[11:36:58] x264 options: Unknown suboption 
+[11:36:58] encx264: min-keyint: auto (38), keyint: 390
+[11:36:58] encx264: encoding with stored aspect 2968/2977
+[11:36:58] encx264: opening libx264 (pass 1)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile Main, level 3.1
+[11:36:58] thread b0d10000 started ("H.264/AVC encoder (libx264)")
+[11:36:58] thread b0d92000 started ("Video Synchronization")
+[11:37:22] reader: done. 1 scr changes
+[11:37:22] thread b089b000 exited ("reader")
+[11:37:22] work: average encoding speed for job is 97.786667 fps
+[11:37:23] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:37:23] thread b0a21000 exited ("Renderer")
+[11:37:23] thread b0d92000 exited ("Video Synchronization")
+[11:37:23] thread b0d92000 joined ("Video Synchronization")
+[11:37:23] sync: got 2359 frames, 2427 expected
+[11:37:23] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:37:23] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:37:23] thread b0a21000 joined ("Renderer")
+[11:37:23] render: lost time: 0 (0 frames)
+[11:37:23] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] thread b0d10000 exited ("H.264/AVC encoder (libx264)")
+[11:37:23] thread b0d10000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:23.24  size: 20348  PSNR Mean Y:42.78 U:48.09 V:47.87 Avg:43.91 Global:42.80
+x264 [info]: frame P:1163  Avg QP:24.13  size:  4643  PSNR Mean Y:40.55 U:45.88 V:45.93 Avg:41.64 Global:39.48
+x264 [info]: frame B:1176  Avg QP:26.11  size:   472  PSNR Mean Y:42.52 U:47.38 V:47.50 Avg:43.54 Global:40.70
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 52.8%  0.0% 47.2%
+x264 [info]: mb P  I16..4: 14.0%  0.0%  0.0%  P16..4: 24.2%  0.0%  0.0%  0.0%  0.0%    skip:61.8%
+x264 [info]: mb B  I16..4:  0.8%  0.0%  0.0%  B16..8:  6.7%  0.0%  0.0%  direct: 1.7%  skip:90.8%  L0:37.9% L1:49.9% BI:12.2%
+x264 [info]: final ratefactor: 25.35
+x264 [info]: coded y,uvDC,uvAC intra: 36.1% 36.9% 13.1% inter: 5.7% 4.5% 0.6%
+x264 [info]: i16 v,h,dc,p: 32% 52% 10%  6%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 35% 15%  2%  6%  4%  5%  4%  5%
+x264 [info]: i8c dc,h,v,p: 52% 30% 15%  3%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: SSIM Mean Y:0.9775936 (16.496db)
+x264 [info]: PSNR Mean Y:41.510 U:46.616 V:46.695 Avg:42.566 Global:40.046 kb/s:839.51
+[11:37:23] thread b089b000 joined ("reader")
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] fifo_close: trashing 0 buffer(s)
+[11:37:23] Freed 32 buffers of size 32768
+[11:37:23] Freed 2 buffers of size 65536
+[11:37:23] Freed 32 buffers of size 131072
+[11:37:23] Freed 32 buffers of size 1048576
+[11:37:23] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[11:37:23] starting job
+[11:37:23] sync: expecting 2359 video frames
+[11:37:23] job configuration:
+[11:37:23]  * source
+[11:37:23]    + /Users/bartuer/Movies/Rec.mov
+[11:37:23]    + title 1, chapter(s) 1 to 1
+[11:37:23]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:37:23]    + data rate: 2684 kbps
+[11:37:23]  * destination
+[11:37:23]    + /Users/bartuer/Movies/Rec_hb_0.7kbps.m4v
+[11:37:23]    + container: MPEG-4 (.mp4 and .m4v)
+[11:37:23]      + optimized for progressive web downloads
+[11:37:23]  * video track
+[11:37:23]    + decoder: h264
+[11:37:23]      + bitrate 2666 kbps
+[11:37:23]    + frame rate: same as source (around 38.972 fps)
+[11:37:23]    + loose anamorphic
+[11:37:23]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:37:23]      + pixel aspect ratio: 2968 / 2977
+[11:37:23]      + display dimensions: 829 * 448
+[11:37:23]    + encoder: x264
+[11:37:23]      + bitrate: 765 kbps, pass: 2
+[11:37:23] thread b089b000 started ("reader")
+[11:37:23] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:37:23] thread b0a21000 started ("Renderer")
+[11:37:23] encx264: min-keyint: auto (38), keyint: 390
+[11:37:23] encx264: encoding with stored aspect 2968/2977
+[11:37:23] encx264: opening libx264 (pass 2)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[11:37:23] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:37:23] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile High, level 3.1
+[11:37:23] thread b0c29000 started ("H.264/AVC encoder (libx264)")
+[11:37:23] thread b0d10000 started ("Video Synchronization")
+[11:37:23] muxmp4: track 0, chunk duration 9246
+[11:38:18] reader: done. 1 scr changes
+[11:38:18] thread b089b000 exited ("reader")
+[11:38:20] work: average encoding speed for job is 41.554264 fps
+[11:38:20] Writing Metadata to output file...
+[11:38:20] muxmp4: optimizing file
+[11:38:20] thread b0c29000 exited ("H.264/AVC encoder (libx264)")
+[11:38:21] thread b0d10000 exited ("Video Synchronization")
+[11:38:21] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:38:21] mux: file size, 5880584 bytes
+[11:38:21] mux: track 0, 2359 frames, 5835925 bytes, 770.30 kbps, fifo 8
+[11:38:21] mux: video bitrate error, +40187 bytes
+[11:38:21] mux: overhead, 18.93 bytes per frame
+[11:38:21] thread b0d10000 joined ("Video Synchronization")
+[11:38:21] sync: got 2359 frames, 2359 expected
+[11:38:21] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:38:21] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:38:21] thread b0a21000 exited ("Renderer")
+[11:38:21] thread b0a21000 joined ("Renderer")
+[11:38:21] render: lost time: 0 (0 frames)
+[11:38:21] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] thread b0c29000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:22.50  size: 21129  PSNR Mean Y:42.93 U:48.91 V:48.65 Avg:44.14 Global:43.37
+x264 [info]: frame P:1163  Avg QP:24.88  size:  4174  PSNR Mean Y:40.94 U:46.67 V:46.68 Avg:42.12 Global:41.15
+x264 [info]: frame B:1176  Avg QP:28.93  size:   475  PSNR Mean Y:42.31 U:47.59 V:47.69 Avg:43.43 Global:42.35
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 37.0% 35.4% 27.6%
+x264 [info]: mb P  I16..4:  6.0%  4.5%  2.5%  P16..4: 17.7%  6.2%  3.0%  0.0%  0.0%    skip:60.2%
+x264 [info]: mb B  I16..4:  0.3%  0.1%  0.1%  B16..8: 12.6%  1.0%  0.2%  direct: 0.3%  skip:85.3%  L0:40.0% L1:56.0% BI: 4.0%
+x264 [info]: 8x8 transform intra:34.2% inter:70.1%
+x264 [info]: coded y,uvDC,uvAC intra: 37.6% 44.2% 14.7% inter: 5.5% 5.4% 0.4%
+x264 [info]: i16 v,h,dc,p: 25% 64%  2%  8%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 30% 20%  4%  5%  5%  6%  5%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 39% 14%  3%  4%  4%  5%  3%  4%
+x264 [info]: i8c dc,h,v,p: 50% 32% 14%  4%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 70.5% 14.7% 10.2%  4.6%  0.0%
+x264 [info]: ref B L0: 90.6%  8.0%  1.4%
+x264 [info]: ref B L1: 96.0%  4.0%
+x264 [info]: SSIM Mean Y:0.9839053 (17.933db)
+x264 [info]: PSNR Mean Y:41.611 U:47.126 V:47.178 Avg:42.763 Global:41.698 kb/s:770.28
+[11:38:21] thread b089b000 joined ("reader")
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] fifo_close: trashing 0 buffer(s)
+[11:38:21] Freed 32 buffers of size 32768
+[11:38:21] Freed 1 buffers of size 65536
+[11:38:21] Freed 32 buffers of size 131072
+[11:38:21] Freed 32 buffers of size 1048576
+[11:38:21] Allocated 38862848 bytes of buffers on this pass and Freed 38862848 bytes, 0 bytes leaked
+[11:38:21] thread b0749000 exited ("work")
+[11:38:21] thread b0749000 joined ("work")
+[11:38:21] libhb: work result = 0
+[11:38:22] macgui: incrementQueueItemDone there are no more pending encodes
+[11:48:36] macgui: Rip: Pending queue count is 0
+[11:48:36] macgui: getNextPendingQueueIndex next pending encode index is:3
+[11:48:36] macgui: scanning specifically for title: 1
+[11:48:36] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[11:48:36] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x19dc200)
+[11:48:36] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:48:36] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:48:36] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:48:36] Got an MP4 input, read the metadata
+[11:48:36] scan: decoding previews for title 1
+[11:48:36] scan: preview 1
+[11:48:36] scan: preview 2
+[11:48:36] scan: preview 3
+[11:48:36] scan: preview 4
+[11:48:36] scan: preview 5
+[11:48:36] scan: preview 6
+[11:48:36] scan: preview 7
+[11:48:36] scan: preview 8
+[11:48:36] scan: preview 9
+[11:48:36] scan: preview 10
+[11:48:36] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:48:36] scan: title (0) job->width:864, job->height:464
+[11:48:36] thread b0749000 exited ("scan")
+[11:48:36] thread b0749000 joined ("scan")
+[11:48:36] libhb: scan thread found 1 valid title(s)
+[11:48:36] macgui: ScanDone state received from fQueueEncodeLibhb
+[11:48:36] macgui: Preset: Custom
+[11:48:36] macgui: processNewQueueEncode number of passes expected is: 2
+[11:48:36] macgui: Start / Stop set to chapters
+[11:48:36] macgui: prepareJob exiting
+[11:48:36] thread b0749000 started ("work")
+[11:48:36] 2 job(s) to process
+[11:48:36] starting job
+[11:48:36] sync: expecting 2427 video frames
+[11:48:36] job configuration:
+[11:48:36]  * source
+[11:48:36]    + /Users/bartuer/Movies/Rec.mov
+[11:48:36]    + title 1, chapter(s) 1 to 1
+[11:48:36]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:48:36]    + data rate: 2684 kbps
+[11:48:36]  * destination
+[11:48:36]    + /Users/bartuer/Movies/Rec_hb_0.7kbps_aq_2.m4v
+[11:48:36]    + container: MPEG-4 (.mp4 and .m4v)
+[11:48:36]      + optimized for progressive web downloads
+[11:48:36]  * video track
+[11:48:36]    + decoder: h264
+[11:48:36]      + bitrate 2666 kbps
+[11:48:36]    + frame rate: same as source (around 38.972 fps)
+[11:48:36]    + loose anamorphic
+[11:48:36]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:48:36]      + pixel aspect ratio: 2968 / 2977
+[11:48:36]      + display dimensions: 829 * 448
+[11:48:36]    + encoder: x264
+[11:48:36]      + options: aq-strength=2.0:ref=1:subme=2:me=dia:analyse=none:trellis=0:no-fast-pskip=0:8x8dct=0:weightb=0
+[11:48:36]      + bitrate: 765 kbps, pass: 1
+[11:48:36] thread b089b000 started ("reader")
+[11:48:36] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:48:36] thread b0a21000 started ("Renderer")
+[11:48:36] encx264: min-keyint: auto (38), keyint: 390
+[11:48:36] encx264: encoding with stored aspect 2968/2977
+[11:48:36] encx264: opening libx264 (pass 1)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[11:48:36] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:48:36] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile Main, level 3.1
+[11:48:37] thread b0cfb000 started ("H.264/AVC encoder (libx264)")
+[11:48:37] thread b0d7d000 started ("Video Synchronization")
+[11:49:01] reader: done. 1 scr changes
+[11:49:01] thread b089b000 exited ("reader")
+[11:49:02] work: average encoding speed for job is 95.079979 fps
+[11:49:02] thread b0d7d000 exited ("Video Synchronization")
+[11:49:02] thread b0d7d000 joined ("Video Synchronization")
+[11:49:02] sync: got 2359 frames, 2427 expected
+[11:49:02] thread b0a21000 exited ("Renderer")
+[11:49:02] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:49:02] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:49:02] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:49:02] thread b0a21000 joined ("Renderer")
+[11:49:02] render: lost time: 0 (0 frames)
+[11:49:02] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] thread b0cfb000 exited ("H.264/AVC encoder (libx264)")
+[11:49:02] thread b0cfb000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:21.61  size: 19072  PSNR Mean Y:39.93 U:46.74 V:46.58 Avg:41.23 Global:39.96
+x264 [info]: frame P:1163  Avg QP:21.31  size:  4401  PSNR Mean Y:37.96 U:44.68 V:44.75 Avg:39.21 Global:37.28
+x264 [info]: frame B:1176  Avg QP:20.13  size:   575  PSNR Mean Y:39.96 U:46.00 V:46.13 Avg:41.12 Global:38.60
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 48.7%  0.0% 51.3%
+x264 [info]: mb P  I16..4: 15.5%  0.0%  0.0%  P16..4: 26.2%  0.0%  0.0%  0.0%  0.0%    skip:58.2%
+x264 [info]: mb B  I16..4:  1.0%  0.0%  0.0%  B16..8:  8.0%  0.0%  0.0%  direct: 2.6%  skip:88.4%  L0:40.1% L1:52.0% BI: 7.9%
+x264 [info]: final ratefactor: 24.96
+x264 [info]: coded y,uvDC,uvAC intra: 38.5% 43.4% 21.7% inter: 5.3% 5.7% 1.0%
+x264 [info]: i16 v,h,dc,p: 36% 49%  9%  6%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 36% 15%  2%  5%  4%  4%  4%  5%
+x264 [info]: i8c dc,h,v,p: 51% 31% 15%  3%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: SSIM Mean Y:0.9727834 (15.652db)
+x264 [info]: PSNR Mean Y:38.930 U:45.328 V:45.424 Avg:40.138 Global:37.881 kb/s:814.98
+[11:49:02] thread b089b000 joined ("reader")
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] fifo_close: trashing 0 buffer(s)
+[11:49:02] Freed 32 buffers of size 32768
+[11:49:02] Freed 2 buffers of size 65536
+[11:49:02] Freed 32 buffers of size 131072
+[11:49:02] Freed 32 buffers of size 1048576
+[11:49:02] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[11:49:02] starting job
+[11:49:02] sync: expecting 2359 video frames
+[11:49:02] job configuration:
+[11:49:02]  * source
+[11:49:02]    + /Users/bartuer/Movies/Rec.mov
+[11:49:02]    + title 1, chapter(s) 1 to 1
+[11:49:02]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:49:02]    + data rate: 2684 kbps
+[11:49:02]  * destination
+[11:49:02]    + /Users/bartuer/Movies/Rec_hb_0.7kbps_aq_2.m4v
+[11:49:02]    + container: MPEG-4 (.mp4 and .m4v)
+[11:49:02]      + optimized for progressive web downloads
+[11:49:02]  * video track
+[11:49:02]    + decoder: h264
+[11:49:02]      + bitrate 2666 kbps
+[11:49:02]    + frame rate: same as source (around 38.972 fps)
+[11:49:02]    + loose anamorphic
+[11:49:02]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:49:02]      + pixel aspect ratio: 2968 / 2977
+[11:49:02]      + display dimensions: 829 * 448
+[11:49:02]    + encoder: x264
+[11:49:02]      + options: aq-strength=2.0
+[11:49:02]      + bitrate: 765 kbps, pass: 2
+[11:49:02] thread b089b000 started ("reader")
+[11:49:02] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:49:02] thread b0a21000 started ("Renderer")
+[11:49:02] encx264: min-keyint: auto (38), keyint: 390
+[11:49:02] encx264: encoding with stored aspect 2968/2977
+[11:49:02] encx264: opening libx264 (pass 2)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[11:49:02] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:49:02] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile High, level 3.1
+[11:49:02] thread b0c29000 started ("H.264/AVC encoder (libx264)")
+[11:49:02] thread b0cfb000 started ("Video Synchronization")
+[11:49:02] muxmp4: track 0, chunk duration 9246
+[11:50:00] reader: done. 1 scr changes
+[11:50:00] thread b089b000 exited ("reader")
+[11:50:03] work: average encoding speed for job is 39.170467 fps
+[11:50:03] Writing Metadata to output file...
+[11:50:03] muxmp4: optimizing file
+[11:50:03] thread b0c29000 exited ("H.264/AVC encoder (libx264)")
+[11:50:03] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:50:03] mux: file size, 5858366 bytes
+[11:50:03] mux: track 0, 2359 frames, 5813707 bytes, 767.37 kbps, fifo 8
+[11:50:03] mux: video bitrate error, +17969 bytes
+[11:50:03] mux: overhead, 18.93 bytes per frame
+[11:50:03] thread b0cfb000 exited ("Video Synchronization")
+[11:50:03] thread b0cfb000 joined ("Video Synchronization")
+[11:50:03] sync: got 2359 frames, 2359 expected
+[11:50:03] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:50:03] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:50:03] thread b0a21000 exited ("Renderer")
+[11:50:03] thread b0a21000 joined ("Renderer")
+[11:50:03] render: lost time: 0 (0 frames)
+[11:50:03] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] thread b0c29000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:20.97  size: 20029  PSNR Mean Y:40.46 U:47.68 V:47.49 Avg:41.79 Global:40.71
+x264 [info]: frame P:1163  Avg QP:22.40  size:  4072  PSNR Mean Y:38.35 U:45.41 V:45.43 Avg:39.66 Global:38.64
+x264 [info]: frame B:1176  Avg QP:22.71  size:   577  PSNR Mean Y:39.87 U:46.22 V:46.28 Avg:41.12 Global:40.14
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 34.6% 36.2% 29.3%
+x264 [info]: mb P  I16..4:  6.2%  5.2%  2.6%  P16..4: 18.1%  7.1%  3.0%  0.0%  0.0%    skip:57.8%
+x264 [info]: mb B  I16..4:  0.3%  0.2%  0.1%  B16..8: 14.3%  1.3%  0.1%  direct: 0.9%  skip:82.7%  L0:41.5% L1:55.7% BI: 2.8%
+x264 [info]: 8x8 transform intra:36.9% inter:73.5%
+x264 [info]: coded y,uvDC,uvAC intra: 40.3% 49.7% 24.6% inter: 5.4% 6.3% 0.9%
+x264 [info]: i16 v,h,dc,p: 31% 61%  2%  7%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 30% 19%  4%  5%  5%  6%  5%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 38% 16%  3%  4%  4%  4%  3%  4%
+x264 [info]: i8c dc,h,v,p: 48% 33% 14%  4%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 71.9% 12.3% 10.9%  4.9%  0.0%
+x264 [info]: ref B L0: 89.3%  9.3%  1.4%
+x264 [info]: ref B L1: 96.1%  3.9%
+x264 [info]: SSIM Mean Y:0.9798254 (16.952db)
+x264 [info]: PSNR Mean Y:39.090 U:45.817 V:45.853 Avg:40.376 Global:39.307 kb/s:767.35
+[11:50:03] thread b089b000 joined ("reader")
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] fifo_close: trashing 0 buffer(s)
+[11:50:03] Freed 32 buffers of size 32768
+[11:50:03] Freed 1 buffers of size 65536
+[11:50:03] Freed 32 buffers of size 131072
+[11:50:03] Freed 32 buffers of size 1048576
+[11:50:03] Allocated 38862848 bytes of buffers on this pass and Freed 38862848 bytes, 0 bytes leaked
+[11:50:03] thread b0749000 exited ("work")
+[11:50:03] thread b0749000 joined ("work")
+[11:50:03] libhb: work result = 0
+[11:50:04] macgui: incrementQueueItemDone there are no more pending encodes
+[11:53:35] macgui: Rip: Pending queue count is 0
+[11:53:35] macgui: getNextPendingQueueIndex next pending encode index is:4
+[11:53:35] macgui: scanning specifically for title: 1
+[11:53:35] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[11:53:35] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x1a4be00)
+[11:53:35] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[11:53:35] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[11:53:35] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[11:53:35] Got an MP4 input, read the metadata
+[11:53:35] scan: decoding previews for title 1
+[11:53:35] scan: preview 1
+[11:53:35] scan: preview 2
+[11:53:35] scan: preview 3
+[11:53:35] scan: preview 4
+[11:53:35] scan: preview 5
+[11:53:35] scan: preview 6
+[11:53:35] scan: preview 7
+[11:53:35] scan: preview 8
+[11:53:35] scan: preview 9
+[11:53:35] scan: preview 10
+[11:53:35] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[11:53:35] scan: title (0) job->width:864, job->height:464
+[11:53:35] thread b0749000 exited ("scan")
+[11:53:35] thread b0749000 joined ("scan")
+[11:53:35] libhb: scan thread found 1 valid title(s)
+[11:53:35] macgui: ScanDone state received from fQueueEncodeLibhb
+[11:53:35] macgui: Preset: Custom
+[11:53:35] macgui: processNewQueueEncode number of passes expected is: 1
+[11:53:35] macgui: Start / Stop set to chapters
+[11:53:35] macgui: prepareJob exiting
+[11:53:35] thread b0749000 started ("work")
+[11:53:35] 1 job(s) to process
+[11:53:35] starting job
+[11:53:35] sync: expecting 2427 video frames
+[11:53:35] job configuration:
+[11:53:35]  * source
+[11:53:35]    + /Users/bartuer/Movies/Rec.mov
+[11:53:35]    + title 1, chapter(s) 1 to 1
+[11:53:35]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[11:53:35]    + data rate: 2684 kbps
+[11:53:35]  * destination
+[11:53:35]    + /Users/bartuer/Movies/Rec_hb_0.5kbps.m4v
+[11:53:35]    + container: MPEG-4 (.mp4 and .m4v)
+[11:53:35]      + optimized for progressive web downloads
+[11:53:35]  * video track
+[11:53:35]    + decoder: h264
+[11:53:35]      + bitrate 2666 kbps
+[11:53:35]    + frame rate: same as source (around 38.972 fps)
+[11:53:35]    + loose anamorphic
+[11:53:35]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[11:53:35]      + pixel aspect ratio: 2968 / 2977
+[11:53:35]      + display dimensions: 829 * 448
+[11:53:35]    + encoder: x264
+[11:53:35]      + bitrate: 512 kbps, pass: 0
+[11:53:35] thread b089b000 started ("reader")
+[11:53:35] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[11:53:35] thread b0a21000 started ("Renderer")
+[11:53:35] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[11:53:35] reader: first SCR 0 id 0 DTS -39000
+[11:53:35] encx264: min-keyint: auto (38), keyint: 390
+[11:53:35] encx264: encoding with stored aspect 2968/2977
+[11:53:35] encx264: opening libx264 (pass 0)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile High, level 3.1
+[11:53:35] thread b0cfb000 started ("H.264/AVC encoder (libx264)")
+[11:53:35] thread b0d7d000 started ("Video Synchronization")
+[11:53:35] muxmp4: track 0, chunk duration 9238
+[11:54:30] reader: done. 1 scr changes
+[11:54:30] thread b089b000 exited ("reader")
+[11:54:33] work: average encoding speed for job is 42.323471 fps
+[11:54:33] Writing Metadata to output file...
+[11:54:33] muxmp4: optimizing file
+[11:54:33] thread b0d7d000 exited ("Video Synchronization")
+[11:54:33] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[11:54:33] mux: file size, 4302983 bytes
+[11:54:33] mux: track 0, 2359 frames, 4258324 bytes, 561.85 kbps, fifo 8
+[11:54:33] mux: video bitrate error, +377822 bytes
+[11:54:33] mux: overhead, 18.93 bytes per frame
+[11:54:33] thread b0d7d000 joined ("Video Synchronization")
+[11:54:33] sync: got 2359 frames, 2427 expected
+[11:54:33] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[11:54:33] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[11:54:33] thread b0a21000 exited ("Renderer")
+[11:54:33] thread b0a21000 joined ("Renderer")
+[11:54:33] render: lost time: 0 (0 frames)
+[11:54:33] render: gained time: 0 (0 frames) (0 not accounted for)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] thread b0cfb000 exited ("H.264/AVC encoder (libx264)")
+[11:54:33] thread b0cfb000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:19    Avg QP:26.05  size: 16944  PSNR Mean Y:40.45 U:47.53 V:47.28 Avg:41.77 Global:40.51
+x264 [info]: frame P:1155  Avg QP:27.52  size:  3014  PSNR Mean Y:39.09 U:45.73 V:45.77 Avg:40.35 Global:38.28
+x264 [info]: frame B:1185  Avg QP:30.52  size:   384  PSNR Mean Y:41.37 U:47.22 V:47.34 Avg:42.54 Global:39.88
+x264 [info]: consecutive B-frames: 27.3% 12.3% 10.0% 50.4%
+x264 [info]: mb I  I16..4: 34.9% 39.8% 25.3%
+x264 [info]: mb P  I16..4:  5.6%  4.0%  1.7%  P16..4: 16.5%  4.9%  2.2%  0.0%  0.0%    skip:65.0%
+x264 [info]: mb B  I16..4:  0.3%  0.1%  0.0%  B16..8: 12.1%  0.8%  0.1%  direct: 0.3%  skip:86.2%  L0:39.8% L1:57.6% BI: 2.7%
+x264 [info]: final ratefactor: 28.40
+x264 [info]: 8x8 transform intra:35.6% inter:71.3%
+x264 [info]: coded y,uvDC,uvAC intra: 32.8% 39.1% 12.0% inter: 4.1% 3.9% 0.4%
+x264 [info]: i16 v,h,dc,p: 26% 62%  3%  9%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 29% 23%  4%  4%  5%  5%  5%  6%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 37% 16%  3%  4%  4%  5%  3%  4%
+x264 [info]: i8c dc,h,v,p: 57% 27% 13%  3%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 72.4% 14.0%  9.6%  4.0%  0.0%
+x264 [info]: ref B L0: 90.8%  7.9%  1.3%
+x264 [info]: ref B L1: 95.8%  4.2%
+x264 [info]: SSIM Mean Y:0.9732067 (15.720db)
+x264 [info]: PSNR Mean Y:40.206 U:46.471 V:46.548 Avg:41.423 Global:38.999 kb/s:562.07
+[11:54:33] thread b089b000 joined ("reader")
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] fifo_close: trashing 0 buffer(s)
+[11:54:33] Freed 32 buffers of size 32768
+[11:54:33] Freed 2 buffers of size 65536
+[11:54:33] Freed 32 buffers of size 131072
+[11:54:33] Freed 32 buffers of size 1048576
+[11:54:33] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[11:54:33] thread b0749000 exited ("work")
+[11:54:33] thread b0749000 joined ("work")
+[11:54:33] libhb: work result = 0
+[11:54:34] macgui: incrementQueueItemDone there are no more pending encodes
+[12:01:31] macgui: Rip: Pending queue count is 0
+[12:01:31] macgui: getNextPendingQueueIndex next pending encode index is:5
+[12:01:31] macgui: scanning specifically for title: 1
+[12:01:31] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[12:01:31] thread b0453000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x1a11800)
+[12:01:31] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[12:01:31] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[12:01:31] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[12:01:31] Got an MP4 input, read the metadata
+[12:01:31] scan: decoding previews for title 1
+[12:01:31] scan: preview 1
+[12:01:31] scan: preview 2
+[12:01:31] scan: preview 3
+[12:01:31] scan: preview 4
+[12:01:31] scan: preview 5
+[12:01:31] scan: preview 6
+[12:01:31] scan: preview 7
+[12:01:31] scan: preview 8
+[12:01:31] scan: preview 9
+[12:01:31] scan: preview 10
+[12:01:31] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[12:01:31] scan: title (0) job->width:864, job->height:464
+[12:01:31] thread b0453000 exited ("scan")
+[12:01:31] thread b0453000 joined ("scan")
+[12:01:31] libhb: scan thread found 1 valid title(s)
+[12:01:32] macgui: ScanDone state received from fQueueEncodeLibhb
+[12:01:32] macgui: Preset: Custom
+[12:01:32] macgui: processNewQueueEncode number of passes expected is: 2
+[12:01:32] macgui: Start / Stop set to chapters
+[12:01:32] macgui: prepareJob exiting
+[12:01:32] thread b0453000 started ("work")
+[12:01:32] 2 job(s) to process
+[12:01:32] starting job
+[12:01:32] sync: expecting 2427 video frames
+[12:01:32] job configuration:
+[12:01:32]  * source
+[12:01:32]    + /Users/bartuer/Movies/Rec.mov
+[12:01:32]    + title 1, chapter(s) 1 to 1
+[12:01:32]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[12:01:32]    + data rate: 2684 kbps
+[12:01:32]  * destination
+[12:01:32]    + /Users/bartuer/Movies/Rec_hb_256kbps.m4v
+[12:01:32]    + container: MPEG-4 (.mp4 and .m4v)
+[12:01:32]      + optimized for progressive web downloads
+[12:01:32]  * video track
+[12:01:32]    + decoder: h264
+[12:01:32]      + bitrate 2666 kbps
+[12:01:32]    + frame rate: same as source (around 38.972 fps)
+[12:01:32]    + loose anamorphic
+[12:01:32]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[12:01:32]      + pixel aspect ratio: 2968 / 2977
+[12:01:32]      + display dimensions: 829 * 448
+[12:01:32]    + encoder: x264
+[12:01:32]      + options: :ref=1:subme=2:me=dia:analyse=none:trellis=0:no-fast-pskip=0:8x8dct=0:weightb=0
+[12:01:32]      + bitrate: 256 kbps, pass: 1
+[12:01:32] thread b089b000 started ("reader")
+[12:01:32] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[12:01:32] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[12:01:32] reader: first SCR 0 id 0 DTS -39000
+[12:01:32] thread b0a21000 started ("Renderer")
+[12:01:32] x264 options: Unknown suboption 
+[12:01:32] encx264: min-keyint: auto (38), keyint: 390
+[12:01:32] encx264: encoding with stored aspect 2968/2977
+[12:01:32] encx264: opening libx264 (pass 1)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile Main, level 3.1
+[12:01:32] thread b0cfb000 started ("H.264/AVC encoder (libx264)")
+[12:01:32] thread b0d7d000 started ("Video Synchronization")
+[12:01:54] reader: done. 1 scr changes
+[12:01:54] thread b089b000 exited ("reader")
+[12:01:55] work: average encoding speed for job is 102.468971 fps
+[12:01:55] thread b0a21000 exited ("Renderer")
+[12:01:55] thread b0d7d000 exited ("Video Synchronization")
+[12:01:55] thread b0d7d000 joined ("Video Synchronization")
+[12:01:55] sync: got 2359 frames, 2427 expected
+[12:01:56] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[12:01:56] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[12:01:56] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[12:01:56] thread b0a21000 joined ("Renderer")
+[12:01:56] render: lost time: 0 (0 frames)
+[12:01:56] render: gained time: 0 (0 frames) (0 not accounted for)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] thread b0cfb000 exited ("H.264/AVC encoder (libx264)")
+[12:01:56] thread b0cfb000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:31.68  size:  9648  PSNR Mean Y:36.65 U:44.38 V:44.35 Avg:38.03 Global:36.65
+x264 [info]: frame P:1163  Avg QP:33.69  size:  1526  PSNR Mean Y:34.26 U:42.45 V:42.56 Avg:35.63 Global:33.71
+x264 [info]: frame B:1176  Avg QP:36.53  size:   152  PSNR Mean Y:35.95 U:43.38 V:43.51 Avg:37.24 Global:34.94
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 71.5%  0.0% 28.5%
+x264 [info]: mb P  I16..4: 11.8%  0.0%  0.0%  P16..4: 12.6%  0.0%  0.0%  0.0%  0.0%    skip:75.7%
+x264 [info]: mb B  I16..4:  0.5%  0.0%  0.0%  B16..8:  3.4%  0.0%  0.0%  direct: 0.4%  skip:95.7%  L0:43.6% L1:52.7% BI: 3.8%
+x264 [info]: final ratefactor: 33.93
+x264 [info]: coded y,uvDC,uvAC intra: 23.1% 23.1% 4.2% inter: 1.5% 1.4% 0.1%
+x264 [info]: i16 v,h,dc,p: 32% 49% 12%  8%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 30% 20%  2%  5%  3%  4%  3%  4%
+x264 [info]: i8c dc,h,v,p: 67% 20% 11%  2%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: SSIM Mean Y:0.9316053 (11.650db)
+x264 [info]: PSNR Mean Y:35.086 U:42.916 V:43.030 Avg:36.421 Global:34.277 kb/s:283.18
+[12:01:56] thread b089b000 joined ("reader")
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] fifo_close: trashing 0 buffer(s)
+[12:01:56] Freed 32 buffers of size 32768
+[12:01:56] Freed 2 buffers of size 65536
+[12:01:56] Freed 32 buffers of size 131072
+[12:01:56] Freed 32 buffers of size 1048576
+[12:01:56] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[12:01:56] starting job
+[12:01:56] sync: expecting 2359 video frames
+[12:01:56] job configuration:
+[12:01:56]  * source
+[12:01:56]    + /Users/bartuer/Movies/Rec.mov
+[12:01:56]    + title 1, chapter(s) 1 to 1
+[12:01:56]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[12:01:56]    + data rate: 2684 kbps
+[12:01:56]  * destination
+[12:01:56]    + /Users/bartuer/Movies/Rec_hb_256kbps.m4v
+[12:01:56]    + container: MPEG-4 (.mp4 and .m4v)
+[12:01:56]      + optimized for progressive web downloads
+[12:01:56]  * video track
+[12:01:56]    + decoder: h264
+[12:01:56]      + bitrate 2666 kbps
+[12:01:56]    + frame rate: same as source (around 38.972 fps)
+[12:01:56]    + loose anamorphic
+[12:01:56]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[12:01:56]      + pixel aspect ratio: 2968 / 2977
+[12:01:56]      + display dimensions: 829 * 448
+[12:01:56]    + encoder: x264
+[12:01:56]      + bitrate: 256 kbps, pass: 2
+[12:01:56] thread b089b000 started ("reader")
+[12:01:56] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[12:01:56] thread b0a21000 started ("Renderer")
+[12:01:56] encx264: min-keyint: auto (38), keyint: 390
+[12:01:56] encx264: encoding with stored aspect 2968/2977
+[12:01:56] encx264: opening libx264 (pass 2)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[12:01:56] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[12:01:56] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile High, level 3.1
+[12:01:56] thread b0c29000 started ("H.264/AVC encoder (libx264)")
+[12:01:56] thread b0cfb000 started ("Video Synchronization")
+[12:01:56] muxmp4: track 0, chunk duration 9246
+[12:02:36] reader: done. 1 scr changes
+[12:02:36] thread b089b000 exited ("reader")
+[12:02:38] work: average encoding speed for job is 56.797112 fps
+[12:02:38] Writing Metadata to output file...
+[12:02:38] muxmp4: optimizing file
+[12:02:38] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[12:02:38] mux: file size, 2025600 bytes
+[12:02:38] mux: track 0, 2359 frames, 1980941 bytes, 261.47 kbps, fifo 8
+[12:02:38] mux: video bitrate error, +41452 bytes
+[12:02:38] mux: overhead, 18.93 bytes per frame
+[12:02:38] thread b0cfb000 exited ("Video Synchronization")
+[12:02:38] thread b0cfb000 joined ("Video Synchronization")
+[12:02:38] sync: got 2359 frames, 2359 expected
+[12:02:38] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[12:02:38] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[12:02:38] thread b0a21000 exited ("Renderer")
+[12:02:38] thread b0a21000 joined ("Renderer")
+[12:02:38] render: lost time: 0 (0 frames)
+[12:02:38] render: gained time: 0 (0 frames) (0 not accounted for)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] thread b0c29000 exited ("H.264/AVC encoder (libx264)")
+[12:02:38] thread b0c29000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:33.23  size:  8106  PSNR Mean Y:35.19 U:44.46 V:44.27 Avg:36.67 Global:35.60
+x264 [info]: frame P:1163  Avg QP:36.14  size:  1365  PSNR Mean Y:33.89 U:42.83 V:42.92 Avg:35.35 Global:34.27
+x264 [info]: frame B:1176  Avg QP:40.36  size:   197  PSNR Mean Y:35.42 U:43.50 V:43.66 Avg:36.83 Global:35.75
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 40.1% 45.2% 14.8%
+x264 [info]: mb P  I16..4:  5.7%  4.1%  0.9%  P16..4: 12.8%  2.0%  0.7%  0.0%  0.0%    skip:73.7%
+x264 [info]: mb B  I16..4:  0.2%  0.1%  0.0%  B16..8:  8.8%  0.3%  0.0%  direct: 0.1%  skip:90.6%  L0:40.6% L1:58.8% BI: 0.7%
+x264 [info]: 8x8 transform intra:39.0% inter:80.8%
+x264 [info]: coded y,uvDC,uvAC intra: 21.6% 26.4% 3.9% inter: 1.8% 1.3% 0.0%
+x264 [info]: i16 v,h,dc,p: 27% 58%  4% 10%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 29% 31%  4%  4%  4%  4%  3%  5%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 34% 21%  3%  4%  4%  4%  3%  3%
+x264 [info]: i8c dc,h,v,p: 71% 18%  9%  1%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 71.3% 13.2% 10.6%  4.9%  0.0%
+x264 [info]: ref B L0: 89.2%  9.4%  1.4%
+x264 [info]: ref B L1: 95.3%  4.7%
+x264 [info]: SSIM Mean Y:0.9416138 (12.337db)
+x264 [info]: PSNR Mean Y:34.630 U:43.163 V:43.284 Avg:36.065 Global:34.923 kb/s:261.51
+[12:02:38] thread b089b000 joined ("reader")
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] fifo_close: trashing 0 buffer(s)
+[12:02:38] Freed 32 buffers of size 32768
+[12:02:38] Freed 1 buffers of size 65536
+[12:02:38] Freed 32 buffers of size 131072
+[12:02:38] Freed 32 buffers of size 1048576
+[12:02:38] Allocated 38862848 bytes of buffers on this pass and Freed 38862848 bytes, 0 bytes leaked
+[12:02:38] thread b0453000 exited ("work")
+[12:02:38] thread b0453000 joined ("work")
+[12:02:38] libhb: work result = 0
+[12:02:39] macgui: incrementQueueItemDone there are no more pending encodes
+[12:04:57] macgui: Rip: Pending queue count is 0
+[12:04:57] macgui: getNextPendingQueueIndex next pending encode index is:6
+[12:04:57] macgui: scanning specifically for title: 1
+[12:04:57] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[12:04:57] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x1fbc800)
+[12:04:57] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[12:04:57] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[12:04:57] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[12:04:57] Got an MP4 input, read the metadata
+[12:04:57] scan: decoding previews for title 1
+[12:04:57] scan: preview 1
+[12:04:57] scan: preview 2
+[12:04:57] scan: preview 3
+[12:04:57] scan: preview 4
+[12:04:57] scan: preview 5
+[12:04:57] scan: preview 6
+[12:04:57] scan: preview 7
+[12:04:57] scan: preview 8
+[12:04:57] scan: preview 9
+[12:04:57] scan: preview 10
+[12:04:57] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[12:04:57] scan: title (0) job->width:864, job->height:464
+[12:04:57] thread b0749000 exited ("scan")
+[12:04:57] thread b0749000 joined ("scan")
+[12:04:57] libhb: scan thread found 1 valid title(s)
+[12:04:57] macgui: ScanDone state received from fQueueEncodeLibhb
+[12:04:57] macgui: Preset: Custom
+[12:04:57] macgui: processNewQueueEncode number of passes expected is: 2
+[12:04:57] macgui: Start / Stop set to chapters
+[12:04:57] macgui: prepareJob exiting
+[12:04:57] thread b0749000 started ("work")
+[12:04:57] 2 job(s) to process
+[12:04:57] starting job
+[12:04:57] sync: expecting 2427 video frames
+[12:04:57] job configuration:
+[12:04:57]  * source
+[12:04:57]    + /Users/bartuer/Movies/Rec.mov
+[12:04:57]    + title 1, chapter(s) 1 to 1
+[12:04:57]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[12:04:57]    + data rate: 2684 kbps
+[12:04:57]  * destination
+[12:04:57]    + /Users/bartuer/Movies/Rec_hb_384kbps.m4v
+[12:04:57]    + container: MPEG-4 (.mp4 and .m4v)
+[12:04:57]      + optimized for progressive web downloads
+[12:04:57]  * video track
+[12:04:57]    + decoder: h264
+[12:04:57]      + bitrate 2666 kbps
+[12:04:57]    + frame rate: same as source (around 38.972 fps)
+[12:04:57]    + loose anamorphic
+[12:04:57]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[12:04:57]      + pixel aspect ratio: 2968 / 2977
+[12:04:57]      + display dimensions: 829 * 448
+[12:04:57]    + encoder: x264
+[12:04:57]      + options: :ref=1:subme=2:me=dia:analyse=none:trellis=0:no-fast-pskip=0:8x8dct=0:weightb=0
+[12:04:57]      + bitrate: 384 kbps, pass: 1
+[12:04:57] thread b089b000 started ("reader")
+[12:04:57] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[12:04:57] reader: first SCR 0 id 0 DTS -39000
+[12:04:57] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[12:04:57] thread b0a21000 started ("Renderer")
+[12:04:57] x264 options: Unknown suboption 
+[12:04:57] encx264: min-keyint: auto (38), keyint: 390
+[12:04:57] encx264: encoding with stored aspect 2968/2977
+[12:04:57] encx264: opening libx264 (pass 1)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile Main, level 3.1
+[12:04:57] thread b0cfb000 started ("H.264/AVC encoder (libx264)")
+[12:04:57] thread b0d7d000 started ("Video Synchronization")
+[12:05:20] reader: done. 1 scr changes
+[12:05:20] thread b089b000 exited ("reader")
+[12:05:21] work: average encoding speed for job is 101.277130 fps
+[12:05:21] thread b0d7d000 exited ("Video Synchronization")
+[12:05:21] thread b0d7d000 joined ("Video Synchronization")
+[12:05:21] sync: got 2359 frames, 2427 expected
+[12:05:21] thread b0a21000 exited ("Renderer")
+[12:05:21] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[12:05:21] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[12:05:21] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[12:05:21] thread b0a21000 joined ("Renderer")
+[12:05:21] render: lost time: 0 (0 frames)
+[12:05:21] render: gained time: 0 (0 frames) (0 not accounted for)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] thread b0cfb000 exited ("H.264/AVC encoder (libx264)")
+[12:05:21] thread b0cfb000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:28.64  size: 12838  PSNR Mean Y:38.90 U:45.64 V:45.53 Avg:40.19 Global:38.89
+x264 [info]: frame P:1163  Avg QP:30.17  size:  2315  PSNR Mean Y:36.58 U:43.64 V:43.71 Avg:37.86 Global:35.83
+x264 [info]: frame B:1176  Avg QP:32.49  size:   225  PSNR Mean Y:38.38 U:44.76 V:44.87 Avg:39.57 Global:37.05
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 63.3%  0.0% 36.7%
+x264 [info]: mb P  I16..4: 12.5%  0.0%  0.0%  P16..4: 16.7%  0.0%  0.0%  0.0%  0.0%    skip:70.8%
+x264 [info]: mb B  I16..4:  0.6%  0.0%  0.0%  B16..8:  4.5%  0.0%  0.0%  direct: 0.7%  skip:94.2%  L0:41.3% L1:51.9% BI: 6.8%
+x264 [info]: final ratefactor: 30.78
+x264 [info]: coded y,uvDC,uvAC intra: 28.5% 26.6% 6.3% inter: 2.6% 2.2% 0.2%
+x264 [info]: i16 v,h,dc,p: 31% 51% 11%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 33% 18%  2%  5%  4%  4%  4%  5%
+x264 [info]: i8c dc,h,v,p: 61% 24% 13%  2%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: SSIM Mean Y:0.9541133 (13.383db)
+x264 [info]: PSNR Mean Y:37.460 U:44.188 V:44.280 Avg:38.695 Global:36.392 kb/s:424.17
+[12:05:21] thread b089b000 joined ("reader")
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] fifo_close: trashing 0 buffer(s)
+[12:05:21] Freed 32 buffers of size 32768
+[12:05:21] Freed 2 buffers of size 65536
+[12:05:21] Freed 32 buffers of size 131072
+[12:05:21] Freed 32 buffers of size 1048576
+[12:05:21] Allocated 38928384 bytes of buffers on this pass and Freed 38928384 bytes, 0 bytes leaked
+[12:05:21] starting job
+[12:05:21] sync: expecting 2359 video frames
+[12:05:21] job configuration:
+[12:05:21]  * source
+[12:05:21]    + /Users/bartuer/Movies/Rec.mov
+[12:05:21]    + title 1, chapter(s) 1 to 1
+[12:05:21]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[12:05:21]    + data rate: 2684 kbps
+[12:05:21]  * destination
+[12:05:21]    + /Users/bartuer/Movies/Rec_hb_384kbps.m4v
+[12:05:21]    + container: MPEG-4 (.mp4 and .m4v)
+[12:05:21]      + optimized for progressive web downloads
+[12:05:21]  * video track
+[12:05:21]    + decoder: h264
+[12:05:21]      + bitrate 2666 kbps
+[12:05:21]    + frame rate: same as source (around 38.972 fps)
+[12:05:21]    + loose anamorphic
+[12:05:21]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[12:05:21]      + pixel aspect ratio: 2968 / 2977
+[12:05:21]      + display dimensions: 829 * 448
+[12:05:21]    + encoder: x264
+[12:05:21]      + bitrate: 384 kbps, pass: 2
+[12:05:21] thread b089b000 started ("reader")
+[12:05:21] thread b099f000 started ("Video decoder (ffmpeg streams)")
+[12:05:21] thread b0a21000 started ("Renderer")
+[12:05:21] encx264: min-keyint: auto (38), keyint: 390
+[12:05:21] encx264: encoding with stored aspect 2968/2977
+[12:05:21] encx264: opening libx264 (pass 2)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+[12:05:21] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[12:05:21] reader: first SCR 0 id 0 DTS -39000
+x264 [info]: profile High, level 3.1
+[12:05:21] thread b0c29000 started ("H.264/AVC encoder (libx264)")
+[12:05:21] thread b0cfb000 started ("Video Synchronization")
+[12:05:21] muxmp4: track 0, chunk duration 9246
+[12:06:07] reader: done. 1 scr changes
+[12:06:07] thread b089b000 exited ("reader")
+[12:06:09] work: average encoding speed for job is 50.801258 fps
+[12:06:09] Writing Metadata to output file...
+[12:06:09] muxmp4: optimizing file
+[12:06:09] thread b099f000 exited ("Video decoder (ffmpeg streams)")
+[12:06:09] thread b0c29000 exited ("H.264/AVC encoder (libx264)")
+[12:06:09] mux: file size, 2995226 bytes
+[12:06:09] mux: track 0, 2359 frames, 2950567 bytes, 389.46 kbps, fifo 8
+[12:06:09] mux: video bitrate error, +41334 bytes
+[12:06:09] mux: overhead, 18.93 bytes per frame
+[12:06:09] thread b0cfb000 exited ("Video Synchronization")
+[12:06:09] thread b0cfb000 joined ("Video Synchronization")
+[12:06:09] sync: got 2359 frames, 2359 expected
+[12:06:09] thread b099f000 joined ("Video decoder (ffmpeg streams)")
+[12:06:09] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[12:06:09] thread b0a21000 exited ("Renderer")
+[12:06:09] thread b0a21000 joined ("Renderer")
+[12:06:09] render: lost time: 0 (0 frames)
+[12:06:09] render: gained time: 0 (0 frames) (0 not accounted for)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] thread b0c29000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:20    Avg QP:29.06  size: 11891  PSNR Mean Y:38.15 U:45.99 V:45.79 Avg:39.53 Global:38.64
+x264 [info]: frame P:1163  Avg QP:31.82  size:  2063  PSNR Mean Y:36.48 U:44.08 V:44.13 Avg:37.84 Global:36.83
+x264 [info]: frame B:1176  Avg QP:36.54  size:   267  PSNR Mean Y:38.01 U:44.85 V:44.95 Avg:39.31 Global:38.24
+x264 [info]: consecutive B-frames: 28.0% 11.6%  9.7% 50.6%
+x264 [info]: mb I  I16..4: 38.5% 41.9% 19.6%
+x264 [info]: mb P  I16..4:  5.7%  4.2%  1.5%  P16..4: 14.5%  3.3%  1.3%  0.0%  0.0%    skip:69.5%
+x264 [info]: mb B  I16..4:  0.2%  0.1%  0.1%  B16..8: 10.1%  0.5%  0.0%  direct: 0.1%  skip:88.8%  L0:40.3% L1:58.3% BI: 1.3%
+x264 [info]: 8x8 transform intra:37.6% inter:76.5%
+x264 [info]: coded y,uvDC,uvAC intra: 27.9% 31.5% 6.1% inter: 2.8% 2.1% 0.1%
+x264 [info]: i16 v,h,dc,p: 26% 60%  4% 10%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 18% 30% 26%  4%  4%  4%  5%  4%  6%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 36% 18%  3%  4%  4%  4%  3%  4%
+x264 [info]: i8c dc,h,v,p: 63% 24% 11%  2%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 70.6% 14.8%  9.9%  4.7%  0.0%
+x264 [info]: ref B L0: 90.3%  8.3%  1.4%
+x264 [info]: ref B L1: 95.3%  4.7%
+x264 [info]: SSIM Mean Y:0.9639022 (14.425db)
+x264 [info]: PSNR Mean Y:37.226 U:44.467 V:44.537 Avg:38.555 Global:37.462 kb/s:389.48
+[12:06:09] thread b089b000 joined ("reader")
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] fifo_close: trashing 0 buffer(s)
+[12:06:09] Freed 32 buffers of size 32768
+[12:06:09] Freed 1 buffers of size 65536
+[12:06:09] Freed 32 buffers of size 131072
+[12:06:09] Freed 32 buffers of size 1048576
+[12:06:09] Allocated 38862848 bytes of buffers on this pass and Freed 38862848 bytes, 0 bytes leaked
+[12:06:09] thread b0749000 exited ("work")
+[12:06:09] thread b0749000 joined ("work")
+[12:06:09] libhb: work result = 0
+[12:06:09] macgui: incrementQueueItemDone there are no more pending encodes
+[12:33:31] macgui: trying to open video_ts folder (parent directory chosen)
+[12:33:31] macgui: Preview: Disabling HUD Controls
+[12:33:31] macgui: Minimum length of title for scan: 900000
+[12:33:31] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=0
+[12:33:31] thread b0a21000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x22286e00)
+[12:33:31] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[12:33:31] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[12:33:31] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[12:33:31] Got an MP4 input, read the metadata
+[12:33:31] scan: decoding previews for title 1
+[12:33:31] scan: preview 1
+[12:33:31] scan: preview 2
+[12:33:31] scan: preview 3
+[12:33:31] scan: preview 4
+[12:33:31] scan: preview 5
+[12:33:31] scan: preview 6
+[12:33:31] scan: preview 7
+[12:33:31] scan: preview 8
+[12:33:31] scan: preview 9
+[12:33:31] scan: preview 10
+[12:33:32] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[12:33:32] scan: title (0) job->width:864, job->height:464
+[12:33:32] thread b0a21000 exited ("scan")
+[12:33:32] thread b0a21000 joined ("scan")
+[12:33:32] libhb: scan thread found 1 valid title(s)
+[12:33:32] macgui: ScanDone state received from fHandle
+[12:33:32] macgui: showNewScan: This is a new source item scan
+[12:33:32] macgui: Preview: Enabling HUD Controls
+[12:35:18] macgui: Rip: Pending queue count is 0
+[12:35:18] macgui: getNextPendingQueueIndex next pending encode index is:7
+[12:35:18] macgui: scanning specifically for title: 1
+[12:35:18] hb_scan: path=/Users/bartuer/Movies/Rec.mov, title_index=1
+[12:35:18] thread b0749000 started ("scan")
+libbluray/bdnav/index_parse.c:157: indx_parse(): error opening /Users/bartuer/Movies/Rec.mov/BDMV/index.bdmv
+libbluray/bluray.c:960: nav_get_title_list(/Users/bartuer/Movies/Rec.mov) failed (0x2255c000)
+[12:35:18] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 4.1.3
+libdvdread: Using libdvdcss version 1.2.10 for DVD access
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav:DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.BUP failed
+libdvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: failed to read VIDEO_TS.IFO
+[12:35:18] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/bartuer/Movies/Rec.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+  Duration: 00:01:01.30, start: 0.683333, bitrate: 2684 kb/s
+    Stream #0.0(und): Video: h264, yuv420p, 848x458 [PAR 1:1 DAR 424:229], 2666 kb/s, 38.97 fps, 60 tbr, 6k tbn, 12k tbc
+[12:35:18] Found ffmpeg 0 chapters, container=mov,mp4,m4a,3gp,3g2,mj2
+[12:35:18] Got an MP4 input, read the metadata
+[12:35:18] scan: decoding previews for title 1
+[12:35:18] scan: preview 1
+[12:35:18] scan: preview 2
+[12:35:18] scan: preview 3
+[12:35:18] scan: preview 4
+[12:35:18] scan: preview 5
+[12:35:18] scan: preview 6
+[12:35:18] scan: preview 7
+[12:35:18] scan: preview 8
+[12:35:18] scan: preview 9
+[12:35:18] scan: preview 10
+[12:35:18] scan: 10 previews, 848x458, 38.972 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1
+[12:35:18] scan: title (0) job->width:864, job->height:464
+[12:35:18] thread b0749000 exited ("scan")
+[12:35:18] thread b0749000 joined ("scan")
+[12:35:18] libhb: scan thread found 1 valid title(s)
+[12:35:19] macgui: ScanDone state received from fQueueEncodeLibhb
+[12:35:19] macgui: Preset: Custom
+[12:35:19] macgui: processNewQueueEncode number of passes expected is: 1
+[12:35:19] macgui: Start / Stop set to chapters
+[12:35:19] macgui: prepareJob exiting
+[12:35:19] thread b0749000 started ("work")
+[12:35:19] 1 job(s) to process
+[12:35:19] starting job
+[12:35:19] sync: expecting 2427 video frames
+[12:35:19] job configuration:
+[12:35:19]  * source
+[12:35:19]    + /Users/bartuer/Movies/Rec.mov
+[12:35:19]    + title 1, chapter(s) 1 to 1
+[12:35:19]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[12:35:19]    + data rate: 2684 kbps
+[12:35:19]  * destination
+[12:35:19]    + /Users/bartuer/Movies/Rec_hb_same_bitrate_as_mc_1200.m4v
+[12:35:19]    + container: MPEG-4 (.mp4 and .m4v)
+[12:35:19]      + 64-bit formatting
+[12:35:19]  * video track
+[12:35:19]    + decoder: h264
+[12:35:19]      + bitrate 2666 kbps
+[12:35:19]    + frame rate: 38.972 fps -> peak rate limited to 29.970 fps
+[12:35:19]    + loose anamorphic
+[12:35:19]      + storage dimensions: 848 * 458 -> 832 * 448, crop 0/0/0/0, mod 16
+[12:35:19]      + pixel aspect ratio: 2968 / 2977
+[12:35:19]      + display dimensions: 829 * 448
+[12:35:19]    + encoder: x264
+[12:35:19]      + bitrate: 945 kbps, pass: 0
+[12:35:19] Seeking to chapter 1: starts 0, ends 5517000, AV pos -6700
+[12:35:19] reader: first SCR 0 id 0 DTS -39000
+[12:35:19] thread b089b000 started ("reader")
+[12:35:19] thread b0a21000 started ("Video decoder (ffmpeg streams)")
+[12:35:19] thread b0aa3000 started ("Renderer")
+[12:35:19] encx264: min-keyint: auto (29), keyint: 300
+[12:35:19] encx264: encoding with stored aspect 2968/2977
+[12:35:19] encx264: opening libx264 (pass 0)
+x264 [info]: using SAR=2968/2977
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 FastShuffle SSE4.1 Cache64
+x264 [info]: profile High, level 3.1
+[12:35:19] thread b0d7d000 started ("H.264/AVC encoder (libx264)")
+[12:35:19] thread b0dff000 started ("Video Synchronization")
+[12:35:19] muxmp4: using 64-bit MP4 formatting.
+[12:35:19] muxmp4: track 0, chunk duration 12012
+[12:37:03] reader: done. 1 scr changes
+[12:37:03] thread b089b000 exited ("reader")
+[12:37:08] work: average encoding speed for job is 22.266975 fps
+[12:37:08] Writing Metadata to output file...
+[12:37:08] mux: file size, 7927903 bytes
+[12:37:08] mux: track 0, 1817 frames, 7895238 bytes, 1041.23 kbps, fifo 8
+[12:37:08] mux: video bitrate error, +729704 bytes
+[12:37:08] mux: overhead, 17.98 bytes per frame
+[12:37:08] thread b0a21000 exited ("Video decoder (ffmpeg streams)")
+[12:37:08] thread b0aa3000 exited ("Renderer")
+[12:37:08] thread b0dff000 exited ("Video Synchronization")
+[12:37:08] thread b0dff000 joined ("Video Synchronization")
+[12:37:08] sync: got 2359 frames, 2427 expected
+[12:37:08] thread b0a21000 joined ("Video decoder (ffmpeg streams)")
+[12:37:08] h264-decoder done: 2359 frames, 0 decoder errors, 0 drops
+[12:37:08] thread b0aa3000 joined ("Renderer")
+[12:37:08] render: 1817 frames output, 542 dropped and 0 duped for CFR/PFR
+[12:37:08] render: lost time: 0 (0 frames)
+[12:37:08] render: gained time: 0 (0 frames) (0 not accounted for)
+[12:37:08] fifo_close: trashing 0 buffer(s)
+[12:37:08] fifo_close: trashing 0 buffer(s)
+[12:37:08] thread b0d7d000 exited ("H.264/AVC encoder (libx264)")
+[12:37:08] thread b0d7d000 joined ("H.264/AVC encoder (libx264)")
+x264 [info]: frame I:21    Avg QP:19.97  size: 28408  PSNR Mean Y:44.83 U:50.41 V:50.12 Avg:45.99 Global:44.63
+x264 [info]: frame P:964   Avg QP:21.77  size:  6510  PSNR Mean Y:43.32 U:48.55 V:48.57 Avg:44.43 Global:42.23
+x264 [info]: frame B:832   Avg QP:23.88  size:  1230  PSNR Mean Y:45.44 U:50.30 V:50.40 Avg:46.50 Global:43.35
+x264 [info]: consecutive B-frames: 31.8% 16.3%  8.7% 43.2%
+x264 [info]: mb I  I16..4: 29.7% 36.9% 33.4%
+x264 [info]: mb P  I16..4:  6.6%  5.3%  3.3%  P16..4: 19.4%  8.2%  4.2%  0.0%  0.0%    skip:53.0%
+x264 [info]: mb B  I16..4:  0.5%  0.3%  0.2%  B16..8: 16.1%  2.4%  0.6%  direct: 1.2%  skip:78.8%  L0:40.6% L1:52.2% BI: 7.2%
+x264 [info]: final ratefactor: 22.41
+x264 [info]: 8x8 transform intra:35.0% inter:63.8%
+x264 [info]: coded y,uvDC,uvAC intra: 43.8% 52.7% 25.2% inter: 8.9% 9.3% 1.7%
+x264 [info]: i16 v,h,dc,p: 27% 64%  2%  8%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 31% 18%  4%  5%  5%  6%  5%  7%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 38% 13%  3%  5%  4%  5%  4%  4%
+x264 [info]: i8c dc,h,v,p: 47% 34% 15%  5%
+x264 [info]: Weighted P-Frames: Y:0.1% UV:0.0%
+x264 [info]: ref P L0: 72.3% 13.9%  9.8%  4.0%  0.0%
+x264 [info]: ref B L0: 91.0%  7.6%  1.3%
+x264 [info]: ref B L1: 96.6%  3.4%
+x264 [info]: SSIM Mean Y:0.9868044 (18.796db)
+x264 [info]: PSNR Mean Y:44.317 U:49.384 V:49.435 Avg:45.407 Global:42.740 kb/s:1041.89
+[12:37:09] thread b089b000 joined ("reader")
+[12:37:09] fifo_close: trashing 0 buffer(s)
+[12:37:09] fifo_close: trashing 0 buffer(s)
+[12:37:09] fifo_close: trashing 0 buffer(s)
+[12:37:09] fifo_close: trashing 0 buffer(s)
+[12:37:09] fifo_close: trashing 0 buffer(s)
+[12:37:09] Freed 32 buffers of size 32768
+[12:37:09] Freed 3 buffers of size 65536
+[12:37:09] Freed 32 buffers of size 131072
+[12:37:09] Freed 32 buffers of size 1048576
+[12:37:09] Allocated 38993920 bytes of buffers on this pass and Freed 38993920 bytes, 0 bytes leaked
+[12:37:09] thread b0749000 exited ("work")
+[12:37:09] thread b0749000 joined ("work")
+[12:37:09] libhb: work result = 0
+[12:37:09] macgui: incrementQueueItemDone there are no more pending encodes
