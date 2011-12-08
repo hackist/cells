@@ -1,0 +1,58 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="AC3_256kbit_48kHz_stereo.spfx" Description="" Id="134753280" IsLite="False" IsMBR="False" Name="AC3_256Kbps_48kHz_stereo" OutputFormat="AC3OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <AudioCompressor codec="MCptAC3 ">
+        <DataRate Value="256000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <ExtendedPluginSettings>
+            <EncoderMode Value="Dolby Digital"/>
+            <ChanneMapping Value="Preset 4:  L,  R,  C, LFE,  Ls,   Rs"/>
+            <DialogNormalization Value="-27"/>
+            <LineModeCompression1 Value="Film standard compression"/>
+            <LineModeCompression2 Value="Film standard compression"/>
+            <RfModeCompression1 Value="Film standard compression"/>
+            <RfModeCompression2 Value="Film standard compression"/>
+            <InputFiltering_DigitalDeemphasis Value="False"/>
+            <InputFiltering_DCFilter Value="True"/>
+            <BandwidthFilter Value="True"/>
+            <LFELowpassFilter Value="True"/>
+            <LFE Value="True"/>
+            <SurroundChannel_90DegreePhaseShift Value="False"/>
+            <SurroundChannel_3dBAttenuation Value="False"/>
+            <CenterMixLevelLtRt Value="-3.0 dB"/>
+            <CenterMixLevelLoRo Value="-3.0 dB"/>
+            <SurroundMixLevelLtRt Value="-3.0 dB"/>
+            <SurroundMixLevelLoRo Value="-3.0 dB"/>
+            <DolbySurroundMode Value="Not indicated"/>
+            <DolbySurroundEx Value="Not indicated"/>
+            <HeadphoneMode Value="Not indicated"/>
+            <ADConverter Value="Standard"/>
+            <Bitstream Value="Main audio service: complete main (CM)"/>
+            <MixingLevel Value="105"/>
+            <RoomType Value="Small room, flat monitor"/>
+            <BitstreamType Value="Independent"/>
+            <Metadata_OriginalMaterial Value="True"/>
+            <Metadata_CopyrightedMaterial Value="True"/>
+            <AutomaticSettingsProfile Value="Default"/>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

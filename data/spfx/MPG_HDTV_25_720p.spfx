@@ -1,0 +1,67 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_HDTV_25_720p.spfx" Description="ATSC compliant MPEG 2 Transport stream 1280X720 for European/Pal broadcasts." Id="334970880" IsLite="False" IsMBR="False" Name="HDTV_25_720p" OutputFormat="MPEGOutputFormat" SubOutputFormat="ATSC HD (MPEG 2)" UsingCustomFilter="False" Version="6.0" Workflow="Broadcast\HDTV">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MPEG2AudioCodec">
+        <DataRate Value="384000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="ATSC HD (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="ATSC HD (MPEG 2)"/>
+        <DataRate Value="10000000"/>
+        <FrameRate Value="25"/>
+        <OutputSize Height="720" Width="1280"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeOnePassVBR"/>
+        <KeyFrameRate Value="12"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="PALDisplayMode"/>
+        <OutputStreamMode Value="TransportOutputStreamMode"/>
+        <FieldEncodingMode Value="ProgressiveFieldEncodingMode"/>
+        <PixelAspectRatio Value="16x9PixelAspectRatio"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="4000000"/>
+        <DataRateMax Value="18500000"/>
+        <FeaturesFlag Value="2592"/>
+        <ClosedGOPS Value="True"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="High"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="17"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="8"/>
+        <VerticalSearchPixelMovement Value="8"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="188"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="0"/>
+        <StartupDelayAudio Value="0"/>
+        <Timestamps Value="0"/>
+        <PadVCDAudio Value="0"/>
+        <AlignSequenceHeaders Value="1"/>
+    </VideoCompressor>
+</Output>

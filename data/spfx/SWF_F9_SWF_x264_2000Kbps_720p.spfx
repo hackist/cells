@@ -1,0 +1,68 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="SWF_F9_SWF_x264_2000Kbps_720p.spfx" Description="h264 Flash player video for progressive download on slow broadband network connections." Id="78033408" IsLite="False" IsMBR="False" Name="F9_SWF_x264_2000Kbps_720p" OutputFormat="SWFOutputFormat" SubOutputFormat="Adobe Flash 9+ (MP4)" UsingCustomFilter="False" Version="6.0" Workflow="Web\Progressive Download\Adobe Flash Video\Flash Player (.swf)\F9 Progressive Download\x264">
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="True"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <PlayerOptions Name="Aluminum" OutputFormat="SWFOutputFormat">
+        <UseLegacyTemplate Value="False"/>
+        <VideoLocation Value="LinkedVideo"/>
+        <PlaybackTemplateEnable Value="True"/>
+        <PlayerTemplateFileName Value="Aluminum.swf"/>
+        <PlayerTemplateFirstSliceOnlyEnable Value="False"/>
+    </PlayerOptions>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="AACAudioCodec">
+        <DataRate Value="160000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="Adobe Flash 9+ (MP4)"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="x264H264">
+        <DataRate Value="1800000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="720" Width="1280"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MaxDataRatePercentEnable Value="True"/>
+        <MaxDataRatePercent Value="160"/>
+        <ExtendedPluginSettings>
+            <crf Value="2.300000000000e+01"/>
+            <preset Value="medium"/>
+            <tune Value="none"/>
+            <fastdecode Value="False"/>
+            <zerolatency Value="False"/>
+            <Profile Value="baseline"/>
+            <alphaDeblocking Value="0"/>
+            <betaDeblocking Value="0"/>
+            <Interlaced Value="False"/>
+            <FieldOrder Value="Top Field First"/>
+            <fake-interlaced Value="False"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

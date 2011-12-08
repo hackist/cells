@@ -1,0 +1,52 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="FLV.xss" IsLite="False" IsMBR="False" Name="FLV" OutputFormat="FLVOutputFormat" SubOutputFormat="Adobe Flash 8+ (FLV)" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\FLV">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="False"/>
+    <UseCustomPlayerOptions Value="False"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="">
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="FLVOutputFormat">
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+    </PlayerOptions>
+    <AudioCompressor codec="Fraunhofer MP3">
+        <DataRate Value="128000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <CodecFourCC Value="1836253269"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="SPARKVideoCodec">
+        <DataRate Value="256000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="240" Width="320"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeSorensonTwoPassVBR"/>
+        <NumDisposableFrames Value="0"/>
+        <CompressionSpeed Value="0"/>
+        <DropFramesEnable Value="False"/>
+        <KeyFrameRate Value="30"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MinQualityEnable Value="False"/>
+        <MinQualityValue Value="50"/>
+        <ImageSmoothingEnable Value="False"/>
+    </VideoCompressor>
+</Output>

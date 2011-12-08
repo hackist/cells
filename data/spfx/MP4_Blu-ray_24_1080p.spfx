@@ -1,0 +1,110 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP4_Blu-ray_24_1080p.spfx" Description="Recommended for use with DVD authoring applications for progressive source files having frame dimensions of 1920x1080 with 24fps." Id="330346496" IsLite="False" IsMBR="False" Name="Blu-ray_24_1080p" OutputFormat="MP4OutputFormat" SubOutputFormat="Blu-ray Disc HD (H.264)" UsingCustomFilter="False" Version="6.0" Workflow="Disc\Blu-ray Authoring\h264">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <AddHintTrack Value="False"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptAC3 ">
+        <DataRate Value="384000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <ExtendedPluginSettings>
+            <EncoderMode Value="Dolby Digital"/>
+            <ChanneMapping Value="Preset 4:  L,  R,  C, LFE,  Ls,   Rs"/>
+            <DialogNormalization Value="-27"/>
+            <LineModeCompression1 Value="Film standard compression"/>
+            <LineModeCompression2 Value="Film standard compression"/>
+            <RfModeCompression1 Value="Film standard compression"/>
+            <RfModeCompression2 Value="Film standard compression"/>
+            <InputFiltering_DigitalDeemphasis Value="False"/>
+            <InputFiltering_DCFilter Value="True"/>
+            <BandwidthFilter Value="True"/>
+            <LFELowpassFilter Value="True"/>
+            <LFE Value="True"/>
+            <SurroundChannel_90DegreePhaseShift Value="False"/>
+            <SurroundChannel_3dBAttenuation Value="False"/>
+            <CenterMixLevelLtRt Value="-3.0 dB"/>
+            <CenterMixLevelLoRo Value="-3.0 dB"/>
+            <SurroundMixLevelLtRt Value="-3.0 dB"/>
+            <SurroundMixLevelLoRo Value="-3.0 dB"/>
+            <DolbySurroundMode Value="Not indicated"/>
+            <DolbySurroundEx Value="Not indicated"/>
+            <HeadphoneMode Value="Not indicated"/>
+            <ADConverter Value="Standard"/>
+            <Bitstream Value="Main audio service: complete main (CM)"/>
+            <MixingLevel Value="105"/>
+            <RoomType Value="Small room, flat monitor"/>
+            <BitstreamType Value="Independent"/>
+            <Metadata_OriginalMaterial Value="True"/>
+            <Metadata_CopyrightedMaterial Value="True"/>
+            <AutomaticSettingsProfile Value="Default"/>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MCpt264 ">
+        <DataRate Value="25000000"/>
+        <FrameRate Value="24"/>
+        <OutputSize Height="1080" Width="1920"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MaxDataRatePercentEnable Value="True"/>
+        <MaxDataRatePercent Value="120"/>
+        <OutputStreamMode Value="SeparateOutputStreamMode"/>
+        <ExtendedPluginSettings>
+            <Performance Value="10"/>
+            <InterlaceMode Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <PixelAspectRatio Value="16:9 Display"/>
+            <Profile Value="High"/>
+            <AutoLevel Value="False"/>
+            <Level Value="4.1"/>
+            <HRDConformance Value="True"/>
+            <BitrateBuffer Value="3750000"/>
+            <VBVBufferInitial Value="0"/>
+            <VBVBufferTarget Value="100"/>
+            <MaxIFrameSize Value="0"/>
+            <MaxPFrameSize Value="0"/>
+            <MaxBFrameSize Value="0"/>
+            <MaxBrFrameSize Value="0"/>
+            <IDRRate Value="1"/>
+            <FixedIFramesDistance Value="True"/>
+            <AdaptiveBFramePlacement Value="True"/>
+            <BFramePyramid Value="False"/>
+            <NumberOfBFrames Value="3"/>
+            <UseBSliceAsReference Value="False"/>
+            <NumberOfReferenceFrames Value="2"/>
+            <AdaptiveQuantBrightnessBase Value="0"/>
+            <AdaptiveQuantContrastBase Value="0"/>
+            <AdaptiveQuantComplexityBase Value="0"/>
+            <CABAC Value="CABAC"/>
+            <NumberOfSlices Value="0"/>
+            <BlackNormalizationLevel Value="True"/>
+            <ColorRangeAndCoeffients Value="Range 16-235, ITU-R Rec. BT.470-2"/>
+            <DropFrameTimeCode Value="False"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

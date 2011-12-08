@@ -1,0 +1,59 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP4.xss" IsLite="False" IsMBR="False" Name="MP4" OutputFormat="MP4OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\MPEG 4">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="False"/>
+    <UseCustomPlayerOptions Value="False"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="">
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="MP4OutputFormat">
+        <AddHintTrack Value="False"/>
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+    </PlayerOptions>
+    <AudioCompressor codec="Coding Technologies aac">
+        <DataRate Value="64000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="AVCVideoCodec">
+        <SubOutputFormat Value="None"/>
+        <DataRate Value="1015000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="480" Width="640"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeSorensonTwoPassVBR"/>
+        <NumberOfBFrames Value="0"/>
+        <CompressionSpeed Value="0"/>
+        <DropFramesEnable Value="False"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="150"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MinQualityEnable Value="False"/>
+        <MinQualityValue Value="0"/>
+        <ImageSmoothingEnable Value="True"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1466"/>
+        <BlockRefreshRateEnable Value="False"/>
+        <BlockRefreshRate Value="5"/>
+    </VideoCompressor>
+</Output>

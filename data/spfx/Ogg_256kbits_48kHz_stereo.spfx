@@ -1,0 +1,32 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="Ogg_256kbits_48kHz_stereo.spfx" Description="Ogg is a free, open container format maintained by the Xiph.Org Foundation." FavWorkflow="" Id="568962048" IsLite="False" IsMBR="False" Name="Ogg_256kbit_48kHz_stereo" OutputFormat="OggOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="SMI VRBS">
+        <DataRate Value="256000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

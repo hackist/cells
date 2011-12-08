@@ -1,0 +1,32 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP3_128kbit_44kHz_stereo.spfx" Description="MPEG-1/Layer 3 Audio File Format." FavWorkflow="" Id="73691136" IsLite="False" IsMBR="False" Name="MP3_128kbit_44kHz_stereo" OutputFormat="MP3OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="SMI MP3 ">
+        <DataRate Value="128000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

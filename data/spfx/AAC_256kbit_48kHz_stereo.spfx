@@ -1,0 +1,30 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="AAC_256kbit_48kHz_stereo.spfx" Description="MPEG-4 Audio File with a .aac extension." FavWorkflow="" Id="75792384" IsLite="False" IsMBR="False" Name="AAC_256Kbps_48kHz_stereo" OutputFormat="AACOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <AudioCompressor codec="SMI AAC ">
+        <DataRate Value="256000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

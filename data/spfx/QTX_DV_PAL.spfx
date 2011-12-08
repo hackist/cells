@@ -1,0 +1,44 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="QTX_DV_PAL.spfx" Description="PAL compliant DV file ideal for transcoding footage to match DV for editing on a timeline.  .dv file extension." FavWorkflow="" Id="67383296" IsLite="False" IsMBR="False" Name="DV_PAL" OutputFormat="QTExportOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Editing\DV Stream">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value="dv"/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="appldvc!">
+        <DataRate Value="0"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <ExtendedSettings Value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 B0 73 65 61 6E 00 00 00 01 00 00 00 07 00 00 00 00 00 00 00 15 64 76 63 76 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 15 6C 6F 63 6B 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 18 64 76 63 66 00 00 00 01 00 00 00 00 00 00 00 00 64 76 20 20 00 00 00 18 73 73 72 74 00 00 00 01 00 00 00 00 00 00 00 00 BB 80 00 00 00 00 00 15 70 72 6F 67 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 15 31 36 78 39 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 18 73 63 61 6D 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 "/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="appldvc!">
+        <ExtendedSettings Value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 B0 73 65 61 6E 00 00 00 01 00 00 00 07 00 00 00 00 00 00 00 15 64 76 63 76 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 15 6C 6F 63 6B 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 18 64 76 63 66 00 00 00 01 00 00 00 00 00 00 00 00 64 76 20 20 00 00 00 18 73 73 72 74 00 00 00 01 00 00 00 00 00 00 00 00 BB 80 00 00 00 00 00 15 70 72 6F 67 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 15 31 36 78 39 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 18 73 63 61 6D 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 "/>
+        <DataRate Value="100000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="576" Width="720"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeOnePassCBR"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

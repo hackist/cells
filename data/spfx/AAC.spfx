@@ -1,0 +1,30 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="AAC.spfx" IsLite="False" IsMBR="False" Name="AAC" OutputFormat="AACOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="FormatTemplates\AAC">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <AudioCompressor codec="SMI AAC ">
+        <DataRate Value="160000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

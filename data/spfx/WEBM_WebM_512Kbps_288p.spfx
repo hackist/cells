@@ -1,0 +1,71 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="WEBM_WebM_512Kbps_288p.spfx" Description="WebM video for progressive download on average 3g network connections." Id="312180736" IsLite="False" IsMBR="False" Name="WebM_512Kbps_288p" OutputFormat="WebMediaOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Web\Progressive Download\WebM">
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="SMI VRBS">
+        <DataRate Value="96000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="ON2!VP8 ">
+        <DataRate Value="400000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="288" Width="512"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <ExtendedPluginSettings>
+            <Profile Value="0"/>
+            <EncodingThreads Value="30"/>
+            <CompressionSpeed Value="Good Quality"/>
+            <CPUUsage Value="3"/>
+            <TwoPassVBRBias Value="70"/>
+            <TwoPassVBRMinSection Value="20"/>
+            <TwoPassVBRMaxSection Value="600"/>
+            <UnderShootPct Value="100"/>
+            <MinimumQuality Value="5"/>
+            <MaximumQuality Value="100"/>
+            <EnableAutoAltRef Value="True"/>
+            <LaggedFrames Value="Auto"/>
+            <MaximumBufferSize Value="10"/>
+            <StartingBufferLevel Value="6"/>
+            <OptimalBufferLevel Value="6"/>
+            <RateControlResizing Value="False"/>
+            <RateControlResizingUpThreshold Value="0"/>
+            <RateControlResizingDownThreshold Value="30"/>
+            <DropFramestoMaintainDataRate Value="False"/>
+            <DropFramesThreshold Value="70"/>
+            <Sharpness Value="0"/>
+            <NoiseSensitivity Value="0"/>
+            <StaticRegionThreshold Value="0"/>
+            <DecodeCPUCores Value="2"/>
+            <ErrorResilient Value="True"/>
+            <VisualTuning Value="Structural Similarity"/>
+            <ConstrainedQualityLevel Value="31"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

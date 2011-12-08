@@ -1,0 +1,67 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="FLV_F8_FLV_VP6_3000Kbps_720p.spfx" Description="Flash video for progressive download on average broadband network connections." Id="416931840" IsLite="False" IsMBR="False" Name="F8_FLV_VP6_3000Kbps_720p" OutputFormat="FLVOutputFormat" SubOutputFormat="Adobe Flash 8+ (FLV)" UsingCustomFilter="False" Version="6.0" Workflow="Web\Progressive Download\Adobe Flash Video\Flash Video (.flv)\F8 Progressive Download">
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="SMI MP3 ">
+        <DataRate Value="160000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="Adobe Flash 8+ (FLV)"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="ON2!VP62">
+        <DataRate Value="2800000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="720" Width="1280"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassCBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <UseAlphaEnable Value="False"/>
+        <AlphaBitRatePercent Value="25"/>
+        <ExtendedPluginSettings>
+            <Profile Value="VP6-E"/>
+            <AutoKeyFramesEnabled Value="True"/>
+            <AutoKeyFrameThreshold Value="70"/>
+            <MinimumDistanceToKeyFrame Value="10"/>
+            <CompressionSpeed Value="Best"/>
+            <Speed Value="12"/>
+            <MinimumQuality Value="0"/>
+            <MaximumQuality Value="100"/>
+            <Quality Value="54"/>
+            <TwoPassVBRBias Value="70"/>
+            <DropFramestoMaintainDataRate Value="False"/>
+            <DropFramesWaterMark Value="20"/>
+            <Sharpness Value="5"/>
+            <NoiseSensitivity Value="0"/>
+            <StartingBufferLevel Value="6"/>
+            <OptimalBufferLevel Value="10"/>
+            <MaximumBufferSize Value="6"/>
+            <TwoPassVBRMinSection Value="40"/>
+            <TwoPassVBRMaxSection Value="400"/>
+            <UnderShootPct Value="100"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

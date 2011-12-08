@@ -1,0 +1,57 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_HDV_60_1080i.spfx" Description="HDV spec. MPEG 2, for transcoding footage to match HDV for editing on a timeline or exporting to tape. .mpg file extension" Id="312311808" IsLite="False" IsMBR="False" Name="HDV_60_1080i" OutputFormat="MPEGOutputFormat" SubOutputFormat="HDV HD2 (MPEG 2)" UsingCustomFilter="False" Version="6.0" Workflow="Editing\HDV Stream">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MPEG2AudioCodec">
+        <DataRate Value="384000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="HDV HD2 (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="HDV HD2 (MPEG 2)"/>
+        <DataRate Value="25000000"/>
+        <FrameRate Value="29.97"/>
+        <OutputSize Height="1080" Width="1440"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeOnePassCBR"/>
+        <KeyFrameRate Value="15"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="NTSCDisplayMode"/>
+        <PFrames Value="3"/>
+        <FeaturesFlag Value="128"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="1440"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="8"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="188"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="400"/>
+        <StartupDelayAudio Value="400"/>
+    </VideoCompressor>
+</Output>

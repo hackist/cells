@@ -1,0 +1,65 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="WMV_512Kbps_288p.spfx" Description="Windows Media video for progressive download on average 3g network connections." Id="76840960" IsLite="False" IsMBR="False" Name="WMV_512Kbps_288p" OutputFormat="WMVOutputFormat" SubOutputFormat="WMV (VC-1)" UsingCustomFilter="False" Version="6.0" Workflow="Web\Progressive Download\Windows Media Video">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptMWMA">
+        <DataRate Value="64000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="WMV (VC-1)"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptVC1 ">
+        <DataRate Value="460000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="288" Width="512"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <ExtendedPluginSettings>
+            <AspectRatio Value="4:3"/>
+            <SetKeyFrameAtSceneChange Value="True"/>
+            <MaxBitratePercent Value="150"/>
+            <FieldEncoding Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <Profile Value="Advanced"/>
+            <Level Value="100"/>
+            <NumberOfBPictures Value="0"/>
+            <MotionEstimationAlgorithm Value="Fast"/>
+            <SubPixelMotionEstimation Value="Full Pixel"/>
+            <MotionEstimationSearchRange Value="32"/>
+            <Use4MV Value="True"/>
+            <UseIntensityCompensation Value="True"/>
+            <UseVariableSizedTransformation Value="Off"/>
+            <WriteHRDParameter Value="False"/>
+            <WriteSeqEndCode Value="False"/>
+            <TimeStampOffset Value="0"/>
+            <FilmModeFramerateConversion Value="Off"/>
+            <UseDeblockingFilter Value="True"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

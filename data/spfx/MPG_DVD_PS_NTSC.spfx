@@ -1,0 +1,58 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_DVD_PS_NTSC.spfx" Description="Recommended for use with DVD authoring applications for interlaced source files having frame dimensions of 720x480 with 29.97fps." Id="292951040" IsLite="False" IsMBR="False" Name="DVD_PS_NTSC" OutputFormat="MPEGOutputFormat" SubOutputFormat="DVD (MPEG 2)" UsingCustomFilter="False" Version="6.0" Workflow="Disc\DVD\Program Streams">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MPEG2AudioCodec">
+        <DataRate Value="224000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+        <DataRate Value="7987000"/>
+        <FrameRate Value="29.97"/>
+        <OutputSize Height="480" Width="720"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="15"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="NTSCDisplayMode"/>
+        <OutputStreamMode Value="ProgramOutputStreamMode"/>
+        <FieldEncodingMode Value="BottomFieldEncodingMode"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="5271420"/>
+        <DataRateMax Value="8945440"/>
+        <ClosedGOPS Value="True"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <MotionSearchMode Value="15"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="2048"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+    </VideoCompressor>
+</Output>

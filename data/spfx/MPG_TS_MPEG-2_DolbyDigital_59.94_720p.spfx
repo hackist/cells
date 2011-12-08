@@ -1,0 +1,97 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_TS_MPEG-2_DolbyDigital_59.94_720p.spfx" Description="1280x720p at 59.94fps - Two pass VBR MPEG-2 at 20000Kbps with Dolby 5.1 audio at 448Kbps/16bit for use with BrightSign Digital Signage devices." Id="301232128" IsLite="False" IsMBR="False" Name="TS_MPEG-2_DolbyDigital_59.94_720p" OutputFormat="MPEGOutputFormat" SubOutputFormat="Digital Signage" UsingCustomFilter="False" Version="6.0" Workflow="Devices\Digital Signage\MPEG-2 TS">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptAC3 ">
+        <DataRate Value="448000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelMode5_1"/>
+        <ExtendedPluginSettings>
+            <EncoderMode Value="Dolby Digital"/>
+            <ChanneMapping Value="Preset 4:  L,  R,  C, LFE,  Ls,   Rs"/>
+            <DialogNormalization Value="-31"/>
+            <LineModeCompression1 Value="No compression"/>
+            <LineModeCompression2 Value="No compression"/>
+            <RfModeCompression1 Value="No compression"/>
+            <RfModeCompression2 Value="No compression"/>
+            <InputFiltering_DigitalDeemphasis Value="False"/>
+            <InputFiltering_DCFilter Value="True"/>
+            <BandwidthFilter Value="False"/>
+            <LFELowpassFilter Value="False"/>
+            <LFE Value="True"/>
+            <SurroundChannel_90DegreePhaseShift Value="False"/>
+            <SurroundChannel_3dBAttenuation Value="False"/>
+            <CenterMixLevelLtRt Value="-3.0 dB"/>
+            <CenterMixLevelLoRo Value="-3.0 dB"/>
+            <SurroundMixLevelLtRt Value="-3.0 dB"/>
+            <SurroundMixLevelLoRo Value="-3.0 dB"/>
+            <DolbySurroundMode Value="Not indicated"/>
+            <DolbySurroundEx Value="Not indicated"/>
+            <HeadphoneMode Value="Not indicated"/>
+            <ADConverter Value="Standard"/>
+            <Bitstream Value="Main audio service: complete main (CM)"/>
+            <MixingLevel Value="105"/>
+            <RoomType Value="Small room, flat monitor"/>
+            <BitstreamType Value="Independent"/>
+            <Metadata_OriginalMaterial Value="True"/>
+            <Metadata_CopyrightedMaterial Value="True"/>
+            <AutomaticSettingsProfile Value="Default"/>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="Digital Signage"/>
+        <DataRate Value="20000000"/>
+        <FrameRate Value="59.94"/>
+        <OutputSize Height="720" Width="1280"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="15"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="NTSCDisplayMode"/>
+        <OutputStreamMode Value="TransportOutputStreamMode"/>
+        <FieldEncodingMode Value="ProgressiveFieldEncodingMode"/>
+        <PixelAspectRatio Value="1x1PixelAspectRatio"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="4000000"/>
+        <DataRateMax Value="25000000"/>
+        <FeaturesFlag Value="2080"/>
+        <ClosedGOPS Value="False"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="High"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="17"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="1"/>
+        <PackOptionSize Value="188"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="0"/>
+        <StartupDelayAudio Value="0"/>
+        <Timestamps Value="0"/>
+        <PadVCDAudio Value="0"/>
+        <AlignSequenceHeaders Value="0"/>
+    </VideoCompressor>
+</Output>

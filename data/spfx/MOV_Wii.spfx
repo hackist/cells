@@ -1,0 +1,48 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MOV_Wii.spfx" Description="" Id="419213312" IsLite="False" IsMBR="False" Name="Wii" OutputFormat="MOVOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Devices\Gaming">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <AddHintTrack Value="False"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="appllpcm">
+        <DataRate Value="0"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="applmjpa">
+        <FrameRate Value="-1"/>
+        <OutputSize Height="480" Width="852"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <ExtendedPluginSettings>
+            <AutoKeyFrames Value="False"/>
+            <ForceKeyFrameEvery Value="300"/>
+            <ColorDepth Value="Color"/>
+            <DataRateAutomatic Value="True"/>
+            <Quality Value="50"/>
+            <FrameReordering Value="False"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

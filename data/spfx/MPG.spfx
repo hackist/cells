@@ -1,0 +1,69 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG.xss" IsMBR="False" Name="MPG" OutputFormat="MPEGOutputFormat" SubOutputFormat="DVD (MPEG 2)" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\MPG">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="True"/>
+    <UseCustomPlayerOptions Value="False"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="Auto Crop Deinterlace">
+        <FilterSetting Name="Crop">
+            <AspectRatio Value="Auto Cropping"/>
+            <FloatRatio Value="0."/>
+            <Top Value="0"/>
+            <Bottom Value="0"/>
+            <Left Value="0"/>
+            <Right Value="0"/>
+        </FilterSetting>
+        <FilterSetting Name="Deinterlace">
+            <Method Value="Auto Adaptive Blend"/>
+        </FilterSetting>
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="MPEGOutputFormat">
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+    </PlayerOptions>
+    <AudioCompressor codec="MPEG Layer 2 Audio">
+        <DataRate Value="224000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+        <DataRate Value="3072000"/>
+        <OutputSize Height="480" Width="720"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <DisplayMode Value="NTSCDisplayMode"/>
+        <OutputStreamMode Value="SeparateOutputStreamMode"/>
+        <FieldEncodingMode Value="BottomFieldEncodingMode"/>
+        <PFrames Value="3"/>
+        <VBRMin Value="2000"/>
+        <VBRAvg Value="3072"/>
+        <VBRMax Value="4000"/>
+        <ClosedGOPS Value="True"/>
+        <ProfileId Value="Main"/>
+        <MotionSearchMode Value="15"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="312"/>
+        <PacketsPerPack Value="1"/>
+        <VideoBufferSize Value="232"/>
+        <MuxRate Value="25200"/>
+        <StartupDelayPack Value="0"/>
+    </VideoCompressor>
+</Output>

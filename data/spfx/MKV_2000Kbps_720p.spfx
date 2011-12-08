@@ -1,0 +1,72 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MKV_2000Kbps_720p.spfx" Description="Matroska video for progressive download on slow broadband network connections." FavWorkflow="" Id="67411456" IsLite="False" IsMBR="False" Name="MKV_2000Kbps_720p" OutputFormat="MatroskaOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="SMI VRBS">
+        <DataRate Value="160000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="ON2!VP8 ">
+        <DataRate Value="1800000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="720" Width="1280"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <ExtendedPluginSettings>
+            <Profile Value="0"/>
+            <EncodingThreads Value="30"/>
+            <CompressionSpeed Value="Good Quality"/>
+            <CPUUsage Value="0"/>
+            <TwoPassVBRBias Value="70"/>
+            <TwoPassVBRMinSection Value="20"/>
+            <TwoPassVBRMaxSection Value="600"/>
+            <UnderShootPct Value="100"/>
+            <MinimumQuality Value="5"/>
+            <MaximumQuality Value="100"/>
+            <EnableAutoAltRef Value="True"/>
+            <LaggedFrames Value="Auto"/>
+            <MaximumBufferSize Value="10"/>
+            <StartingBufferLevel Value="6"/>
+            <OptimalBufferLevel Value="6"/>
+            <RateControlResizing Value="False"/>
+            <RateControlResizingUpThreshold Value="0"/>
+            <RateControlResizingDownThreshold Value="30"/>
+            <DropFramestoMaintainDataRate Value="False"/>
+            <DropFramesThreshold Value="70"/>
+            <Sharpness Value="3"/>
+            <NoiseSensitivity Value="0"/>
+            <StaticRegionThreshold Value="800"/>
+            <DecodeCPUCores Value="2"/>
+            <ErrorResilient Value="True"/>
+            <VisualTuning Value="Structural Similarity"/>
+            <ConstrainedQualityLevel Value="31"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

@@ -1,0 +1,68 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_DVD_ISO_Image_ES_PAL.spfx" Description="Recommended for use with DVD authoring applications for interlaced source files having frame dimensions of 720x576 with 25fps." FavWorkflow="" Id="236665384" IsLite="False" IsMBR="False" Name="DVD_ISO_Image_ES_PAL" OutputFormat="MPEGOutputFormat" SubOutputFormat="DVD (MPEG 2)" UsingCustomFilter="False" Version="6.0" Workflow="Disc\DVD\Elementary Streams">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <DestinationGroup>
+        <BurnDvdDestination Name="DVD disc image" burnToHardDrive="true" burnToHardDrivePath="/Users/randon/Library/Preferences/SorensonMedia/Squeeze6/Presets/Movies" createXML="false" dvdDrive="SuperDrive" noMenus="true"/>
+    </DestinationGroup>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MPEG2AudioCodec">
+        <DataRate Value="224000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="DVD (MPEG 2)"/>
+        <DataRate Value="3072000"/>
+        <FrameRate Value="25"/>
+        <OutputSize Height="576" Width="720"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <DisplayMode Value="PALDisplayMode"/>
+        <OutputStreamMode Value="SeparateOutputStreamMode"/>
+        <FieldEncodingMode Value="BottomFieldEncodingMode"/>
+        <PixelAspectRatio Value="4x3PixelAspectRatio"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="1996800"/>
+        <DataRateMax Value="3993600"/>
+        <FeaturesFlag Value="2048"/>
+        <ClosedGOPS Value="True"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="Main"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="15"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="312"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="0"/>
+        <StartupDelayAudio Value="0"/>
+        <Timestamps Value="2"/>
+        <PadVCDAudio Value="0"/>
+        <AlignSequenceHeaders Value="0"/>
+    </VideoCompressor>
+</Output>

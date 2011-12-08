@@ -1,0 +1,44 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="QTX_WMV_768Kbps_360p.spfx" Description="Windows Media Video using Flip4Mac. For progressive download on fast 3g network connections." FavWorkflow="" Id="68632576" IsLite="False" IsMBR="False" Name="WMV_768Kbps_360p" OutputFormat="QTExportOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value="wmv"/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="TELEASF_">
+        <DataRate Value="0"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <ExtendedSettings Value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 DF 73 65 61 6E 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 CB 57 50 61 72 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 3C 57 56 69 64 00 00 00 01 00 00 00 00 00 00 00 00 00 07 01 5A 00 00 00 00 00 00 00 00 57 4D 56 33 02 02 02 00 00 02 D2 A8 40 00 00 00 00 00 13 88 00 00 13 88 00 01 00 00 00 00 00 30 57 41 75 64 00 00 00 01 00 00 00 00 00 00 00 00 00 05 01 03 01 61 00 00 02 10 00 00 00 01 77 00 40 00 00 00 00 00 AC 44 00 00 13 88 00 00 00 30 57 53 6C 76 00 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 1B 57 43 6E 74 00 00 00 01 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 "/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="TELEASF_">
+        <ExtendedSettings Value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 DF 73 65 61 6E 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00 CB 57 50 61 72 00 00 00 01 00 00 00 04 00 00 00 00 00 00 00 3C 57 56 69 64 00 00 00 01 00 00 00 00 00 00 00 00 00 07 01 5A 00 00 00 00 00 00 00 00 57 4D 56 33 02 02 02 00 00 02 D2 A8 40 00 00 00 00 00 13 88 00 00 13 88 00 01 00 00 00 00 00 30 57 41 75 64 00 00 00 01 00 00 00 00 00 00 00 00 00 05 01 03 01 61 00 00 02 10 00 00 00 01 77 00 40 00 00 00 00 00 AC 44 00 00 13 88 00 00 00 30 57 53 6C 76 00 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 1B 57 43 6E 74 00 00 00 01 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 "/>
+        <DataRate Value="100000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="360" Width="640"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeOnePassCBR"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

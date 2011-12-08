@@ -1,0 +1,67 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_HDTV_24_1080p.spfx" Description="ATSC compliant MPEG 2 Transport stream 1920X1080." Id="334163968" IsLite="False" IsMBR="False" Name="HDTV_24_1080p" OutputFormat="MPEGOutputFormat" SubOutputFormat="ATSC HD (MPEG 2)" UsingCustomFilter="False" Version="6.0" Workflow="Broadcast\HDTV">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MPEG2AudioCodec">
+        <DataRate Value="384000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="ATSC HD (MPEG 2)"/>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="ATSC HD (MPEG 2)"/>
+        <DataRate Value="15000000"/>
+        <FrameRate Value="24"/>
+        <OutputSize Height="1080" Width="1920"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeOnePassVBR"/>
+        <KeyFrameRate Value="12"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="NTSCDisplayMode"/>
+        <OutputStreamMode Value="TransportOutputStreamMode"/>
+        <FieldEncodingMode Value="ProgressiveFieldEncodingMode"/>
+        <PixelAspectRatio Value="16x9PixelAspectRatio"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="4050000"/>
+        <DataRateMax Value="18600000"/>
+        <FeaturesFlag Value="2592"/>
+        <ClosedGOPS Value="True"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="High"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="17"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="8"/>
+        <VerticalSearchPixelMovement Value="8"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="188"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="0"/>
+        <StartupDelayAudio Value="0"/>
+        <Timestamps Value="0"/>
+        <PadVCDAudio Value="0"/>
+        <AlignSequenceHeaders Value="1"/>
+    </VideoCompressor>
+</Output>

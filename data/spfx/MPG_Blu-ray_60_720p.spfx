@@ -1,0 +1,98 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MPG_Blu-ray_60_720p.spfx" Description="Recommended for use with DVD authoring applications for progressive source files having frame dimensions of 1280x720 with 60fps." Id="286171136" IsLite="False" IsMBR="False" Name="Blu-ray_60_720p" OutputFormat="MPEGOutputFormat" SubOutputFormat="Blu-ray Disc (HD)" UsingCustomFilter="False" Version="6.0" Workflow="Disc\Blu-ray Authoring\MPEG-2">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptAC3 ">
+        <DataRate Value="640000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelMode5_1"/>
+        <ExtendedPluginSettings>
+            <EncoderMode Value="Dolby Digital"/>
+            <ChanneMapping Value="Preset 4:  L,  R,  C, LFE,  Ls,   Rs"/>
+            <DialogNormalization Value="-27"/>
+            <LineModeCompression1 Value="Film standard compression"/>
+            <LineModeCompression2 Value="Film standard compression"/>
+            <RfModeCompression1 Value="Film standard compression"/>
+            <RfModeCompression2 Value="Film standard compression"/>
+            <InputFiltering_DigitalDeemphasis Value="False"/>
+            <InputFiltering_DCFilter Value="True"/>
+            <BandwidthFilter Value="True"/>
+            <LFELowpassFilter Value="True"/>
+            <LFE Value="True"/>
+            <SurroundChannel_90DegreePhaseShift Value="False"/>
+            <SurroundChannel_3dBAttenuation Value="False"/>
+            <CenterMixLevelLtRt Value="-3.0 dB"/>
+            <CenterMixLevelLoRo Value="-3.0 dB"/>
+            <SurroundMixLevelLtRt Value="-3.0 dB"/>
+            <SurroundMixLevelLoRo Value="-3.0 dB"/>
+            <DolbySurroundMode Value="Not indicated"/>
+            <DolbySurroundEx Value="Not indicated"/>
+            <HeadphoneMode Value="Not indicated"/>
+            <ADConverter Value="Standard"/>
+            <Bitstream Value="Main audio service: complete main (CM)"/>
+            <MixingLevel Value="105"/>
+            <RoomType Value="Small room, flat monitor"/>
+            <BitstreamType Value="Independent"/>
+            <Metadata_OriginalMaterial Value="True"/>
+            <Metadata_CopyrightedMaterial Value="True"/>
+            <AutomaticSettingsProfile Value="Default"/>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MPEG2VideoCodec">
+        <SubOutputFormat Value="Blu-ray Disc (HD)"/>
+        <DataRate Value="32000000"/>
+        <FrameRate Value="59.94"/>
+        <OutputSize Height="720" Width="1280"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRate Value="12"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <DisplayMode Value="UnspecifiedDisplayMode"/>
+        <OutputStreamMode Value="SeparateOutputStreamMode"/>
+        <FieldEncodingMode Value="ProgressiveFieldEncodingMode"/>
+        <PixelAspectRatio Value="16x9PixelAspectRatio"/>
+        <PFrames Value="3"/>
+        <DataRateMin Value="27840000"/>
+        <DataRateMax Value="37760000"/>
+        <FeaturesFlag Value="32"/>
+        <ClosedGOPS Value="True"/>
+        <DropFrameTimeCode Value="False"/>
+        <ProfileId Value="Main"/>
+        <LevelId Value="High"/>
+        <ChromaId Value="4:2:0"/>
+        <MotionSearchMode Value="15"/>
+        <DoHalfPelSearch Value="1"/>
+        <EnableSearchPixelMovement Value="0"/>
+        <HorizontalSearchPixelMovement Value="0"/>
+        <VerticalSearchPixelMovement Value="0"/>
+        <NoiseSensitivity Value="5"/>
+        <PackOptionSize Value="312"/>
+        <PacketsPerPack Value="1"/>
+        <StartupDelayPack Value="0"/>
+        <StartupDelayVideo Value="0"/>
+        <StartupDelayAudio Value="0"/>
+        <Timestamps Value="0"/>
+        <PadVCDAudio Value="0"/>
+        <AlignSequenceHeaders Value="0"/>
+    </VideoCompressor>
+</Output>

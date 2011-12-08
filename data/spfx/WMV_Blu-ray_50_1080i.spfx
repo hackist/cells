@@ -1,0 +1,93 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="WMV_Blu-ray_50_1080i.spfx" Description="Recommended for use with Blu-ray authoring applications for interlaced source files having frame dimensions of 1920x1080 with 25fps." Id="334254080" IsLite="False" IsMBR="False" Name="Blu-ray_50_1080i" OutputFormat="WMVOutputFormat" SubOutputFormat="Blu-ray Disc HD (VC-1)" UsingCustomFilter="False" Version="6.0" Workflow="Disc\Blu-ray Authoring\VC-1">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptAC3 ">
+        <DataRate Value="640000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelMode5_1"/>
+        <ExtendedPluginSettings>
+            <EncoderMode Value="Dolby Digital"/>
+            <ChanneMapping Value="Preset 4:  L,  R,  C, LFE,  Ls,   Rs"/>
+            <DialogNormalization Value="-27"/>
+            <LineModeCompression1 Value="Film standard compression"/>
+            <LineModeCompression2 Value="Film standard compression"/>
+            <RfModeCompression1 Value="Film standard compression"/>
+            <RfModeCompression2 Value="Film standard compression"/>
+            <InputFiltering_DigitalDeemphasis Value="False"/>
+            <InputFiltering_DCFilter Value="True"/>
+            <BandwidthFilter Value="True"/>
+            <LFELowpassFilter Value="True"/>
+            <LFE Value="True"/>
+            <SurroundChannel_90DegreePhaseShift Value="False"/>
+            <SurroundChannel_3dBAttenuation Value="False"/>
+            <CenterMixLevelLtRt Value="-3.0 dB"/>
+            <CenterMixLevelLoRo Value="-3.0 dB"/>
+            <SurroundMixLevelLtRt Value="-3.0 dB"/>
+            <SurroundMixLevelLoRo Value="-3.0 dB"/>
+            <DolbySurroundMode Value="Not indicated"/>
+            <DolbySurroundEx Value="Not indicated"/>
+            <HeadphoneMode Value="Not indicated"/>
+            <ADConverter Value="Standard"/>
+            <Bitstream Value="Main audio service: complete main (CM)"/>
+            <MixingLevel Value="105"/>
+            <RoomType Value="Small room, flat monitor"/>
+            <BitstreamType Value="Independent"/>
+            <Metadata_OriginalMaterial Value="True"/>
+            <Metadata_CopyrightedMaterial Value="True"/>
+            <AutomaticSettingsProfile Value="Default"/>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptVC1 ">
+        <DataRate Value="25000000"/>
+        <FrameRate Value="25"/>
+        <OutputSize Height="1080" Width="1920"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <ExtendedPluginSettings>
+            <AspectRatio Value="16:9"/>
+            <SetKeyFrameAtSceneChange Value="True"/>
+            <MaxBitratePercent Value="133"/>
+            <FieldEncoding Value="Interlaced MBAFF"/>
+            <FieldOrder Value="Top Field First"/>
+            <Profile Value="Advanced"/>
+            <Level Value="3"/>
+            <NumberOfBPictures Value="0"/>
+            <MotionEstimationAlgorithm Value="Fast"/>
+            <SubPixelMotionEstimation Value="Full Pixel"/>
+            <MotionEstimationSearchRange Value="32"/>
+            <Use4MV Value="True"/>
+            <UseIntensityCompensation Value="True"/>
+            <UseVariableSizedTransformation Value="Off"/>
+            <WriteHRDParameter Value="True"/>
+            <WriteSeqEndCode Value="True"/>
+            <TimeStampOffset Value="0"/>
+            <FilmModeFramerateConversion Value="Off"/>
+            <UseDeblockingFilter Value="True"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

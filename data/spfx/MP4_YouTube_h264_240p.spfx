@@ -1,0 +1,85 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP4_YouTube_h264_240p.spfx" Description="Optimized output for YouTube upload of 240p source files." FavWorkflow="" Id="312912896" IsLite="False" IsMBR="False" Name="YouTube_h264_240p" OutputFormat="MP4OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Web\Destinations\YouTube\h264">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <DefaultSettingsProviderID Value="Beachfront"/>
+    <DefaultSettingsRecipientID Value="rmorford@sorensonmedia.com"/>
+    <DefaultSettingsID Value="MP4_768Kbps_YouTube.spfx"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <AddHintTrack Value="True"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="AACAudioCodec">
+        <DataRate Value="64000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptH264">
+        <DataRate Value="659968"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="240" Width="320"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="True"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeOnePassCBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="300"/>
+        <KeyFrameRateUnits Value="Frames"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MaxDataRatePercentEnable Value="True"/>
+        <MaxDataRatePercent Value="160"/>
+        <ExtendedPluginSettings>
+            <Performance Value="10"/>
+            <InterlaceMode Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <PixelAspectRatio Value="Square Pixels"/>
+            <Profile Value="High"/>
+            <AutoLevel Value="True"/>
+            <Level Value="3.1"/>
+            <HRDConformance Value="False"/>
+            <BitrateBuffer Value="82500"/>
+            <VBVBufferInitial Value="0"/>
+            <VBVBufferTarget Value="100"/>
+            <MaxIFrameSize Value="0"/>
+            <MaxPFrameSize Value="0"/>
+            <MaxBFrameSize Value="0"/>
+            <MaxBrFrameSize Value="0"/>
+            <IDRRate Value="1"/>
+            <FixedIFramesDistance Value="True"/>
+            <AdaptiveBFramePlacement Value="True"/>
+            <BFramePyramid Value="False"/>
+            <NumberOfBFrames Value="3"/>
+            <UseBSliceAsReference Value="False"/>
+            <NumberOfReferenceFrames Value="2"/>
+            <AdaptiveQuantBrightnessBase Value="0"/>
+            <AdaptiveQuantContrastBase Value="0"/>
+            <AdaptiveQuantComplexityBase Value="0"/>
+            <CABAC Value="CABAC"/>
+            <NumberOfSlices Value="0"/>
+            <BlackNormalizationLevel Value="True"/>
+            <ColorRangeAndCoeffients Value="Range 16-235, ITU-R Rec. BT.470-2"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

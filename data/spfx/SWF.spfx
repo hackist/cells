@@ -1,0 +1,75 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="SWF.xss" IsLite="False" IsMBR="False" Name="SWF" OutputFormat="SWFOutputFormat" SubOutputFormat="Adobe Flash 6+ (FLV)" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\SWF (Flash 6+)">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="False"/>
+    <UseCustomPlayerOptions Value="True"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="True"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="">
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="SWFOutputFormat">
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+        <BeginPlaybackEvent Value="True"/>
+        <BeginPlaybackEventMethod Value="BeginPlaybackEventAutoPlay"/>
+        <BeginPlaybackEventWaitXSeconds Value="1"/>
+        <EndPlaybackEventEnable Value="False"/>
+        <EndPlaybackEventMethod Value="EndPlaybackEventUnloadMovie"/>
+        <EndPlaybackEventMovieFileName Value="http://"/>
+        <EndPlaybackEventURL Value="http://"/>
+        <EndPlaybackEventURLTargetWindow Value="EventTargetWindowSelf"/>
+        <ClickPlaybackEventEnable Value="False"/>
+        <ClickPlaybackEventMethod Value="ClickPlaybackEventLoadMovie"/>
+        <ClickPlaybackEventMovieFileName Value="http://"/>
+        <ClickPlaybackEventURL Value="http://"/>
+        <ClickPlaybackEventURLTargetWindow Value="EventTargetWindowSelf"/>
+        <LoopPlaybackEventEnable Value="True"/>
+        <LoopPlaybackEventMethod Value="LoopPlaybackEventPlayOnceAndStop"/>
+        <LoopPlaybackEventLoopXTimes Value="2"/>
+        <PlaybackTemplateEnable Value="False"/>
+        <PlayerTemplateFileName Value=""/>
+        <PlayerTemplateFirstSliceOnlyEnable Value="False"/>
+        <StitchEnable Value="False"/>
+        <StitchFileSplitMode Value=""/>
+        <StitchFrameLimitConstraint Value="1"/>
+        <StitchFileSizeConstraint Value="1"/>
+        <VariableSetting Value="False"/>
+    </PlayerOptions>
+    <AudioCompressor codec="Fraunhofer MP3">
+        <DataRate Value="32000"/>
+        <SampleRate Value="22050"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeMono"/>
+        <CodecFourCC Value="1836253269"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="SPARKVideoCodec">
+        <DataRate Value="133000"/>
+        <FrameRate Value="-2"/>
+        <OutputSize Height="180" Width="240"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeSorensonTwoPassVBR"/>
+        <NumDisposableFrames Value="0"/>
+        <CompressionSpeed Value="0"/>
+        <DropFramesEnable Value="False"/>
+        <KeyFrameRate Value="30"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MinQualityEnable Value="False"/>
+        <MinQualityValue Value="50"/>
+        <ImageSmoothingEnable Value="False"/>
+    </VideoCompressor>
+</Output>

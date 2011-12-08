@@ -1,0 +1,88 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="SWF_F9_SWF_h264_512Kbps_288p.spfx" Description="h264 Flash player video for progressive download on average 3g network connections." Id="314232832" IsLite="False" IsMBR="False" Name="F9_SWF_h264_512Kbps_288p" OutputFormat="SWFOutputFormat" SubOutputFormat="Adobe Flash 9+ (MP4)" UsingCustomFilter="False" Version="6.0" Workflow="Web\Progressive Download\Adobe Flash Video\Flash Player (.swf)\F9 Progressive Download\h264">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="True"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <PlayerOptions Name="Aluminum" OutputFormat="SWFOutputFormat">
+        <UseLegacyTemplate Value="False"/>
+        <VideoLocation Value="LinkedVideo"/>
+        <PlaybackTemplateEnable Value="True"/>
+        <PlayerTemplateFileName Value="Aluminum.swf"/>
+        <PlayerTemplateFirstSliceOnlyEnable Value="False"/>
+    </PlayerOptions>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="AACAudioCodec">
+        <DataRate Value="96000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="Adobe Flash 9+ (MP4)"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptH264">
+        <DataRate Value="400000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="288" Width="512"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MaxDataRatePercentEnable Value="True"/>
+        <MaxDataRatePercent Value="160"/>
+        <ExtendedPluginSettings>
+            <Performance Value="10"/>
+            <InterlaceMode Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <PixelAspectRatio Value="Square Pixels"/>
+            <Profile Value="Baseline"/>
+            <AutoLevel Value="True"/>
+            <Level Value="2.1"/>
+            <HRDConformance Value="False"/>
+            <BitrateBuffer Value="80000"/>
+            <VBVBufferInitial Value="0"/>
+            <VBVBufferTarget Value="100"/>
+            <MaxIFrameSize Value="0"/>
+            <MaxPFrameSize Value="0"/>
+            <MaxBFrameSize Value="0"/>
+            <MaxBrFrameSize Value="0"/>
+            <IDRRate Value="1"/>
+            <FixedIFramesDistance Value="True"/>
+            <AdaptiveBFramePlacement Value="True"/>
+            <BFramePyramid Value="False"/>
+            <NumberOfBFrames Value="0"/>
+            <UseBSliceAsReference Value="False"/>
+            <NumberOfReferenceFrames Value="2"/>
+            <AdaptiveQuantBrightnessBase Value="0"/>
+            <AdaptiveQuantContrastBase Value="0"/>
+            <AdaptiveQuantComplexityBase Value="0"/>
+            <CABAC Value="CAVLC"/>
+            <NumberOfSlices Value="0"/>
+            <BlackNormalizationLevel Value="True"/>
+            <ColorRangeAndCoeffients Value="Range 16-235, ITU-R Rec. BT.470-2"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

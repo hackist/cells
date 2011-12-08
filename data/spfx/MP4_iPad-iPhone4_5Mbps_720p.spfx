@@ -1,0 +1,81 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP4_iPad-iPhone4_5Mbps_720p.spfx" Description="iPad, and iPhone 4/iPod touch with Retina Display and Apple TV. AVC Main Profilie." FavWorkflow="" Id="80199680" IsLite="False" IsMBR="False" Name="iPad-iPhone4_7Mbps_720p" OutputFormat="MP4OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Devices\Apple i-Devices">
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <AddHintTrack Value="False"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="AACAudioCodec">
+        <DataRate Value="160000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptH264">
+        <DataRate Value="3500000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="720" Width="1280"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="False"/>
+        <BitRateMode Value="BitRateModeTwoPassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="10"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MaxDataRatePercentEnable Value="True"/>
+        <MaxDataRatePercent Value="200"/>
+        <ExtendedPluginSettings>
+            <Performance Value="10"/>
+            <InterlaceMode Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <PixelAspectRatio Value="Square Pixels"/>
+            <Profile Value="Main"/>
+            <AutoLevel Value="False"/>
+            <Level Value="3.1"/>
+            <HRDConformance Value="False"/>
+            <BitrateBuffer Value="622343"/>
+            <VBVBufferInitial Value="0"/>
+            <VBVBufferTarget Value="622343"/>
+            <MaxIFrameSize Value="0"/>
+            <MaxPFrameSize Value="0"/>
+            <MaxBFrameSize Value="0"/>
+            <MaxBrFrameSize Value="0"/>
+            <IDRRate Value="1"/>
+            <FixedIFramesDistance Value="False"/>
+            <AdaptiveBFramePlacement Value="True"/>
+            <BFramePyramid Value="True"/>
+            <NumberOfBFrames Value="3"/>
+            <UseBSliceAsReference Value="False"/>
+            <NumberOfReferenceFrames Value="3"/>
+            <AdaptiveQuantBrightnessBase Value="0"/>
+            <AdaptiveQuantContrastBase Value="0"/>
+            <AdaptiveQuantComplexityBase Value="0"/>
+            <CABAC Value="CABAC"/>
+            <NumberOfSlices Value="0"/>
+            <BlackNormalizationLevel Value="True"/>
+            <ColorRangeAndCoeffients Value="Range 16-235, ITU-R Rec. BT.470-2"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

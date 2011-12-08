@@ -1,0 +1,35 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MP3.xss" IsLite="False" IsMBR="False" Name="MP3" OutputFormat="MP3OutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\MP3">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="False"/>
+    <UseCustomPlayerOptions Value="False"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="">
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="MP3OutputFormat">
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+    </PlayerOptions>
+    <AudioCompressor codec="Fraunhofer MP3">
+        <DataRate Value="256000"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <CodecFourCC Value="1836253269"/>
+        <PacketSizeEnable Value="False"/>
+        <PacketSize Value="1450"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+    </AudioCompressor>
+</Output>

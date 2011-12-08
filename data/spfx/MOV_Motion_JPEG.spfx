@@ -1,0 +1,49 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MOV_Motion_JPEG.spfx" Description="High data-rate, low-loss intermediate formate that is universally accessible.  " FavWorkflow="" Id="293636608" IsLite="False" IsMBR="False" Name="Motion_JPEG" OutputFormat="MOVOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="Editing\Offline Editing">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <AddHintTrack Value="False"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="appllpcm">
+        <DataRate Value="0"/>
+        <SampleRate Value="48000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="applmjpa">
+        <ExtendedSettings Value="00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 53 73 65 61 6E 00 00 00 01 00 00 00 03 00 00 00 00 00 00 00 15 66 69 65 6C 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 15 66 64 6F 6D 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 15 72 74 70 6A 00 00 00 01 00 00 00 00 00 00 00 00 00 "/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="240" Width="320"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="True"/>
+        <ExtendedPluginSettings>
+            <AutoKeyFrames Value="False"/>
+            <ForceKeyFrameEvery Value="300"/>
+            <ColorDepth Value="Color"/>
+            <DataRateAutomatic Value="True"/>
+            <Quality Value="80"/>
+            <FrameReordering Value="False"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

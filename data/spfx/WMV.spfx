@@ -1,0 +1,64 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="WMV.xss" IsLite="False" IsMBR="False" Name="WMV" OutputFormat="WMVOutputFormat" SubOutputFormat="WMV (VC-1)" UsingCustomFilter="False" Version="6.0" Workflow="FormatTemplates\WindowsMedia">
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <Notifications>
+    </Notifications>
+    <AudioCompressor codec="MCptMWMA">
+        <DataRate Value="128000"/>
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <SubOutputFormat Value="WMV (VC-1)"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+    <VideoCompressor codec="MCptVC1 ">
+        <DataRate Value="768000"/>
+        <FrameRate Value="-1"/>
+        <OutputSize Height="480" Width="480"/>
+        <MaintainSourceAspectRatioEnable Value="False"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <FrameSizeSameAsSourceEnable Value="True"/>
+        <BitRateMode Value="BitRateModeOnePassVBR"/>
+        <KeyFrameRateEnable Value="True"/>
+        <KeyFrameRate Value="2"/>
+        <KeyFrameRateUnits Value="Seconds"/>
+        <ExtendedPluginSettings>
+            <AspectRatio Value="16:9"/>
+            <SetKeyFrameAtSceneChange Value="True"/>
+            <MaxBitratePercent Value="150"/>
+            <FieldEncoding Value="Progressive"/>
+            <FieldOrder Value="Top Field First"/>
+            <Profile Value="Advanced"/>
+            <Level Value="1"/>
+            <NumberOfBPictures Value="1"/>
+            <MotionEstimationAlgorithm Value="Fast"/>
+            <SubPixelMotionEstimation Value="Quater Pixel"/>
+            <MotionEstimationSearchRange Value="32"/>
+            <Use4MV Value="True"/>
+            <UseIntensityCompensation Value="False"/>
+            <UseVariableSizedTransformation Value="Off"/>
+            <WriteHRDParameter Value="False"/>
+            <WriteSeqEndCode Value="False"/>
+            <TimeStampOffset Value="0"/>
+            <FilmModeFramerateConversion Value="Off"/>
+            <UseDeblockingFilter Value="True"/>
+        </ExtendedPluginSettings>
+    </VideoCompressor>
+</Output>

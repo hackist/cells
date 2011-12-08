@@ -1,0 +1,30 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="AAC_32kbit_32kHz_mono.spfx" Description="MPEG-4 Audio File with a .aac extension." FavWorkflow="" Id="650238976" IsLite="False" IsMBR="False" Name="AAC_32Kbps_32kHz_mono" OutputFormat="AACOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="6.0" Workflow="">
+    <CanBeResetToDefaultSettings Value="True"/>
+    <FileName Value=""/>
+    <UsingCustomFileName Value="False"/>
+    <OutputExt Value=""/>
+    <OutputAudExt Value=""/>
+    <OutputPrefix Value=""/>
+    <OutputSuffix Value=""/>
+    <UsePrefix Value="True"/>
+    <UseSuffix Value="True"/>
+    <Status Value="Ready"/>
+    <EncodeVideo Value="False"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="False"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <InOutPointsLocallyAssigned Value="False"/>
+    <InOutPointsEnable Value="False"/>
+    <AudioCompressor codec="SMI AAC+">
+        <DataRate Value="32000"/>
+        <SampleRate Value="32000"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeMono"/>
+        <SubOutputFormat Value="None"/>
+        <ExtendedPluginSettings>
+        </ExtendedPluginSettings>
+    </AudioCompressor>
+</Output>

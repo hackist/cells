@@ -1,0 +1,70 @@
+<!DOCTYPE squeeze_audience>
+<Output DefaultName="MOV.xss" IsLite="False" IsMBR="False" Name="MOV" OutputFormat="MOVOutputFormat" SubOutputFormat="None" UsingCustomFilter="False" Version="5.0" Workflow="FormatTemplates\QuickTime">
+    <FileName Value=""/>
+    <Status Value="Ready"/>
+    <UseCustomVideo Value="False"/>
+    <UseCustomAudio Value="False"/>
+    <UseCustomFilter Value="False"/>
+    <UseCustomPlayerOptions Value="False"/>
+    <UseCustomDestinations Value="Global"/>
+    <UseCustomMarkers Value="False"/>
+    <UseCustomMarkers Value="False"/>
+    <EncodeVideo Value="True"/>
+    <EncodeAudio Value="True"/>
+    <UsePreFilter Value="True"/>
+    <UsePlaybackConfiguration Value="False"/>
+    <UseFilesizeConstraint Value="False"/>
+    <FileSizeConstraint Value="0"/>
+    <Filter Name="">
+    </Filter>
+    <PlayerOptions Name="" OutputFormat="MOVOutputFormat">
+        <AddHintTrack Value="True"/>
+        <VideoLocation Value="LinkedFlv"/>
+        <LinkedFlvPath Value=""/>
+    </PlayerOptions>
+    <AudioCompressor codec="MPEG-4 Audio">
+        <SampleRate Value="44100"/>
+        <SampleSize Value="16"/>
+        <ChannelMode Value="ChannelModeStereo"/>
+        <CodecFourCC Value="1836069985"/>
+        <ExtendedSettings Value="00 00 00 0C 66 72 6D 61 6D 70 34 61 00 00 00 0C 6D 70 34 61 00 00 00 00 00 00 00 33 65 73 64 73 00 00 00 00 03 80 80 80 22 00 00 00 04 80 80 80 14 40 15 00 18 00 00 01 F4 00 00 01 F4 00 05 80 80 80 02 12 10 06 80 80 80 01 02 00 00 00 0C 73 72 63 71 60 00 00 00 00 00 00 0C 61 63 62 66 02 00 00 00 00 00 00 08 00 00 00 00 "/>
+    </AudioCompressor>
+    <VideoCompressor codec="SMISV3ProVideoCodec">
+        <DataRate Value="1024000"/>
+        <FrameRate Value="-2"/>
+        <OutputSize Height="480" Width="720"/>
+        <MaintainSourceAspectRatioEnable Value="True"/>
+        <LetterBoxOrPillarEnable Value="False"/>
+        <BitRateMode Value="BitRateModeOnePassCBR"/>
+        <NumberOfBFrames Value="2"/>
+        <CompressionSpeed Value="0"/>
+        <DropFramesEnable Value="False"/>
+        <KeyFrameRate Value="150"/>
+        <AutoKeyFrameEnable Value="True"/>
+        <AutoKeyFrameSensitivity Value="50"/>
+        <MinQualityEnable Value="False"/>
+        <MinQualityValue Value="0"/>
+        <ImageSmoothingEnable Value="True"/>
+        <MediaKeyEnable Value="False"/>
+        <MediaKey Value=""/>
+        <StreamingEnable Value="True"/>
+        <PacketSizeEnable Value="True"/>
+        <PacketSize Value="1425"/>
+        <BlockRefreshRateEnable Value="True"/>
+        <BlockRefreshRate Value="5"/>
+        <MaskingEnable Value="False"/>
+        <MaskingMethod Value="MaskingMethodRect"/>
+        <MaskingQuality Value="MaskingQualityHigh"/>
+        <MaskingSource Value="MaskingSourceInputVideo"/>
+        <MaskingFile Value=""/>
+        <MaskingRGB Blue="0" Green="0" Red="0"/>
+        <MaskingColorSpread Value="40"/>
+        <MaskingMaxOpacity Value="255"/>
+        <FeatherEffectsEnable Value="False"/>
+        <FeatherDistance Value="0"/>
+        <WatermarkEnable Value="False"/>
+        <WatermarkPosition Value="WatermarkPositionLowerRight"/>
+        <WatermarkOffset Value="10"/>
+        <WatermarkOpacity Value="50"/>
+    </VideoCompressor>
+</Output>
