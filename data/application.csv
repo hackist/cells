@@ -1,0 +1,289 @@
+id,_name,path,version,runtime_environment,info,lastModified
+1,Firefox,/Applications/36ff.app,3.6.24,universal,"Firefox 3.6.24, © 1998-2011 Contributors",2011-11-10T23:28:56Z
+2,Firefox,/Applications/4ff.app,4.0.1,arch_x86,Firefox 4.0.1,2011-05-12T01:37:51Z
+3,AP Grapher,/Applications/AP Grapher.app,1.2,universal,1.2,2007-11-02T23:05:09Z
+4,ASDictionary,/Applications/ASDictionary.app,0.11.1,universal,,2008-11-23T23:04:22Z
+5,Address Book,/Applications/Address Book.app,4.1.2,universal,"4.1, Copyright Apple Inc. 2002-2007",2009-08-20T10:28:54Z
+6,Acrobat Distiller,/Applications/Adobe Acrobat 8 Professional/Acrobat Distiller.app,8.0.0,universal,"Acrobat Distiller™ 8.0.0, 1984-2006 Adobe Systems Incorporated. All rights reserved.",2008-05-21T06:35:21Z
+7,Acrobat Uninstaller,/Applications/Adobe Acrobat 8 Professional/Acrobat Uninstaller.app,Acrobat Uninstaller version 8.0.0,universal,"Acrobat Uninstaller version 8.0.0, Copyright © 2004-2006 by Adobe Systems, Incorporated.  All rights reserved.",2008-05-21T06:35:29Z
+8,Adobe Acrobat Professional,/Applications/Adobe Acrobat 8 Professional/Adobe Acrobat Professional.app,8.0.0,universal,"Adobe® Acrobat® 8.0.0, ©1984-2006 Adobe Systems Incorporated. All rights reserved.",2008-05-21T06:35:11Z
+9,Adobe Help Viewer 1.0,/Applications/Adobe Help Viewer 1.0.app,1.0,universal,1.0.0.185,2009-12-30T04:15:03Z
+10,AppleScript Utility,/Applications/AppleScript/AppleScript Utility.app,1.1,universal,,2008-05-31T09:59:03Z
+11,Folder Actions Setup,/Applications/AppleScript/Folder Actions Setup.app,1.1.2,universal,,2008-05-31T10:35:11Z
+12,Script Editor,/Applications/AppleScript/Script Editor.app,2.2.1,universal,,2008-06-09T13:35:56Z
+13,Aquamacs,/Applications/Aquamacs Emacs 22.app,22,universal,Aquamacs Emacs 22,2009-09-30T01:34:27Z
+14,Art Text,/Applications/Art Text 2.app,320,universal,,2009-09-08T09:24:43Z
+15,Audacity,/Applications/Audacity.app,1.3.6,universal,Audacity version 1.3.6,2008-10-25T11:48:24Z
+16,Automator,/Applications/Automator.app,2.0.4,universal,"Automator version 2.0.4, Copyright 2004-2009 Apple Inc.",2009-08-20T10:28:54Z
+17,蓝迪游戏,/Applications/BlueDJGames/Hall.app,,universal,,2007-10-13T20:49:18Z
+18,UpdateHall,/Applications/BlueDJGames/UpdateHall.app,,universal,Created by Qt/QMake,2007-10-13T20:49:18Z
+19,Bonjour Browser,/Applications/Bonjour Browser.app,1.5.6,universal,,2006-07-18T06:00:10Z
+20,Calculator,/Applications/Calculator.app,4.2,universal,"4.2, Copyright © 2000-2007 Apple Inc.",2008-10-23T09:58:54Z
+21,Chess,/Applications/Chess.app,2.4.1,universal,"2.4.1, Copyright 2003-2008 Apple Inc.",2008-11-13T07:47:38Z
+22,Chicken of the VNC,/Applications/Chicken of the VNC.app,2.0b4,universal,"Chicken of the VNC version 2.0b4, Copyright 2002-2006 Geekspiff.",2008-06-06T09:53:38Z
+23,Chmox,/Applications/Chmox.app,0.4ß,universal,,2011-03-19T07:47:54Z
+24,Colloquy,/Applications/Colloquy.app,2.2.1,universal,"Colloquy 2.2.1; Copyright © 2003-2009, Timothy Hatcher",2009-01-09T18:03:54Z
+25,Comic Life,/Applications/Comic Life.app,1.2.4 (v554),universal,,2007-04-28T06:35:30Z
+26,Copernicus,/Applications/Copernicus.app,1.5.2,universal,"1.5.2, ©Danicsoft 2003-2007",2007-03-08T05:02:12Z
+27,DVD Player,/Applications/DVD Player.app,5.1.1,universal,"5.1.1, Copyright © 2001-2009 by Apple Inc.  All Rights Reserved.",2009-04-16T21:29:17Z
+28,DarwiinRemote,/Applications/DarwiinRemote.app,0.5,universal,"DarwiinRemote 0.5, Copyright 2006 Hiroaki",2007-03-07T16:36:32Z
+29,Dashboard,/Applications/Dashboard.app,1.1,universal,,2009-08-20T10:28:54Z
+30,Library,/Applications/Delicious Library.app,1.6.4,universal,,2007-06-23T10:44:49Z
+31,Dictionary,/Applications/Dictionary.app,2.0.3,universal,"2.0.3, Copyright © 2005-2009 Apple Inc.",2011-06-29T09:16:10Z
+32,Disk Inventory X,/Applications/Disk Inventory X.app,1.0,universal,,2006-03-27T20:09:12Z
+33,Dropbox,/Applications/Dropbox.app,Dropbox 0.7.110,universal,,2008-09-26T07:20:48Z
+34,Etoys 4.1,/Applications/Etoys 4.1.app,4.1.1,universal,"Etoys 4.1.1 (2390), VM 4.2.4b1",2011-01-11T03:33:48Z
+35,Expose,/Applications/Expose.app,1.0,universal,,2009-08-20T10:28:54Z
+36,Fennec,/Applications/Fennec.app,4.0.1,arch_x86,Fennec 4.0.1,2011-04-15T23:47:05Z
+37,FinkCommander,/Applications/FinkCommander.app,0.5.4,arch_ppc,,2005-07-05T10:24:25Z
+38,Font Book,/Applications/Font Book.app,2.1,universal,"2.1, Copyright © 2003-2007 Apple Inc.",2008-06-16T23:14:42Z
+39,Front Row,/Applications/Front Row.app,1.0,universal,,2009-08-20T10:28:54Z
+40,GIMP,/Applications/GIMP.app,389,universal,,2006-01-17T08:58:10Z
+41,Google,/Applications/Google,,,,2010-03-21T23:35:54Z
+42,Chrome,/Applications/Google Chrome.app,15.0.874.121,arch_x86,,2011-11-14T23:39:25Z
+43,Google Earth,/Applications/Google Earth.app,4.3,universal,4.3.7284.3916,2008-07-09T01:44:39Z
+44,Google Updater,/Applications/Google Updater.app,1.0.7,universal,"Google Updater 1.0.7.543, © 2005-2007 Google Inc.",2007-10-19T22:15:14Z
+45,GoogleChrome,/Applications/GoogleChrome.app,,,,2010-04-14T02:03:40Z
+46,Graphviz,/Applications/Graphviz.app,2.26,universal,,2011-03-05T10:42:30Z
+47,HandBrake,/Applications/HandBrake.app,0.9.5 i386,arch_x86,2011010300,2011-01-03T17:54:20Z
+48,Image Capture,/Applications/Image Capture.app,4.0,universal,"4.0, © Copyright 2000-2007 Apple Inc., all rights reserved.",2009-08-20T10:28:54Z
+49,Image Tricks,/Applications/Image Tricks.app,2.4.1,universal,,2009-09-18T03:40:00Z
+50,ImageLobe,/Applications/ImageLobe.app,2.1 (v24),universal,,2009-08-29T18:54:55Z
+51,KeyCastr,/Applications/KeyCastr.app,0.8.0,universal,,2009-02-26T02:45:50Z
+52,Last.fm,/Applications/Last.fm.app,1.5.4,universal,,2009-03-19T19:50:06Z
+53,MPlayer OSX,/Applications/MPlayer OSX.app,1.0pre8,universal,,2007-12-28T01:25:17Z
+54,MacDjView,/Applications/MacDjView.app,0.1.2,universal,,2011-02-02T16:41:00Z
+55,Mail,/Applications/Mail.app,3.6,universal,,2009-08-20T10:28:54Z
+56,AutoUpdate,/Applications/Microsoft AutoUpdate.app,040402,arch_ppc,"1.1.0 (040402), ©2003 Microsoft Corporation.  All rights reserved.",2004-04-02T23:48:35Z
+57,Microsoft Messenger,/Applications/Microsoft Messenger.app,6.0.3,universal,"6.0.3 (070803), © 2006 Microsoft Corporation. All rights reserved.",2007-08-03T07:00:00Z
+58,Handheld Sync Installer,/Applications/Microsoft Office 2004/Additional Tools/Handheld Sync Installer,1.0.1,arch_ppc,,2007-06-18T16:57:30Z
+59,Remove Office,/Applications/Microsoft Office 2004/Additional Tools/Remove Office/Remove Office,11.0.0,arch_ppc,"11.0.0 (040322), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+60,Microsoft Entourage,/Applications/Microsoft Office 2004/Microsoft Entourage,11.0.0,arch_ppc,"11.0.0 (040405), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+61,Microsoft Excel 11.0,/Applications/Microsoft Office 2004/Microsoft Excel 11.0.0,11.0.0,arch_ppc,"11.0.0 (040329), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+62,Microsoft PowerPoint,/Applications/Microsoft Office 2004/Microsoft PowerPoint,11.0.0,arch_ppc,"11.0.0 (040330), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+63,Microsoft Word,/Applications/Microsoft Office 2004/Microsoft Word,11.0.0,arch_ppc,"11.0.0 (040408), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+64,Alerts Daemon,/Applications/Microsoft Office 2004/Office/Alerts Daemon.app,040322,arch_ppc,"11.0.0 (040322), ©2004 Microsoft Corporation.  All rights reserved.",2007-06-18T16:59:52Z
+65,Database Utility,/Applications/Microsoft Office 2004/Office/Database Utility,11.0.0,arch_ppc,"11.0.0 (040331), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+66,Cert Manager,/Applications/Microsoft Office 2004/Office/Microsoft Cert Manager.app,040322,arch_ppc,"1.0.0 (040322), ©2004 Microsoft Corporation.  All rights reserved.",2007-06-18T17:00:52Z
+67,Microsoft Clip Gallery,/Applications/Microsoft Office 2004/Office/Microsoft Clip Gallery,11.0.0,arch_ppc,"11.0.0 (040322), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+68,Microsoft Database Daemon,/Applications/Microsoft Office 2004/Office/Microsoft Database Daemon,11.0.0,arch_ppc,"11.0.0 (040326), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+69,Microsoft Error Reporting,/Applications/Microsoft Office 2004/Office/Microsoft Error Reporting.app,040329,arch_ppc,"1.0.0 (040329), ©2004 Microsoft Corporation.  All rights reserved.",2007-06-18T17:00:56Z
+70,Microsoft Graph,/Applications/Microsoft Office 2004/Office/Microsoft Graph,11.0.0,arch_ppc,"11.0.0 (040325), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+71,Microsoft Office Notifications,/Applications/Microsoft Office 2004/Office/Microsoft Office Notifications,11.0.0,arch_ppc,"11.0.0 (040322), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+72,Microsoft Query,/Applications/Microsoft Office 2004/Office/Microsoft Query,10.0.0,arch_ppc,10.0.0 (1204)  Copyright 1995-2002 Microsoft Corporation.  All rights reserved.,2004-04-21T07:00:00Z
+73,Organization Chart,/Applications/Microsoft Office 2004/Office/Organization Chart,11.0.0,arch_ppc,"11.0.0 (040322), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+74,Project Gallery Launcher,/Applications/Microsoft Office 2004/Office/Project Gallery Launcher,11.0.0,arch_ppc,"11.0.0 (040322), © 2004 Microsoft Corporation.  All rights reserved.",2004-04-21T07:00:00Z
+75,Silverlight Preferences,/Applications/Microsoft Silverlight,4.0,arch_x86,4.0.60531.0,2011-06-17T06:17:39Z
+76,Minefield,/Applications/Minefield.app,3.6a1pre,universal,"Minefield 3.6a1pre, © 1998-2009 Contributors",2009-06-09T11:08:01Z
+77,Miro,/Applications/Miro.app,3.0.3,universal,"3.0.3 (http://git.participatoryculture.org/miro - 25bd61d5), Copyright (c) 2005-2010 Participatory Culture Foundation",2010-07-26T14:51:02Z
+78,script,/Applications/Mozart.app,1.4.0,universal,script 1.4.0 Copyright 2008 Gustavo Gutierrez &lt;ggutierrez@cic.puj.edu.co&gt;,2008-07-07T11:18:12Z
+79,MySQL Administrator,/Applications/MySQL Tools/MySQL Administrator.app,1.2.12,universal,,2007-05-10T16:19:33Z
+80,MySQL Query Browser,/Applications/MySQL Tools/MySQL Query Browser.app,1.2.12,universal,,2007-05-10T16:21:33Z
+81,NeoOffice,/Applications/NeoOffice.app,2.2.1,arch_x86,NeoOffice® 2.2.1 Patch 0,2007-10-13T18:02:20Z
+82,Octave.app,/Applications/Octave.app,3.0.3,universal,Octave.app 3.0.3 Copyright 2008 John W. Eaton,2008-11-01T13:45:29Z
+83,OmniOutliner,/Applications/OmniOutliner.app,3.5,universal,"OmniOutliner 3.5, version 134.3, Copyright 2000-2005 The Omni Group",2007-04-28T06:35:41Z
+84,Pacifist,/Applications/Pacifist/Pacifist.app,2.6.4,universal,Pacifist 2.5.3 © 2001-2009 Charles Srstka.,2010-01-24T00:34:35Z
+85,Parallels Desktop,/Applications/Parallels/Parallels Desktop.app,3.0,arch_x86,"Parallels Desktop 3.0 Build 4128.0, Copyright 2005-2007 Parallels Software International, Inc.",2007-06-09T16:10:19Z
+86,Parallels Explorer,/Applications/Parallels/Parallels Explorer.app,3.0,arch_x86,"Parallels Explorer 3.0 Build 4128, Copyright 2005-2007, Parallels Software International, Inc.",2007-06-09T16:28:00Z
+87,Parallels Transporter,/Applications/Parallels/Parallels Transporter.app,1240,arch_x86,"Parallels Transporter 3.0 Build 1240, Copyright 2005-2007, Parallels Software International, Inc.",2007-06-09T16:27:59Z
+88,Photo Booth,/Applications/Photo Booth.app,2.0.3,universal,,2008-09-12T04:25:54Z
+89,Picasa Web Albums Uploader,/Applications/Picasa Web Albums Uploader.app,1.4.0,universal,"Picasa Web Albums Uploader 1.4.0.1284, © 2005-2010 Google Inc.",2010-12-03T01:39:52Z
+90,Preview,/Applications/Preview.app,4.2,universal,"4.1, Copyright 2002-2008 Apple Inc.",2009-02-06T08:42:33Z
+91,PwnageTool,/Applications/PwnageTool.app,2.2,universal,,2008-11-22T19:49:11Z
+92,QuickTime Player,/Applications/QuickTime Player.app,7.7,universal,"7.7, Copyright © 1989-2011 Apple Inc. All Rights Reserved",2011-10-11T10:43:44Z
+93,Quıcĸsıɩⅴεʀ,/Applications/Quicksilver.app,3815,universal,"Copyright ©2000-2005 Blacktree, Inc.",2007-11-15T04:08:04Z
+94,R,/Applications/R.app,R 2.12.1 GUI 1.35 Leopard build 32-bit,universal,,2009-02-27T23:11:02Z
+95,R64,/Applications/R64.app,R 2.12.1 GUI 1.35 Leopard build 64-bit,,,2011-02-17T15:02:32Z
+96,RealPlayer,/Applications/RealPlayer.app,10.0.0,arch_ppc,"10.0.0, RealPlayer for Mac OS X ¨, © 1995-2004 RealNetworks, Inc. (build 331)",2005-05-27T18:13:15Z
+97,Safari,/Applications/Safari.app,5.0.6,universal,"5.0.6, Copyright © 2003-2011 Apple Inc.",2011-08-02T13:27:04Z
+98,Second Life,/Applications/Second Life.app,1.23.5.136262,universal,,2009-10-14T18:50:49Z
+99,QTSS Web Admin,/Applications/Server/QTSS Web Admin.app,6.0.0,universal,Executes the web admin on port 1220,2011-01-22T19:51:21Z
+100,Spaces,/Applications/Spaces.app,1.0,universal,,2009-08-20T10:28:54Z
+101,Squeeze,/Applications/SqzTrial/Squeeze.app,7.2,arch_x86,"Sorenson Squeeze 8.0 Copyright Sorenson Media, Inc. 2001-2011",2011-10-31T05:36:52Z
+102,Stickies,/Applications/Stickies.app,6.0,universal,"6.0, Copyright Apple Computer, Inc. 1999-2005",2008-05-31T09:53:11Z
+103,Expander,/Applications/StuffIt 11/StuffIt Expander.app,11.0,universal,"11.0 (Build 522), Copyright 1990-2006 Allume Systems, Inc.",2006-09-21T12:37:33Z
+104,System Preferences,/Applications/System Preferences.app,5.2,universal,"5.0, Copyright © 2000-2007 Apple Inc.",2008-10-16T23:40:31Z
+105,BibDesk,/Applications/TeX/BibDesk.app,1.5.3,universal,,2011-01-24T00:19:15Z
+106,Excalibur,/Applications/TeX/Excalibur-4.0.7/Excalibur.app,4.0.7,universal,4.0.7,2011-01-24T00:19:15Z
+107,LaTeXiT,/Applications/TeX/LaTeXiT.app,2.3.0,universal,,2011-01-24T00:19:15Z
+108,TeX Live Utility,/Applications/TeX/TeX Live Utility.app,0.91,universal,,2010-11-19T02:33:20Z
+109,TeXShop,/Applications/TeX/TeXShop.app,2.37,universal,"2.37, Copyright 2001-2007, Richard Koch",2011-01-24T00:19:15Z
+110,TeXworks,/Applications/TeX/TeXworks.app,0.2.3 (r.466),universal,TeXworks version 0.2.3 (r.466),2011-01-24T00:19:15Z
+111,TextEdit,/Applications/TextEdit.app,1.5,universal,,2008-05-31T09:49:09Z
+112,Time Machine,/Applications/Time Machine.app,1.0,universal,,2009-08-20T10:28:54Z
+113,UVocabNetPlugin,/Applications/UVocabNetPlugin.app,v1,arch_x86,"v1, 2011 @ DaoChong CO.",2011-11-24T08:20:38Z
+114,Activity Monitor,/Applications/Utilities/Activity Monitor.app,10.5,universal,"10.5, © 2002-2007 Apple Computer Inc. All Rights Reserved.",2008-05-31T11:12:06Z
+115,Adobe AIR Application Installer,/Applications/Utilities/Adobe AIR Application Installer.app,2.5.1,arch_x86,Adobe AIR 2.5.1,2010-12-11T10:05:18Z
+116,Adobe AIR Uninstaller,/Applications/Utilities/Adobe AIR Uninstaller.app,2.5.1,arch_x86,Adobe AIR 2.5.1,2010-12-01T22:38:37Z
+117,Adobe Updater,/Applications/Utilities/Adobe Utilities.localized/Adobe Updater5/Adobe Updater.app,Adobe Updater 5.1.0.1069,universal,"Adobe Updater 5.1.0.1069, Copyright � 2002-2007 by Adobe Systems Incorporated. All rights reserved.",2008-05-21T06:30:10Z
+118,ExtendScript Toolkit 2,/Applications/Utilities/Adobe Utilities.localized/ExtendScript Toolkit 2/ExtendScript Toolkit 2.app,2.0.0 . 55,universal,"2.0.0 . 55 , Copyright © 2007 Adobe Systems Incorporated",2008-05-21T06:32:30Z
+119,AirPort Utility,/Applications/Utilities/AirPort Utility.app,5.5.3,universal,"5.5.3, Copyright 2001-2011 Apple Inc.",2011-06-29T09:16:10Z
+120,Audio MIDI Setup,/Applications/Utilities/Audio MIDI Setup.app,2.2.2,universal,"2.2.2, Copyright 2002-2007 Apple, Inc.",2008-05-31T09:54:19Z
+121,Bluetooth File Exchange,/Applications/Utilities/Bluetooth File Exchange.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+122,Bluetooth Firmware Update,/Applications/Utilities/Bluetooth Firmware Update.app,2.0,arch_x86,,2009-08-20T10:28:54Z
+123,Boot Camp Assistant,/Applications/Utilities/Boot Camp Assistant.app,2.0,universal,"Boot Camp Assistant 2.0, Copyright © 2007 Apple Inc. All rights reserved",2008-06-09T23:58:40Z
+124,Built-In Keyboard Firmware Update,/Applications/Utilities/Built-In Keyboard Firmware Update.app,1.0.1,arch_x86,,2009-05-20T23:13:48Z
+125,ColorSync Utility,/Applications/Utilities/ColorSync Utility.app,4.5,universal,"4.5, © Copyright 2007 Apple Inc.",2011-06-29T09:16:10Z
+126,Console,/Applications/Utilities/Console.app,10.5.6,universal,"10.5, Copyright © 1998-2007 Apple Inc.",2008-06-13T23:29:28Z
+127,DigitalColor Meter,/Applications/Utilities/DigitalColor Meter.app,3.6.1,universal,"3.6.1, � Copyright 2001-2007 Apple Computer Inc. All Rights Reserved.",2008-05-31T11:09:46Z
+128,Directory Utility,/Applications/Utilities/Directory Utility.app,2.0.1,universal,"2.0.1, Copyright © 2001–2008 Apple Inc.",2009-08-20T10:28:54Z
+129,Directory,/Applications/Utilities/Directory.app,1.0.3,universal,,2007-08-14T21:41:58Z
+130,Disk Utility,/Applications/Utilities/Disk Utility.app,11.1,universal,"Disk Utility Version 11.1, Copyright © 1999-2008 Apple Inc. All rights reserved.",2008-07-30T01:47:27Z
+131,Grab,/Applications/Utilities/Grab.app,1.4,universal,,2008-05-31T09:40:07Z
+132,Grapher,/Applications/Utilities/Grapher.app,2.0,universal,,2007-06-19T22:19:20Z
+133,HHKB Lite2 for Mac,/Applications/Utilities/HHKeyboard for X.app,2.0.2,universal,"2.0.2, © 2007 PFU LIMITED.",2008-06-22T14:46:30Z
+134,Java Preferences,/Applications/Utilities/Java Preferences.app,12.9.0,universal,,2011-06-29T09:16:10Z
+135,Keychain Access,/Applications/Utilities/Keychain Access.app,4.0.2,universal,,2009-03-20T03:03:10Z
+136,MacBook EFI Firmware Update,/Applications/Utilities/MacBook EFI Firmware Update.app,1.1,universal,,2009-06-04T03:29:50Z
+137,Migration Assistant,/Applications/Utilities/Migration Assistant.app,1.2.4,universal,,2011-10-11T10:43:44Z
+138,Network Utility,/Applications/Utilities/Network Utility.app,1.4.5,universal,"Network Utility Version 1.4.5, Copyright © 2000-2007 Apple Inc. All rights reserved.",2008-05-31T10:03:57Z
+139,ODBC Administrator,/Applications/Utilities/ODBC Administrator.app,1.1.0,universal,,2007-07-05T19:20:18Z
+140,Podcast Capture,/Applications/Utilities/Podcast Capture.app,1.0.3,universal,"1.0.3, Copyright © 2007-2008 Apple Inc.",2008-10-23T10:39:53Z
+141,RAID Utility,/Applications/Utilities/RAID Utility.app,1.0.3,universal,"RAID Utility 1.0 (57), Copyright © 2007-2009 Apple Inc.",2009-08-20T10:28:54Z
+142,Remote Install Mac OS X,/Applications/Utilities/Remote Install Mac OS X.app,1.1,universal,"Remote Install Mac OS X 1.1, Copyright © 2007-2008 Apple Inc. All rights reserved",2008-11-20T00:01:26Z
+143,System Profiler,/Applications/Utilities/System Profiler.app,10.5.7,universal,"10.5.0, Copyright 1997-2007 Apple, Inc.",2009-02-16T04:01:37Z
+144,Terminal,/Applications/Utilities/Terminal.app,2.0.2,universal,"2.0.2, © 1995-2007 Apple Computer Inc. All Rights Reserved.",2009-02-06T07:53:39Z
+145,VoiceOver Utility,/Applications/Utilities/VoiceOver Utility.app,2.1,universal,"2.1, Copyright © 2004-2008 Apple Computer Inc., All Rights Reserved",2008-05-31T10:23:55Z
+146,X11,/Applications/Utilities/X11.app,2.1.6,,X11,2009-02-27T02:26:25Z
+147,VLC,/Applications/VLC.app,1.0.3,universal,VLC media player - version 1.0.3 Goldeneye - (c),2009-11-01T15:29:55Z
+148,VMware Fusion,/Applications/VMware Fusion.app,2.0.6,arch_x86,,2009-10-18T06:41:22Z
+149,VirtualBox,/Applications/VirtualBox.app,2.1.4,arch_x86,"VirtualBox 2.1.4, © 2007-2008 Sun Microsystems, Inc.",2009-02-23T06:48:51Z
+150,WebKit,/Applications/WebKit.app,r97664,arch_x86,"r97664, Copyright 2005-2009 Apple Inc.",2011-10-18T00:12:07Z
+151,Wolfram CDF Player,/Applications/Wolfram CDF Player.app,8.0.1.2078136,arch_x86,"Wolfram CDF Player 8.0.1 [2078136]  Copyright 1988-2011 Wolfram Research, Inc.",2011-06-19T02:09:19Z
+152,X-Lite,/Applications/X-Lite.app,3.0 47051,universal,"X-Lite 3.0 build 47051, (c) 2006 CounterPath Solutions Inc. All rights reserved.",2008-03-27T23:01:44Z
+153,XaoS,/Applications/XaoS.app,3.5,universal,,2011-02-06T14:27:11Z
+154,alan_kay_iphone,/Applications/alan_kay_iphone.app,1.0,universal,alan_kay_iphone 1.0 Copyright 2011 bartuer,2011-10-10T08:50:21Z
+155,browser_tile,/Applications/browser_tile.app,1.0,universal,browser_tile 1.0 Copyright 2009 bartuer,2009-09-21T07:13:43Z
+156,change album,/Applications/change album.app,1.0,universal,,2009-03-16T03:55:54Z
+157,conference_iphone,/Applications/conference_iphone.app,1.0,universal,conference_iphone 1.0 Copyright 2011 bartuer,2011-10-10T08:45:06Z
+158,draft,/Applications/draft.app,,universal,,2011-02-27T14:07:38Z
+159,ff_only,/Applications/ff_only.app,1.0,universal,ff_only 1.0 Copyright 2009 bartuer,2009-09-11T21:41:40Z
+160,ff_safari,/Applications/ff_safari.app,1.0,universal,ff_safari 1.0 Copyright 2009 bartuer,2009-09-10T02:09:07Z
+161,ff,/Applications/ffff.app,1.0,universal,ff 1.0 Copyright 2009 bartuer,2009-08-26T05:12:19Z
+162,iCal,/Applications/iCal.app,3.0.8,universal,"3.0.7, Copyright 2002-2009 Apple Inc.",2009-08-20T10:28:54Z
+163,iChat,/Applications/iChat.app,4.0.9,universal,"4.0.8, Copyright © 2002-2009 Apple Inc. All rights reserved. The Running Man logo is a trademark of AOL, LLC.",2011-06-29T09:16:10Z
+164,iDVD,/Applications/iDVD.app,6.0.4,universal,"iDVD 6.0.4, Copyright � 2001-2006 Apple Inc.",2007-12-16T03:34:12Z
+165,iMovie HD,/Applications/iMovie HD.app,6.0.3,universal,"6.0.3, © Apple Computer, Inc., 1999–2006",2007-04-28T06:56:12Z
+166,iPhoto,/Applications/iPhoto.app,6.0.6,universal,"iPhoto 6.0.6, Copyright © 2002-2007 Apple Inc.",2007-06-24T02:07:54Z
+167,iShowU,/Applications/iShowU.app,1.75,universal,,2009-09-23T05:43:13Z
+168,iSync,/Applications/iSync.app,3.0.2,universal,"3.0.2, Copyright © 2003-2008 Apple Inc.",2008-05-31T10:29:31Z
+169,iTunes,/Applications/iTunes.app,10.5.1,universal,"iTunes 10.5.1, © 2000-2011 Apple Inc. All rights reserved.",2011-11-22T05:28:35Z
+170,iWeb,/Applications/iWeb.app,1.1.2,universal,"1.1.2, Copyright 2006 Apple Computer, Inc.",2007-04-28T06:49:52Z
+171,Keynote,/Applications/iWork '06/Keynote.app,3.0.2,universal,"3.0.2, Copyright 2006 Apple Computer, Inc.",2007-06-24T02:07:53Z
+172,Pages,/Applications/iWork '06/Pages.app,2.0.2,universal,"2.0.2, Copyright 2006 Apple Computer Inc.",2007-06-24T02:07:53Z
+173,macsclient,/Applications/macsclient.app,1.0,universal,macsclient 1.0 Copyright 2009 bartuer,2009-03-11T03:57:47Z
+174,mit-scheme,/Applications/mit-scheme.app,9.0,arch_x86,release 9.0,2011-03-17T22:54:42Z
+175,month30,/Applications/month30_iphone.app,1.0,universal,month30 1.0 Copyright 2011 bartuer,2011-10-10T08:06:31Z
+176,osx2x,/Applications/osx2x.app,2.4,universal,,2009-11-05T23:20:34Z
+177,pause_mplayer,/Applications/pause_mplayer.app,1.0,universal,,2009-03-10T07:05:19Z
+178,pdfn,/Applications/pdfn.app,1.0,universal,pdfn 1.0 Copyright 2009 bartuer,2009-04-26T05:35:57Z
+179,pdfp,/Applications/pdfp.app,1.0,universal,pdfp 1.0 Copyright 2009 bartuer,2009-04-26T05:35:02Z
+180,safari_only,/Applications/safari_only.app,1.0,universal,safari_only 1.0 Copyright 2009 bartuer,2009-09-11T21:44:02Z
+181,sshfs-mount-ayame-photo,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-mount-ayame-photo.app,,,,2009-01-18T12:46:27Z
+182,sshfs-mount-ayame,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-mount-ayame.app,,,,2009-01-18T12:46:27Z
+183,sshfs-mount-const,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-mount-const.app,,,,2009-01-18T12:46:27Z
+184,sshfs-mount-gardenia.tkym.org-tekezo,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-mount-gardenia.tkym.org-tekezo.app,,,,2009-01-18T12:46:27Z
+185,sshfs-umount-ayame-photo,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-umount-ayame-photo.app,,,,2009-01-18T12:46:27Z
+186,sshfs-umount-ayame,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-umount-ayame.app,,,,2009-01-18T12:46:27Z
+187,sshfs-umount-const,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-umount-const.app,,,,2009-01-18T12:46:27Z
+188,sshfs-umount-gardenia.tkym.org-tekezo,/Applications/sshfs/extra/mountHelper/makeApp/test/sshfs-umount-gardenia.tkym.org-tekezo.app,,,,2009-01-18T12:46:27Z
+189,touch,/Applications/touch_iphone.app,1.0,universal,touch 1.0 Copyright 2011 bartuer,2011-10-10T08:40:15Z
+190,update_browser,/Applications/update_browser.app,1.0,universal,,2009-03-10T02:34:31Z
+191,xdev,/Applications/xdev.app,1.0,universal,xdev 1.0 Copyright 2009 bartuer,2009-05-08T14:08:12Z
+192,xcode_help,/Applications/xhelp.app,1.0,universal,xcode_help 1.0 Copyright 2009 bartuer,2009-05-08T10:08:47Z
+193,xcode_read,/Applications/xread.app,1.0,universal,xcode_read 1.0 Copyright 2009 bartuer,2009-05-10T02:54:03Z
+194,xcode_read,/Applications/xread1.app,1.0,universal,xcode_read 1.0 Copyright 2009 bartuer,2009-05-08T13:43:46Z
+195,xrun,/Applications/xrun.app,1.0,universal,xrun 1.0 Copyright 2009 bartuer,2009-05-10T02:38:36Z
+196,xcode_run,/Applications/xrun1.app,1.0,universal,xcode_run 1.0 Copyright 2009 bartuer,2009-05-08T13:43:30Z
+197,xsim,/Applications/xsim.app,1.0,universal,xsim 1.0 Copyright 2009 bartuer,2009-05-08T14:08:30Z
+198,xcode_stop,/Applications/xstop.app,1.0,universal,xcode_stop 1.0 Copyright 2009 bartuer,2009-05-08T13:46:45Z
+199,AU Lab,/Developer/Applications/Audio/AU Lab.app,2.0.1,universal,"2.0.1 ©2008, Apple, Inc",2009-08-20T10:50:06Z
+200,HALLab,/Developer/Applications/Audio/HALLab.app,1.4,universal,,2009-08-20T10:50:07Z
+201,Dashcode,/Developer/Applications/Dashcode.app,2.0.1,universal,,2009-08-20T10:50:07Z
+202,Core Image Fun House,/Developer/Applications/Graphics Tools/Core Image Fun House.app,2.1.38,universal,,2009-08-20T10:50:07Z
+203,OpenGL Driver Monitor,/Developer/Applications/Graphics Tools/OpenGL Driver Monitor.app,1.4,universal,"1.4, Copyright 2007 Apple Inc.",2009-08-20T10:50:07Z
+204,OpenGL Profiler,/Developer/Applications/Graphics Tools/OpenGL Profiler.app,4.1,universal,"4.1, Copyright 2003-2008 Apple, Inc.",2009-08-20T10:50:06Z
+205,OpenGL Shader Builder,/Developer/Applications/Graphics Tools/OpenGL Shader Builder.app,2.0,universal,,2009-08-20T10:50:07Z
+206,Pixie,/Developer/Applications/Graphics Tools/Pixie.app,2.2,universal,,2009-08-20T10:50:06Z
+207,Quartz Composer Visualizer,/Developer/Applications/Graphics Tools/Quartz Composer Visualizer.app,1.2,universal,,2009-08-20T10:50:07Z
+208,Quartz Debug,/Developer/Applications/Graphics Tools/Quartz Debug.app,3.0,universal,3.0,2009-08-20T10:50:07Z
+209,Instruments,/Developer/Applications/Instruments.app,1.5,universal,,2009-08-20T10:50:07Z
+210,Interface Builder,/Developer/Applications/Interface Builder.app,3.1.2,universal,,2009-08-20T10:50:07Z
+211,BigTop,/Developer/Applications/Performance Tools/BigTop.app,4.6.1,universal,,2009-08-20T10:50:07Z
+212,CHUD Remover,/Developer/Applications/Performance Tools/CHUD/CHUD Remover.app,4.6.1,universal,,2009-08-20T10:50:07Z
+213,Reggie SE,/Developer/Applications/Performance Tools/CHUD/Hardware Tools/Reggie SE.app,4.6.1,universal,,2009-08-20T10:50:07Z
+214,SpindownHD,/Developer/Applications/Performance Tools/CHUD/Hardware Tools/SpindownHD.app,4.6.1,universal,,2009-08-20T10:50:07Z
+215,Saturn,/Developer/Applications/Performance Tools/CHUD/Saturn.app,4.6.1,universal,,2009-08-20T10:50:07Z
+216,MallocDebug,/Developer/Applications/Performance Tools/MallocDebug.app,1.7.1,universal,,2009-08-20T10:50:06Z
+217,Quartz Debug,/Developer/Applications/Performance Tools/Quartz Debug.app,3.0,universal,3.0,2009-08-20T10:50:07Z
+218,Shark,/Developer/Applications/Performance Tools/Shark.app,4.6.1,universal,,2009-08-20T10:50:07Z
+219,Spin Control,/Developer/Applications/Performance Tools/Spin Control.app,0.8,universal,Spin Control,2009-08-20T10:50:07Z
+220,Thread Viewer,/Developer/Applications/Performance Tools/Thread Viewer.app,1.4,universal,Thread Viewer,2009-08-20T10:50:07Z
+221,Quartz Composer,/Developer/Applications/Quartz Composer.app,3.1,universal,,2009-08-20T10:50:07Z
+222,Accessibility Inspector,/Developer/Applications/Utilities/Accessibility Tools/Accessibility Inspector.app,1.1,universal,"Accessibility Inspector 1.1, Copyright 2002-2007 Apple Inc.",2009-08-20T10:50:07Z
+223,Accessibility Verifier,/Developer/Applications/Utilities/Accessibility Tools/Accessibility Verifier.app,1.1,universal,,2009-08-20T10:50:07Z
+224,Applet Launcher,/Developer/Applications/Utilities/Applet Launcher.app,12.9.0,universal,,2011-06-29T09:16:10Z
+225,WebServicesAssistant,/Developer/Applications/WebObjects/WebServicesAssistant.app,5.4.2,universal,,2009-08-20T10:50:07Z
+226,Xcode,/Developer/Applications/Xcode.app,3.1.2,universal,Xcode version 3.1.2,2009-08-20T10:50:07Z
+227,AVRCPAgent,/System/Library/CoreServices/AVRCPAgent.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+228,AddPrinter,/System/Library/CoreServices/AddPrinter.app,5.5.8,universal,,2009-08-20T10:28:54Z
+229,AirPort Base Station Agent,/System/Library/CoreServices/AirPort Base Station Agent.app,1.5.5,universal,"1.5.5 (155.2), Copyright © 2006-2009 Apple Inc. All Rights Reserved.",2011-06-29T09:16:10Z
+230,Apple80211Agent,/System/Library/CoreServices/Apple80211Agent.app,5.3.3,universal,"5.3.3, Copyright © 2000–2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+231,AppleFileServer,/System/Library/CoreServices/AppleFileServer.app,4.0.4,universal,4.0.4,2011-06-29T09:16:10Z
+232,AppleScript Runner,/System/Library/CoreServices/AppleScript Runner.app,1.0,universal,,2008-05-31T10:35:28Z
+233,Archive Utility,/System/Library/CoreServices/Archive Utility.app,10.5.1,universal,"10.5, Copyright 2003-2007 Apple Inc.",2008-10-29T23:48:57Z
+234,Automator Launcher,/System/Library/CoreServices/Automator Launcher.app,1.1.1,universal,"Automator Launcher version 1.1.1, Copyright 2004-2007 Apple Inc.",2009-08-20T10:28:54Z
+235,Automator Runner,/System/Library/CoreServices/Automator Runner.app,1.0,universal,"Automator Runner version 1.0, Copyright 2006 Apple Computer, Inc.",2009-08-20T10:28:54Z
+236,Bluetooth Setup Assistant,/System/Library/CoreServices/Bluetooth Setup Assistant.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+237,BluetoothAudioAgent,/System/Library/CoreServices/BluetoothAudioAgent.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+238,BluetoothUIServer,/System/Library/CoreServices/BluetoothUIServer.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+239,CCacheServer,/System/Library/CoreServices/CCacheServer.app,6.0.15,universal,6.0 Copyright © 2007 Massachusetts Institute of Technology,2011-06-29T09:16:10Z
+240,Certificate Assistant,/System/Library/CoreServices/Certificate Assistant.app,2.0,universal,,2009-03-20T03:04:05Z
+241,CoreServicesUIAgent,/System/Library/CoreServices/CoreServicesUIAgent.app,12.1,universal,Copyright © 2007 Apple Inc.,2008-05-31T09:55:57Z
+242,Database Events,/System/Library/CoreServices/Database Events.app,1.0.2,universal,,2008-05-31T10:34:55Z
+243,DiskImageMounter,/System/Library/CoreServices/DiskImageMounter.app,10.5.10,universal,"10.5, Copyright 2003-2007 Apple Inc.",2011-06-29T09:16:10Z
+244,Dock,/System/Library/CoreServices/Dock.app,1.6.10,universal,Dock 1.6.10,2009-08-20T10:28:54Z
+245,Expansion Slot Utility,/System/Library/CoreServices/Expansion Slot Utility.app,1.3.1,arch_x86,,2009-08-20T10:28:54Z
+246,File Sync,/System/Library/CoreServices/File Sync.app,4.2,universal,"© Copyright 2006 Apple Computer Inc., all rights reserved.",2009-08-20T10:28:54Z
+247,FileSyncAgent,/System/Library/CoreServices/FileSyncAgent.app,4.2,universal,"¬© Copyright 2006 Apple Computer Inc., all rights reserved.",2009-08-20T10:28:54Z
+248,Finder,/System/Library/CoreServices/Finder.app,10.5.8,universal,Mac OS X Finder 10.5.8,2009-04-09T21:28:59Z
+249,Folder Actions Dispatcher,/System/Library/CoreServices/Folder Actions Dispatcher.app,1.0,universal,,2008-05-31T10:35:45Z
+250,Front Row,/System/Library/CoreServices/Front Row.app,2.1.7,universal,,2009-04-24T02:02:22Z
+251,Help Viewer,/System/Library/CoreServices/Help Viewer.app,4.0.2,universal,,2011-06-29T09:16:10Z
+252,Image Events,/System/Library/CoreServices/Image Events.app,1.1.2,universal,,2008-05-31T10:34:48Z
+253,Installer,/System/Library/CoreServices/Installer.app,3.0.2,universal,"3.0, Copyright © 2000-2006 Apple Computer Inc., All Rights Reserved",2008-05-31T11:11:15Z
+254,Jar Launcher,/System/Library/CoreServices/Jar Launcher.app,12.9.0,universal,,2011-06-29T09:16:10Z
+255,Java Web Start,/System/Library/CoreServices/Java Web Start.app,12.9.0,universal,,2011-06-29T09:16:10Z
+256,Kerberos,/System/Library/CoreServices/Kerberos.app,6.0.15,universal,6.0 Copyright © 2007 Massachusetts Institute of Technology,2011-06-29T09:16:10Z
+257,KerberosAgent,/System/Library/CoreServices/KerberosAgent.app,6.0.15,universal,6.0 Copyright © 2007 Massachusetts Institute of Technology,2011-06-29T09:16:10Z
+258,KeyboardSetupAssistant,/System/Library/CoreServices/KeyboardSetupAssistant.app,10.5.0,universal,,2008-05-31T11:05:01Z
+259,Language Chooser,/System/Library/CoreServices/Language Chooser.app,1.6,universal,System Language Initializer,2008-06-16T03:27:24Z
+260,ManagedClient,/System/Library/CoreServices/ManagedClient.app,1.4,universal,ManagedClient 1.4 Copyright (c) 2004-2009 Apple Inc. All Rights Reserved.,2009-03-03T02:52:34Z
+261,Memory Slot Utility,/System/Library/CoreServices/Memory Slot Utility.app,1.3.1,universal,,2009-08-20T10:28:54Z
+262,NetAuthAgent,/System/Library/CoreServices/NetAuthAgent.app,1.4,universal,,2011-06-29T09:16:10Z
+263,Network Diagnostics,/System/Library/CoreServices/Network Diagnostics.app,1.1.1,universal,,2008-05-31T11:41:35Z
+264,Network Setup Assistant,/System/Library/CoreServices/Network Setup Assistant.app,1.5.3,universal,"1.5.3, Copyright Apple Computer, Inc. 2003",2008-05-31T12:05:59Z
+265,OBEXAgent,/System/Library/CoreServices/OBEXAgent.app,2.1.8,universal,"2.1.8, Copyright (c) 2009 Apple Inc. All rights reserved.",2009-08-20T10:28:54Z
+266,ODSAgent,/System/Library/CoreServices/ODSAgent.app,1.3,universal,"1.3 (130.6), Copyright © 2007-2008 Apple Inc. All Rights Reserved.",2008-11-11T06:06:39Z
+267,PreferenceSyncClient,/System/Library/CoreServices/PreferenceSyncClient.app,1.2,universal,,2009-08-20T10:28:54Z
+268,Printer Setup Utility,/System/Library/CoreServices/Printer Setup Utility.app,5.5.8,universal,,2009-08-20T10:28:54Z
+269,Problem Reporter,/System/Library/CoreServices/Problem Reporter.app,10.5.7,universal,,2009-08-20T10:28:54Z
+270,ARDAgent,/System/Library/CoreServices/RemoteManagement/ARDAgent.app,3.4,universal,,2011-01-10T05:36:51Z
+271,LockScreen,/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/Support/LockScreen.app,3.4,universal,,2011-01-10T05:36:51Z
+272,LockScreenLeopard386,/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/Support/LockScreenLeopard386.app,3.4,arch_x86,,2011-01-10T05:36:51Z
+273,VNC Guest,/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/Support/VNC Guest.app,3.4,universal,,2011-01-10T05:36:51Z
+274,VNCDragHelper,/System/Library/CoreServices/RemoteManagement/AppleVNCServer.bundle/Contents/Support/VNCDragHelper.app,3.4,universal,,2011-01-10T05:36:51Z
+275,DesktopDB,/System/Library/CoreServices/SKPlugins/DesktopDB.service,,classic,,2009-03-10T04:35:52Z
+276,Screen Sharing,/System/Library/CoreServices/Screen Sharing.app,1.0.3,universal,"1.0.3, Copyright © 2007-2009 Apple Inc., All Rights Reserved.",2011-06-29T09:16:10Z
+277,SecurityAgent,/System/Library/CoreServices/SecurityAgent.app,4.0,universal,,2009-04-09T01:52:55Z
+278,Fixer,/System/Library/CoreServices/SecurityFixer.app,10.5,universal,,2008-05-31T10:09:39Z
+279,Setup Assistant,/System/Library/CoreServices/Setup Assistant.app,10.5.6,universal,"10.5.0, Copyright © Apple Inc. 2005-2007.  All rights reserved.",2009-04-09T21:32:47Z
+280,Software Update,/System/Library/CoreServices/Software Update.app,3.0.4,universal,"Software Update version 3.0, Copyright 2000-2007, Apple Inc.",2009-02-06T08:38:18Z
+281,Spotlight,/System/Library/CoreServices/Spotlight.app,10.5,universal,,2009-08-20T10:28:54Z
+282,System Events,/System/Library/CoreServices/System Events.app,1.3.2,universal,,2008-05-31T10:34:31Z
+283,SystemUIServer,/System/Library/CoreServices/SystemUIServer.app,1.5.5,universal,"SystemUIServer version 1.5.5, Copyright 2000-2009 Apple Computer, Inc.",2009-08-20T10:28:54Z
+284,UserNotificationCenter,/System/Library/CoreServices/UserNotificationCenter.app,3.0.0,universal,,2008-05-31T10:44:22Z
+285,SecureDownloadAgent,/System/Library/CoreServices/VerifiedDownloadAgent.app,1.1,universal,,2008-05-31T11:00:45Z
+286,iSight Updater,/System/Library/CoreServices/iSight Updater.localized/iSight Updater.app,2.1,universal,,2008-05-31T09:48:06Z
+287,loginwindow,/System/Library/CoreServices/loginwindow.app,5.6,universal,,2009-08-20T10:28:54Z
+288,rcd,/System/Library/CoreServices/rcd.app,1.8,universal,1.8,2009-08-20T10:28:54Z

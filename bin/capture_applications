@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby
+# -*- mode: ruby -*-
+require 'rubygems'
+require 'hpricot'
+require 'sequel'
+
+dom = Hpricot(`system_profiler -xml SPApplicationsDataType`)
+applications = dom.search('//array/dict/array/dict')
+app = applications[0]
+current_key = ''
+apps = []
+applications.each { |app|
+  app_field = {}
+  app.each_child_with_index { |c, i|
+    if c.elem?
+      if c.name == 'key'
+        current_key = c.innerHTML
+      else
+        app_field[current_key.to_sym] = c.innerHTML
+      end
+    end
+  }
+  apps.push app_field
+}
+
+if apps.size > 0
+  DB = Sequel.sqlite("../data/application.db")
+  new_table = true
+  begin
+    DB.schema('application')
+    new_table = false
+  rescue 
+    DB.create_table :application do
+      primary_key :id
+      String :_name
+      String :path
+      String :version
+      String :runtime_environment
+      String :info
+      String :lastModified
+      index :_name
+    end
+  end
+  dataset = DB[:application]
+  puts app
+  if new_table
+    apps.each { |app|
+      dataset.insert(app)
+    }
+  else
+    apps.each { |app|
+      dataset.update(app)
+    }
+  end
+end
+
+
+
+
+
+# ~> /Library/Ruby/Gems/1.8/gems/sequel-3.14.0/lib/sequel/database/query.rb:163:in `schema': schema parsing returned no columns, table probably doesn't exist (Sequel::Error)
+# ~> 	from -:27

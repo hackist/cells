@@ -1,0 +1,3 @@
+CPU,GPU,vendor,product,version,encoder,frame size,frame per second
+Intel Core 2 Duo,NVIDIA GeForce 9400M 256MB,Sorenson,Squeeze,8.0,Main Concept,800x480,15
+Intel Core 2 Duo,NVIDIA GeForce 9400M 256MB,HandBrake developers,HandBrake,0.9.5,x264,800x600,60

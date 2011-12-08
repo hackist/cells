@@ -1,0 +1,6 @@
+connection type,connetion quality,bandwidth(bits per second)
+ADSL,high,3000
+ADSL,low,1400
+3G,high,768
+3G,normal,512
+3G,low,256
