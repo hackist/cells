@@ -34,8 +34,11 @@
 ***** TODO build desktop application link parts by transition to try video Editor UI
 *** audio 
 ***** HALT combine audio track to video file
-      ffmpeg has serious lost frames problem, it could combine sound,
-      but video quality is damaged
+      - ffmpeg has serious lost frames problem, it could combine sound,
+        but video quality is damaged
+      - seems the problem due to not use x264 properly, Sorenson
+        squeeze also has such problem
+      - should be fixed after apply encode code from HandBrake
 ***** DONE split audio track out of video
       #!/bin/bash
       ffmpeg -i $1 -vn -acodec copy $1.`afinfo /tmp/sound |head -2|tail -1|cut -d ':' -f 2|sed -e 's/ //g;s+f$++g;s+WAVE+wav+g;s+MPG3+mp3+g;s+ac-3+ac3+g;s+AIFF+aif+g;s+3gpp+3gp+g'`
@@ -81,6 +84,14 @@
 ***** DONE empty image stream
       just draw some rectangle on client
       for audio only case
+***** TODO merge image sequence into audio track [0/4]
+      - [ ] it is last fall back when bandwidth in not enought
+      - [ ] it seems better than audio book
+      - [ ] it can be done with http stream server
+      - [ ] how to merge this with slide show video making
+            - is it possible to wrap quartz composer into mpeg-2
+              transport stream packet?
+            - the experience will be seamless?
 ***** TODO automatic slideshow video making [0/4]
       - [ ] image pool
       - [ ] music pool
@@ -100,8 +111,8 @@
       - [ ] server configure support break recover
       - [ ] try cloudfront AWS
       - [ ] try new location of linode
-***** TODO encode according to bandwidth and screen size settings [3/5]
-      - [ ] profile
+***** TODO encode according to bandwidth and screen size settings [4/5]
+      - [X] profile
             (link "doc/encoders.eml" 1)
             - standard specification
             - profile database 
@@ -142,20 +153,7 @@
       - [X] javascript control
       - [ ] browser native control
       - [ ] page structure
-***** TODO setup http streaming server [0/4]
-      - [ ] migrate my server from SF to Tokyo
-      - [ ] benchmark local and VPS
-      - [ ] stream audio first
-      - [ ] http segment
-***** TODO automatically script driven capture [0/2]               :research:
-      - [ ] is it possible use script driven capture
-            - can make that script downloadable
-      - [ ] programming API of QuickTime or Capture software
-            - macruby as glue language?
-***** TODO video effect and transitions [0/2]
-      - [ ] filter matrixs in CoreImage library
-      - [ ] quartz composer make video transition
-***** TODO profile collection [0/2] 
+***** TODO profile collection [0/3] 
       - [ ] from software
             - squeeze
             - handbrake
@@ -163,13 +161,32 @@
             - http stream
       - [ ] from document
             - stream media guide
+***** TODO setup http streaming server [0/4]
+      - [ ] migrate my server from SF to Tokyo
+      - [ ] benchmark local and VPS
+      - [ ] stream audio first
+      - [ ] http segment
+***** TODO automatically script driven capture [1/2]               :research:
+      - [X] is it possible use script driven capture
+            - can make that script downloadable
+            - try it, pretty hard, abandon
+      - [ ] programming API of QuickTime or Capture software
+            - macruby as glue language?
+            - have take look at js as system script language on OSX possibility?
+***** TODO video effect and transitions [0/2]
+      - [ ] filter matrixs in CoreImage library
+      - [ ] quartz composer make video transition
+*** deployment
+***** TODO main site at bartuer's linode machine
+***** TODO use Youku as CDN
+***** TODO try amazon GPU cluster farm
 *** project maintain
-***** TODO github repository [1/3]
+***** DONE github repository [2/2]
       SCHEDULED: <2011-11-27 Sun 18:00>
-      - [ ] make commit right
-      - [ ] branch based process
+      - [X] branch based process
+            - now just commit on master is okay
       - [X] not pull request
-***** TODO site server data and document [1/1]
+***** TODO site server data and document [1/2]
       SCHEDULED: <2011-11-26 Sat 13:30>
       CLOCK: [2011-11-26 Sat 13:18]--[2011-11-26 Sat 14:05] =>  0:47
       :PROPERTIES:
@@ -180,7 +197,7 @@
       #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
       :END:
       - [X] automatically convert this document
-***** TODO setup working network environment [2/6]
+***** TODO setup working network environment [2/7]
       SCHEDULED: <2011-11-27 Sun 10:00>
       - [X] fast network
       - [X] storage
@@ -190,3 +207,7 @@
       - [ ] document browser
       - [ ] document edit
       - [ ] notification
+      - [ ] iChat server can save conversation?
+            - can route irc to jabberd?
+            - how to integrate with my realtime comments
+            - pin idea here, will setup new one when chance coming
