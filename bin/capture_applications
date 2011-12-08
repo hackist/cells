@@ -42,7 +42,7 @@ if apps.size > 0
     end
   end
   dataset = DB[:application]
-  puts app
+  puts app[:_name]
   if new_table
     apps.each { |app|
       dataset.insert(app)
