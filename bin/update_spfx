@@ -25,11 +25,14 @@ def video_record(root, output)
   output[:video_frame_rate] = vf.fattr('framerate')
   output[:video_frame_size] = vf.fattr('outputsize', 'Width') + 'x' + vf.fattr('outputsize', 'Height')
   output[:video_bit_rate] = vf.fattr('datarate')
-  output[:video_bit_rate_max_percent] = vf.fattr('maxdataratepercent') + '%'
+  output[:video_bit_rate_max_percent] = vf.fattr('maxdataratepercent') + '%' if vf.fattr('maxdataratepercent').length > 0
   output[:video_bit_rate_method] = vf.fattr('bitratemode')
-  output[:video_key_frame] = vf.fattr('keyframerate') + '/' + vf.fattr('keyframerateunits')
+  if vf.fattr('keyframerateunits').length > 0
+    output[:video_key_frame] = vf.fattr('keyframerate') + '/' + vf.fattr('keyframerateunits')    
+  else
+    output[:video_key_frame] = vf.fattr('keyframerate')
+  end
 
-  # maybe [x264H264, MPEG2VideoCodec, ON2!VP8, applmjpa, ...]
   codec_setting = root.search('/extendedpluginsettings')
   setting_count = 0
   if codec_setting.length > 0
@@ -47,7 +50,6 @@ end
 def parse_spfx()
   parse_result = []
   spfx_files = `find ../data/spfx -type f -name "*.spfx"`.split(%r{\n})
-  spfx_files.size
   spfx_files.each { |file|
     dom = Hpricot(`sed -e 's+squeeze_audience+xml+g' "#{file}"`) 
     output = dom.search('//output')
@@ -645,9 +647,6 @@ if result.size > 0
           main_record[k] = v 
         else
           head, para_name = k.split('_') 
-          if encoder[head] == nil
-            puts head
-          end
           if encoder[head][:type] == :video
             vtable = encoder[head][:table] if vtable == nil
             para[:video][field_name[para_name]] = v
