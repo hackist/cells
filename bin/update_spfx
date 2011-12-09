@@ -1,0 +1,680 @@
+#!/usr/bin/env ruby
+# -*- mode: ruby -*-
+require 'rubygems'
+require 'hpricot'
+require 'sequel'
+require 'open-uri'
+
+module Hpricot
+  module Traverse
+    def fattr(field, attribute='Value')
+      node = search('/' + field)
+      if node.length > 0
+        node.attr(attribute)
+      else
+        ''
+      end
+    end
+  end
+end
+
+def video_record(root, output)
+  output[:video_codec] = root.attr('codec')
+  codec = root.attr('codec')
+  vf = root[0]
+  output[:video_frame_rate] = vf.fattr('framerate')
+  output[:video_frame_size] = vf.fattr('outputsize', 'Width') + 'x' + vf.fattr('outputsize', 'Height')
+  output[:video_bit_rate] = vf.fattr('datarate')
+  output[:video_bit_rate_max_percent] = vf.fattr('maxdataratepercent') + '%'
+  output[:video_bit_rate_method] = vf.fattr('bitratemode')
+  output[:video_key_frame] = vf.fattr('keyframerate') + '/' + vf.fattr('keyframerateunits')
+
+  # maybe [x264H264, MPEG2VideoCodec, ON2!VP8, applmjpa, ...]
+  codec_setting = root.search('/extendedpluginsettings')
+  setting_count = 0
+  if codec_setting.length > 0
+    codec_setting[0].each_child_with_index { |c, i|
+      if c.elem? 
+        output[codec.chop.gsub(/ON2!/, 'ON2') + '_' + c.name] = c.attributes['Value']
+        setting_count += 1
+      end
+    }
+
+  end
+  output
+end
+
+def parse_spfx()
+  parse_result = []
+  spfx_files = `find ../data/spfx -type f -name "*.spfx"`.split(%r{\n})
+  spfx_files.size
+  spfx_files.each { |file|
+    dom = Hpricot(`sed -e 's+squeeze_audience+xml+g' "#{file}"`) 
+    output = dom.search('//output')
+    f = {}
+    f[:name] = output.attr('DefaultName') 
+    f[:description] = output.attr('Description')
+    f[:work_flow] = output.attr('Workflow').gsub(/\\/, '.')
+
+    audio = dom.search('//audiocompressor')
+    f[:audio_codec] = audio.attr('codec')
+    af = audio[0]
+    f[:audio_data_rate]  = af.fattr('datarate') 
+    f[:audio_sample_rate] = af.fattr('samplerate')
+    f[:audio_sample_size] = af.fattr('samplesize')
+    f[:audio_channel] = af.fattr('channelmode')
+    f[:audio_format] = af.fattr('suboutputformat')
+    codec_setting = af.search('/extendedpluginsettings')
+    if codec_setting.length > 0
+      a_setting_count = 0
+      codec = f[:audio_codec]
+      codec_setting[0].each_child_with_index { |c, i|
+        if (c.elem? && c.name != 'extendedpluginsettings')
+          f[codec.chop + '_' + c.name] = c.attributes['Value']
+          a_setting_count += 1
+        end
+      }
+    end
+    # maybe 0..n
+    video = dom.search('//videocompressor')
+    if video.length > 0
+      video.each { |v|
+        r = video_record(video,f)
+        parse_result.push(r)
+      }
+    else
+      parse_result.push(f)
+    end
+  }
+  parse_result
+end
+
+result = []
+dict = '../data/spfx/spfx_parse_result.dict'
+if File.exist?(dict)
+  result = Marshal.load(open(dict).read)
+else
+  result = parse_spfx
+  open(dict, 'w').write(Marshal.dump(result))
+end
+
+def create_spfx(db)
+  db.create_table :spfx do
+    primary_key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+  end
+end
+
+def create_mcpt264(db)
+  db.create_table :mcpt264 do
+    primary_key :id
+
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :adaptive_bframe_placement
+    String :adaptive_quant_brightness_base
+    String :adaptive_quant_complexity_base
+    String :adaptive_quant_contrast_base
+    String :auto_level
+    String :bframe_pyramid
+    String :bitrate_buffer
+    String :black_normalization_level
+    String :cabac
+    String :color_range_and_coeffients
+    String :drop_frame_time_code
+    String :field_order
+    String :fixed_iframe_distance
+    String :hrd_conformance
+    String :idr_rate
+    String :interlace_mode
+    String :level
+    String :max_bframe_size
+    String :max_brframe_size
+    String :max_iframe_size
+    String :max_pframe_size
+    String :number_of_bframes
+    String :number_of_reference_frames
+    String :number_of_slices
+    String :performance
+    String :pixel_aspect_ratio
+    String :profile
+    String :use_bslice_as_reference
+    String :vbv_buffer_initial
+    String :vbv_buffer_target
+  end
+end
+
+def create_mcptaac(db)
+  db.create_table :mcptaac do
+    primary_key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :crc
+    String :cut_off_frequency
+    String :encode_type
+    String :header_type
+    String :hf_cut_off
+    String :tns
+  end
+end
+
+def create_mcptac3(db)
+  db.create_table :mcptac3 do
+    primary_key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :ad_converter
+    String :automatic_settings_profile
+    String :bandwidth_filter
+    String :bitstream
+    String :bitstream_type
+    String :center_mix_level_loro
+    String :center_mix_level_ltrt
+    String :channemapping
+    String :dialog_normalization
+    String :dolby_surroundex
+    String :dolby_surround_mode
+    String :encoder_mode
+    String :headphone_mode
+    String :input_filtering
+    String :input_filtering_dc_fitler
+    String :input_filtering_digital_deem_phasis
+    String :lfe
+    String :lfe_low_pass_filter
+    String :line_mode_compression1
+    String :line_mode_compression2
+    String :metadata
+    String :metadata_copyright_material
+    String :metadata_original_material
+    String :mixing_level
+    String :rf_mode_compression1
+    String :rf_mode_compression2
+    String :room_type
+    String :surround_channel
+    String :surround_channel_3d_attenuation
+    String :surround_channel_90degree_phase_shift
+    String :surround_mix_level_loro
+    String :surround_mix_level_ltrt
+  end
+end
+
+def create_mcptvc1(db)
+  db.create_table :mcptvc1 do
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    Primary_Key :id
+    String :aspect_ratio
+    String :field_encoding
+    String :field_order
+    String :film_mode_frame_rate_conversion
+    String :level
+    String :max_bit_rate_percent # will conflict with main record column name?
+    String :motion_estimation_algorithm
+    String :motion_estimation_search_range
+    String :number_of_bpictures
+    String :profile
+    String :set_key_frame_at_scene_change
+    String :subpixel_motion_estimation
+    String :time_stamp_offset
+    String :use_4mv
+    String :use_deblocking_filter
+    String :use_intensity_compensation
+    String :use_variable_sized_transformation
+    String :write_hrd_parameter
+    String :write_seq_end_code
+  end
+end
+
+def create_on2vp6(db)
+  db.create_table :on2vp6 do
+    Primary_Key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :auto_key_frames_enabled
+    String :auto_key_frame_threshold
+    String :compression_speed
+    String :drop_frames_to_maintain_data_rate
+    String :drop_frames_watermark
+    String :maximum_buffer_size
+    String :maximum_quality
+    String :minimum_distance_to_key_frame
+    String :minimum_quality
+    String :noise_sensitivity
+    String :optimal_buffer_level
+    String :profile
+    String :quality
+    String :sharpness
+    String :speed
+    String :starting_buffer_level
+    String :two_pass_vbr_bias
+    String :two_pass_vbr_max_section
+    String :two_pass_vbr_min_section
+    String :under_shoot_pct
+  end
+end
+
+def create_on2vp8(db)
+  db.create_table :on2vp8 do
+    Primary_Key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :compression_speed
+    String :constrained_quality_level
+    String :cpu_usage
+    String :decode_cpu_cores
+    String :drop_frames_threshold
+    String :drop_frames_to_maintain_data_rate
+    String :enable_auto_alt_ref
+    String :encoding_threads
+    String :error_resilient
+    String :lagged_frames
+    String :maximum_buffer_size
+    String :maximum_quality
+    String :minimum_quality
+    String :noise_sensitivity
+    String :optimal_buffer_level
+    String :profile
+    String :rate_control_resizing
+    String :rate_control_resizing_down_threshold
+    String :rate_control_resizing_up_threshold
+    String :sharpness
+    String :starting_buffer_level
+    String :static_region_threshold
+    String :two_pass_vbr_bias
+    String :two_pass_vbr_max_section
+    String :two_pass_vbr_min_section
+    String :under_shoot_pct
+    String :visual_tuning
+  end
+end
+
+def create_applmjp(db)
+  db.create_table :applmjp do
+    Primary_Key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :auto_key_frames
+    String :color_depth
+    String :data_rate_automatic
+    String :force_key_frame_every
+    String :frame_reordering
+    String :quality
+  end
+end
+
+def create_x264h264(db)
+  db.create_table :x264h264 do
+    Primary_Key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+    String :alpha_deblocking
+    String :beta_deblocking
+    String :crf
+    String :fake_interlaced
+    String :fast_decode
+    String :field_order
+    String :interlaced
+    String :level
+    String :preset
+    String :profile
+    String :tune
+    String :zero_latency
+  end
+end
+
+if result.size > 0
+  DB = Sequel.sqlite("../data/spfx.db")
+  new_table = true
+  begin
+    DB.schema('spfx')
+    new_table = false
+  rescue 
+    create_spfx DB
+    create_mcpt264 DB
+    create_mcptaac DB
+    create_mcptac3 DB
+    create_mcptvc1 DB
+    create_on2vp6 DB
+    create_on2vp8 DB
+    create_applmjp DB
+    create_x264h264 DB
+  end
+  spfx = DB[:spfx] 
+  mcpt264 = DB[:mcpt264] 
+  mcptaac = DB[:mcptaac] 
+  mcptac3 = DB[:mcptac3] 
+  mcptvc1 = DB[:mcptvc1] 
+  on2vp6 = DB[:on2vp6]   
+  on2vp8 = DB[:on2vp8]   
+  applmjp = DB[:applmjp] 
+  x264h264 = DB[:x264h264]
+  encoder = {
+    'MCptH26'  => { :type  => :video, :table  => mcpt264},
+    'MCpt264'  => { :type  => :video, :table  => mcpt264},
+    'MCptH264' => { :type  => :video, :table  => mcpt264},
+    'MCptVC1'  => { :type  => :video, :table  => mcptvc1},
+    'ON2VP6'   => { :type  => :video, :table  => on2vp6},
+    'ON2VP8'   => { :type  => :video, :table  => on2vp8},
+    'applmjp'  => { :type  => :video, :table  => applmjp},
+    'x264H264' => { :type  => :video, :table  => x264h264},
+    'x264H26'  => { :type  => :video, :table  => x264h264},
+    'MCptAAC'  => { :type  => :audio, :table  => mcptaac},
+    'MCptAC3'  => { :type  => :audio, :table  => mcptac3},
+    'MCptAC3 ' => { :type  => :audio, :table  => mcptac3},
+  }
+  field_name = {
+    'adaptivebframeplacement' => :adaptive_bframe_placement,
+    'adaptivequantbrightnessbase' => :adaptive_quant_brightness_base,
+    'adaptivequantcontrastbase' => :adaptive_quant_contrast_base,
+    'adconverter' => :ad_converter,
+    'adaptivequantcomplexitybase' => :adaptive_quant_complexity_base,
+    'alphadeblocking' => :alpha_deblocking,
+    'aspectratio' => :aspect_ratio,
+    'autokeyframesenabled' => :auto_key_frames_enabled,
+    'autokeyframes' => :auto_key_frames,
+    'autokeyframethreshold' => :auto_key_frame_threshold,
+    'autolevel' => :auto_level,
+    'automaticsettingsprofile' => :automatic_settings_profile,
+    'bandwidthfilter' => :bandwidth_filter,
+    'betadeblocking' => :beta_deblocking,
+    'bframepyramid' => :bframe_pyramid,
+    'bitratebuffer' => :bitrate_buffer,
+    'bitstream' => :bitstream,
+    'bitstreamtype' => :bitstream_type,
+    'blacknormalizationlevel' => :black_normalization_level,
+    'cabac' => :cabac,
+    'centermixlevelloro' => :center_mix_level_loro,
+    'centermixlevelltrt' => :center_mix_level_ltrt,
+    'channemapping' => :channemapping,
+    'colordepth' => :color_depth,
+    'colorrangeandcoeffients' => :color_range_and_coeffients,
+    'compressionspeed' => :compression_speed,
+    'constrainedqualitylevel' => :constrained_quality_level,
+    'cpuusage' => :cpu_usage,
+    'crc' => :crc,
+    'crf' => :crf,
+    'cutofffrequency' => :cut_off_frequency,
+    'datarateautomatic' => :data_rate_automatic,
+    'decodecpucores' => :decode_cpu_cores,
+    'dialognormalization' => :dialog_normalization,
+    'dolbysurroundex' => :dolby_surroundex,
+    'dolbysurroundmode' => :dolby_surround_mode,
+    'dropframesthreshold' => :drop_frames_threshold,
+    'dropframestomaintaindatarate' => :drop_frames_to_maintain_data_rate,
+    'dropframestomaintaindatarate' => :drop_frames_to_maintain_data_rate,
+    'dropframeswatermark' => :drop_frames_watermark,
+    'dropframetimecode' => :drop_frame_time_code,
+    'enableautoaltref' => :enable_auto_alt_ref,
+    'encodermode' => :encoder_mode,
+    'encodetype' => :encode_type,
+    'encodingthreads' => :encoding_threads,
+    'errorresilient' => :error_resilient,
+    'fake-interlaced' => :fake_interlaced,
+    'fastdecode' => :fast_decode,
+    'fieldencoding' => :field_encoding,
+    'fieldorder' => :field_order,
+    'filmmodeframerateconversion' => :film_mode_frame_rate_conversion,
+    'fixediframesdistance' => :fixed_iframe_distance,
+    'forcekeyframeevery' => :force_key_frame_every,
+    'framereordering' => :frame_reordering,
+    'headertype' => :header_type,
+    'headphonemode' => :headphone_mode,
+    'hfcutoff' => :hf_cut_off,
+    'hrdconformance' => :hrd_conformance,
+    'idrrate' => :idr_rate,
+    'inputfiltering' => :input_filtering,
+    'inputfilteringdcfitler' => :input_filtering_dc_fitler,
+    'inputfilteringdigitaldeemphasis' => :input_filtering_digital_deem_phasis,
+    'interlaced' => :interlaced,
+    'interlacemode' => :interlace_mode,
+    'laggedframes' => :lagged_frames,
+    'level' => :level,
+    'lfe' => :lfe,
+    'lfelowpassfilter' => :lfe_low_pass_filter,
+    'linemodecompression1' => :line_mode_compression1,
+    'linemodecompression2' => :line_mode_compression2,
+    'maxbframesize' => :max_bframe_size,
+    'maxbrframesize' => :max_brframe_size,
+    'maxiframesize' => :max_iframe_size,
+    'maximumbuffersize' => :maximum_buffer_size,
+    'maximumquality' => :maximum_quality,
+    'maxpframesize' => :max_pframe_size,
+    'metadata'  => :metadata,
+    'metadatacopyrightmaterial' => :metadata_copyright_material,
+    'metadataoriginalmaterial' => :metadata_original_material,
+    'minimumdistancetokeyframe' => :minimum_distance_to_key_frame,
+    'minimumquality' => :minimum_quality,
+    'mixinglevel' => :mixing_level,
+    'motionestimationalgorithm' => :motion_estimation_algorithm,
+    'motionestimationsearchrange' => :motion_estimation_search_range,
+    'maxbitratepercent' => :max_bit_rate_percent,
+    'noisesensitivity' => :noise_sensitivity,
+    'numberofbframes' => :number_of_bframes,
+    'numberofbpictures' => :number_of_bpictures,
+    'numberofreferenceframes' => :number_of_reference_frames,
+    'numberofslices' => :number_of_slices,
+    'optimalbufferlevel' => :optimal_buffer_level,
+    'performance' => :performance,
+    'pixelaspectratio' => :pixel_aspect_ratio,
+    'preset' => :preset,
+    'profile' => :profile,
+    'quality' => :quality,
+    'ratecontrolresizing' => :rate_control_resizing,
+    'ratecontrolresizingupthreshold' => :rate_control_resizing_up_threshold,
+    'ratecontrolresizingdownthreshold' => :rate_control_resizing_down_threshold,
+    'rfmodecompression1' => :rf_mode_compression1,
+    'rfmodecompression2' => :rf_mode_compression2,
+    'roomtype' => :room_type,
+    'setkeyframeatscenechange' => :set_key_frame_at_scene_change,
+    'sharpness' => :sharpness,
+    'speed' => :speed,
+    'startingbufferlevel' => :starting_buffer_level,
+    'startingbufferlevel' => :starting_buffer_level,
+    'staticregionthreshold' => :static_region_threshold,
+    'subpixelmotionestimation' => :subpixel_motion_estimation,
+    'surroundchannel' => :surround_channel,
+    'surroundchannel3dattenuation' => :surround_channel_3d_attenuation,
+    'surroundchannel90degreephaseshift' => :surround_channel_90degree_phase_shift,
+    'surroundmixlevelloro' => :surround_mix_level_loro,
+    'surroundmixlevelltrt' => :surround_mix_level_ltrt,
+    'timestampoffset' => :time_stamp_offset,
+    'tns' => :tns,
+    'tune' => :tune,
+    'twopassvbrbias' => :two_pass_vbr_bias,
+    'twopassvbrmaxsection' => :two_pass_vbr_max_section,
+    'twopassvbrminsection' => :two_pass_vbr_min_section,
+    'undershootpct' => :under_shoot_pct,
+    'use4mv' => :use_4mv,
+    'usebsliceasreference' => :use_bslice_as_reference,
+    'usedeblockingfilter' => :use_deblocking_filter,
+    'useintensitycompensation' => :use_intensity_compensation,
+    'usevariablesizedtransformation' => :use_variable_sized_transformation,
+    'vbvbufferinitial' => :vbv_buffer_initial,
+    'vbvbuffertarget' => :vbv_buffer_target,
+    'visualtuning' => :visual_tuning,
+    'writehrdparameter' => :write_hrd_parameter,
+    'writeseqendcode' => :write_seq_end_code,
+    'zerolatency'  => :zero_latency
+  }
+  new_table
+  if new_table
+    result.each_with_index { |r,id|
+      main_record = {}
+      para = {:audio => {}, :video => {}}
+      vtable = nil
+      atable = nil
+      r.each { |k, v|
+        if k.is_a? Symbol
+          main_record[k] = v 
+        else
+          head, para_name = k.split('_') 
+          if encoder[head] == nil
+            puts head
+          end
+          if encoder[head][:type] == :video
+            vtable = encoder[head][:table] if vtable == nil
+            para[:video][field_name[para_name]] = v
+          end
+          encoder[head][:type] 
+          if encoder[head][:type] == :audio
+            atable = encoder[head][:table] if atable == nil
+            para[:audio][field_name[para_name]] = v
+          end
+        end
+      }
+      main_record[:id] = id
+      if para[:audio].length > 0
+        atable.insert(para[:audio].merge(main_record)) 
+        puts id.to_s + ':audio:' + main_record[:name]
+      end
+      if para[:video].length > 0
+        para[:video].merge(main_record) 
+        vtable.insert(para[:video].merge(main_record)) 
+        puts id.to_s + ':video:' + main_record[:name]
+      end
+      spfx.insert(main_record)  
+      puts id.to_s + ':' + main_record[:name]
+    }
+  else
+    result.each { |preset|
+
+    }
+  end
+end
