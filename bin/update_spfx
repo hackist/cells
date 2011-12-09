@@ -285,7 +285,7 @@ def create_mcptvc1(db)
     String :field_order
     String :film_mode_frame_rate_conversion
     String :level
-    String :max_bit_rate_percent # will conflict with main record column name?
+    String :max_bit_rate_percent
     String :motion_estimation_algorithm
     String :motion_estimation_search_range
     String :number_of_bpictures
