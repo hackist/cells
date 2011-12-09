@@ -1,0 +1,8 @@
+Devices,Progressive Download,RTMP/RTSP Streaming,Adaptive HTTP Streaming
+Adobe Flash Player,MP4 FLV,RTMP,HLS Zeri Smooth
+HTML5 (Safari & IE9),MP4,-,-
+HTML5 (Firefox & Chrome),WebM,-,-
+iOS (iPad/iPhone),MP4,-,HLS
+Android Devices,MP4 WebM,RTSP,HLS (as of 3.0)
+CDNs (e.g. CloudFront),MP4 FLV WebM,RTMP,HLS
+Web Servers (e.g. S3),MP4 FLV WebM,-,HLS
