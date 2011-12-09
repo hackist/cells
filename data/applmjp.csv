@@ -1,0 +1,3 @@
+id,name,description,work_flow,audio_codec,audio_channel,audio_data_rate,audio_format,audio_sample_rate,audio_sample_size,video_codec,video_bit_rate,video_bit_rate_max_percent,video_bit_rate_method,video_frame_rate,video_frame_size,video_key_frame,auto_key_frames,color_depth,data_rate_automatic,force_key_frame_every,frame_reordering,quality
+31,MOV_Motion_JPEG.spfx,"High data-rate, low-loss intermediate formate that is universally accessible.  ","Editing.Offline Editing",appllpcm,ChannelModeStereo,0,None,48000,16,applmjpa,"",,"",-1,320x240,"",False,Color,True,300,False,80
+32,MOV_Wii.spfx,"",Devices.Gaming,appllpcm,ChannelModeStereo,0,None,44100,16,applmjpa,"",,"",-1,852x480,"",False,Color,True,300,False,50

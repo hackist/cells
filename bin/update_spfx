@@ -3,7 +3,6 @@
 require 'rubygems'
 require 'hpricot'
 require 'sequel'
-require 'open-uri'
 
 module Hpricot
   module Traverse
@@ -87,6 +86,7 @@ def parse_spfx()
   parse_result
 end
 
+puts 'parsing spfx files ...'
 result = []
 dict = '../data/spfx/spfx_parse_result.dict'
 if File.exist?(dict)
@@ -95,6 +95,8 @@ else
   result = parse_spfx
   open(dict, 'w').write(Marshal.dump(result))
 end
+puts "total #{result.size} spdx files"
+puts 'creating database ...'
 
 def create_spfx(db)
   db.create_table :spfx do
@@ -457,6 +459,14 @@ def create_x264h264(db)
   end
 end
 
+def dump_db(db, tables)
+  tables.each { |table|
+    puts "export #{db} table #{table} to ../data/#{table}.csv ..."
+    `sqlite3 -line #{db} 'select * from #{table} limit 1; '|awk 'BEGIN {FS=" = "} {ORS=","} {gsub(/ */, "", $1)} {print $1}'|sed -e 's+,$++g' > ../data/#{table}.csv`
+    `sqlite3 -csv #{db} 'select * from #{table};' >> ../data/#{table}.csv`
+  }
+end
+
 if result.size > 0
   DB = Sequel.sqlite("../data/spfx.db")
   new_table = true
@@ -631,7 +641,6 @@ if result.size > 0
     'writeseqendcode' => :write_seq_end_code,
     'zerolatency'  => :zero_latency
   }
-  new_table
   if new_table
     result.each_with_index { |r,id|
       main_record = {}
@@ -647,7 +656,6 @@ if result.size > 0
             vtable = encoder[head][:table] if vtable == nil
             para[:video][field_name[para_name]] = v
           end
-          encoder[head][:type] 
           if encoder[head][:type] == :audio
             atable = encoder[head][:table] if atable == nil
             para[:audio][field_name[para_name]] = v
@@ -669,7 +677,8 @@ if result.size > 0
     }
   else
     result.each { |preset|
-
+      throw "update haven't implemented, should delete db and do insert again"
     }
   end
+  dump_db('../data/spfx.db', ['spfx','applmjp','mcptaac','mcptvc1','on2vp8','x264h264','mcpt264','mcptac3','on2vp6'])
 end
