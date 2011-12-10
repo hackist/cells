@@ -459,11 +459,166 @@ def create_x264h264(db)
   end
 end
 
+def create_single(db)
+  db.create_table :single do
+    Primary_Key :id
+    String :name
+    String :description
+    String :work_flow
+    String :audio_codec
+    String :audio_channel
+    String :audio_data_rate
+    String :audio_format
+    String :audio_sample_rate
+    String :audio_sample_size
+    String :video_codec
+    String :video_bit_rate
+    String :video_bit_rate_max_percent
+    String :video_bit_rate_method
+    String :video_frame_rate
+    String :video_frame_size
+    String :video_key_frame
+
+
+    String :adaptive_bframe_placement
+    String :adaptive_quant_brightness_base
+    String :adaptive_quant_contrast_base
+    String :ad_converter
+    String :adaptive_quant_complexity_base
+    String :alpha_deblocking
+    String :aspect_ratio
+    String :auto_key_frames_enabled
+    String :auto_key_frames
+    String :auto_key_frame_threshold
+    String :auto_level
+    String :automatic_settings_profile
+    String :bandwidth_filter
+    String :beta_deblocking
+    String :bframe_pyramid
+    String :bitrate_buffer
+    String :bitstream
+    String :bitstream_type
+    String :black_normalization_level
+    String :cabac
+    String :center_mix_level_loro
+    String :center_mix_level_ltrt
+    String :channemapping
+    String :color_depth
+    String :color_range_and_coeffients
+    String :compression_speed
+    String :constrained_quality_level
+    String :cpu_usage
+    String :crc
+    String :crf
+    String :cut_off_frequency
+    String :data_rate_automatic
+    String :decode_cpu_cores
+    String :dialog_normalization
+    String :dolby_surroundex
+    String :dolby_surround_mode
+    String :drop_frames_threshold
+    String :drop_frames_to_maintain_data_rate
+    String :drop_frames_watermark
+    String :drop_frame_time_code
+    String :enable_auto_alt_ref
+    String :encoder_mode
+    String :encode_type
+    String :encoding_threads
+    String :error_resilient
+    String :fake_interlaced
+    String :fast_decode
+    String :field_encoding
+    String :field_order
+    String :film_mode_frame_rate_conversion
+    String :fixed_iframe_distance
+    String :force_key_frame_every
+    String :frame_reordering
+    String :header_type
+    String :headphone_mode
+    String :hf_cut_off
+    String :hrd_conformance
+    String :idr_rate
+    String :input_filtering
+    String :input_filtering_dc_fitler
+    String :input_filtering_digital_deem_phasis
+    String :interlaced
+    String :interlace_mode
+    String :lagged_frames
+    String :level
+    String :lfe
+    String :lfe_low_pass_filter
+    String :line_mode_compression1
+    String :line_mode_compression2
+    String :max_bframe_size
+    String :max_brframe_size
+    String :max_iframe_size
+    String :maximum_buffer_size
+    String :maximum_quality
+    String :max_pframe_size
+    String :metadata
+    String :metadata_copyright_material
+    String :metadata_original_material
+    String :minimum_distance_to_key_frame
+    String :minimum_quality
+    String :mixing_level
+    String :motion_estimation_algorithm
+    String :motion_estimation_search_range
+    String :max_bit_rate_percent
+    String :noise_sensitivity
+    String :number_of_bframes
+    String :number_of_bpictures
+    String :number_of_reference_frames
+    String :number_of_slices
+    String :optimal_buffer_level
+    String :performance
+    String :pixel_aspect_ratio
+    String :preset
+    String :profile
+    String :quality
+    String :rate_control_resizing
+    String :rate_control_resizing_up_threshold
+    String :rate_control_resizing_down_threshold
+    String :rf_mode_compression1
+    String :rf_mode_compression2
+    String :room_type
+    String :set_key_frame_at_scene_change
+    String :sharpness
+    String :speed
+    String :starting_buffer_level
+    String :static_region_threshold
+    String :subpixel_motion_estimation
+    String :surround_channel
+    String :surround_channel_3d_attenuation
+    String :surround_channel_90degree_phase_shift
+    String :surround_mix_level_loro
+    String :surround_mix_level_ltrt
+    String :time_stamp_offset
+    String :tns
+    String :tune
+    String :two_pass_vbr_bias
+    String :two_pass_vbr_max_section
+    String :two_pass_vbr_min_section
+    String :under_shoot_pct
+    String :use_4mv
+    String :use_bslice_as_reference
+    String :use_deblocking_filter
+    String :use_intensity_compensation
+    String :use_variable_sized_transformation
+    String :vbv_buffer_initial
+    String :vbv_buffer_target
+    String :visual_tuning
+    String :write_hrd_parameter
+    String :write_seq_end_code
+    String :zero_latency
+  end
+end
+
 def dump_db(db, tables)
   tables.each { |table|
-    puts "export #{db} table #{table} to ../data/#{table}.csv ..."
-    `sqlite3 -line #{db} 'select * from #{table} limit 1; '|awk 'BEGIN {FS=" = "} {ORS=","} {gsub(/ */, "", $1)} {print $1}'|sed -e 's+,$++g' > ../data/#{table}.csv`
-    `sqlite3 -csv #{db} 'select * from #{table};' >> ../data/#{table}.csv`
+    csv_name = "#{db[0..-4]}_#{table}.csv"
+    puts "export #{db} table #{table} to #{csv_name} ..."
+    `sqlite3 -line #{db} 'select * from #{table} limit 1; '|awk 'BEGIN {FS=" = "} {ORS=","} {gsub(/^ */, "", $1)} {print $1}'|sed -e 's+,$++g' > #{csv_name}`
+    `sqlite3 -csv #{db} 'select * from #{table};' >> #{csv_name}`
   }
 end
 
@@ -483,6 +638,7 @@ if result.size > 0
     create_on2vp8 DB
     create_applmjp DB
     create_x264h264 DB
+    create_single DB
   end
   spfx = DB[:spfx] 
   mcpt264 = DB[:mcpt264] 
@@ -493,6 +649,7 @@ if result.size > 0
   on2vp8 = DB[:on2vp8]   
   applmjp = DB[:applmjp] 
   x264h264 = DB[:x264h264]
+  single = DB[:single]
   encoder = {
     'MCptH26'  => { :type  => :video, :table  => mcpt264},
     'MCpt264'  => { :type  => :video, :table  => mcpt264},
@@ -545,7 +702,6 @@ if result.size > 0
     'dolbysurroundex' => :dolby_surroundex,
     'dolbysurroundmode' => :dolby_surround_mode,
     'dropframesthreshold' => :drop_frames_threshold,
-    'dropframestomaintaindatarate' => :drop_frames_to_maintain_data_rate,
     'dropframestomaintaindatarate' => :drop_frames_to_maintain_data_rate,
     'dropframeswatermark' => :drop_frames_watermark,
     'dropframetimecode' => :drop_frame_time_code,
@@ -614,7 +770,6 @@ if result.size > 0
     'sharpness' => :sharpness,
     'speed' => :speed,
     'startingbufferlevel' => :starting_buffer_level,
-    'startingbufferlevel' => :starting_buffer_level,
     'staticregionthreshold' => :static_region_threshold,
     'subpixelmotionestimation' => :subpixel_motion_estimation,
     'surroundchannel' => :surround_channel,
@@ -644,12 +799,14 @@ if result.size > 0
   if new_table
     result.each_with_index { |r,id|
       main_record = {}
+      single_record = {}
       para = {:audio => {}, :video => {}}
       vtable = nil
       atable = nil
       r.each { |k, v|
         if k.is_a? Symbol
           main_record[k] = v 
+          single_record[k] = v
         else
           head, para_name = k.split('_') 
           if encoder[head][:type] == :video
@@ -661,18 +818,23 @@ if result.size > 0
             para[:audio][field_name[para_name]] = v
           end
         end
+
       }
       main_record[:id] = id
+      single_record[:id] = id
       if para[:audio].length > 0
         atable.insert(para[:audio].merge(main_record)) 
+        single_record.merge!(para[:audio])
         puts id.to_s + ':audio:' + main_record[:name]
       end
       if para[:video].length > 0
         para[:video].merge(main_record) 
         vtable.insert(para[:video].merge(main_record)) 
+        single_record.merge!(para[:video])
         puts id.to_s + ':video:' + main_record[:name]
       end
-      spfx.insert(main_record)  
+      spfx.insert(main_record)
+      single.insert(single_record)
       puts id.to_s + ':' + main_record[:name]
     }
   else
@@ -680,5 +842,5 @@ if result.size > 0
       throw "update haven't implemented, should delete db and do insert again"
     }
   end
-  dump_db('../data/spfx.db', ['spfx','applmjp','mcptaac','mcptvc1','on2vp8','x264h264','mcpt264','mcptac3','on2vp6'])
+  dump_db('../data/spfx.db', ['spfx','applmjp','mcptaac','mcptvc1','on2vp8','x264h264','mcpt264','mcptac3','on2vp6','single'])
 end
