@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-12-08 12:34:25 CST"/>
+<meta name="generated" content="2011-12-10 16:45:27 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -85,6 +85,7 @@ lang="en" xml:lang="en">
 <ul>
 <li><a href="#sec-1_1_1">1.1.1 联系这个文档的作者 </a></li>
 <li><a href="#sec-1_1_2">1.1.2 查看文档的HTML版本 </a></li>
+<li><a href="#sec-1_1_3">1.1.3 内容 </a></li>
 </ul>
 </li>
 <li><a href="#sec-1_2">1.2 数据表格 </a></li>
@@ -130,9 +131,9 @@ lang="en" xml:lang="en">
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
 <li><a href="#sec-3_4_2">3.4.2 huge file upload and download [0/6] </a></li>
-<li><a href="#sec-3_4_3">3.4.3 encode according to bandwidth and screen size settings [4/5] </a></li>
+<li><a href="#sec-3_4_3">3.4.3 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
 <li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
-<li><a href="#sec-3_4_5">3.4.5 profile collection [0/3] </a></li>
+<li><a href="#sec-3_4_5">3.4.5 profile collection [1/3] </a></li>
 <li><a href="#sec-3_4_6">3.4.6 setup http streaming server [0/4] </a></li>
 <li><a href="#sec-3_4_7">3.4.7 automatically script driven capture [1/2]</a></li>
 <li><a href="#sec-3_4_8">3.4.8 video effect and transitions [0/2] </a></li>
@@ -196,10 +197,70 @@ lang="en" xml:lang="en">
 
 <ul>
 <li>
-地址
+自动生成,不要在HTML做修改
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-1_1_3" class="outline-4">
+<h4 id="sec-1_1_3"><span class="section-number-4">1.1.3</span> 内容 </h4>
+<div class="outline-text-4" id="text-1_1_3">
+
+<ul>
+<li>
+这个文档不是用户文档
+用户文档在项目的wiki:
+<a href="https://github.com/hackist/cells/wiki">https://github.com/hackist/cells/wiki</a>
 </li>
 <li>
-自动生成,不要在HTML做修改
+这个文档只记录任务及其理由，包括
+<ul>
+<li>
+任务如何分割
+</li>
+<li>
+时间记录
+</li>
+<li>
+成果连接
+</li>
+</ul>
+</li>
+<li>
+其它资料和成果的位置
+<ul>
+<li>
+详细的讨论在 doc/discuss 目录下
+</li>
+<li>
+如何去做的参考文章和书籍收集在 doc/reference 目录下
+</li>
+<li>
+如果是数据收集类的任务
+<ul>
+<li>
+成果出现在 data 目录下
+</li>
+</ul>
+</li>
+<li>
+如果是编程类的任务
+<ul>
+<li>
+为项目本身服务，而且代码很小(几行)，会出现在 bin 目录下
+</li>
+<li>
+为用户服务，有很多文件组成，出现在 src 目录下
+</li>
+</ul>
+</li>
+<li>
+如果一个记录不属于文档，数据，程序的任何一类
+但有一些参考意义，不应丢弃，把它放在 log 目录下
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -213,16 +274,23 @@ lang="en" xml:lang="en">
 
 <ul>
 <li>
-CSV 下载地址
+SQLite3数据库和csv数据在 data 目录下
 </li>
 <li>
-CSV 上传地址
+如果有和csv文件同名的db文件
+<ul>
+<li>
+通常这个csv是由db生成的
 </li>
 <li>
-CSV 在线修改
+如果db包含多个表，每个表都会生成对应的csv
+csv文件名会象这样 database<sub>table</sub>.csv
 </li>
 <li>
-SQLite 数据库下载地址
+很有可能db也是由其它程序产生的
+比如bin/update<sub>spfx</sub> 生成所有data/spfx*.*
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -236,9 +304,11 @@ SQLite 数据库下载地址
 <ul>
 <li>
 github
+<a href="https://github.com/hackist/cells">https://github.com/hackist/cells</a>
 </li>
 <li>
 git 图形工具
+<a href="http://mac.github.com/">http://mac.github.com/</a>
 </li>
 </ul>
 </div>
@@ -618,7 +688,7 @@ should make it as automatically as possible
 </div>
 
 <div id="outline-container-3_4_3" class="outline-4">
-<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> encode according to bandwidth and screen size settings [4/5] </h4>
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="done DONE"> DONE</span> preset of encode according to bandwidth and screen size settings [5/5] </h4>
 <div class="outline-text-4" id="text-3_4_3">
 
 <ul>
@@ -652,7 +722,7 @@ export sample profile from popular transcoder
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> x264
+<b>[X]</b> x264
 <ul>
 <li>
 encoder in Handbrake
@@ -756,15 +826,17 @@ indeed there is no such significant difference there
 </div>
 
 <div id="outline-container-3_4_5" class="outline-4">
-<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> profile collection [0/3] </h4>
+<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> profile collection [1/3] </h4>
 <div class="outline-text-4" id="text-3_4_5">
 
-<ul>
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 16:00</span></span><br/>
+</p><ul>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> from software
+<b>[X]</b> from software
 <ul>
 <li>
 squeeze
+(link "./data/spfx<sub>single</sub>.csv" 3449)
 </li>
 <li>
 handbrake
@@ -807,7 +879,7 @@ stream media guide
 <b>[<span style="visibility:hidden;">X</span>]</b> stream audio first
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> http segment
+<b>[<span style="visibility:hidden;">X</span>]</b> HLS segment
 </li>
 </ul>
 </div>
@@ -992,7 +1064,7 @@ pin idea here, will setup new one when chance coming
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-12-08 12:34:25 CST</p>
+<p class="date"> Date: 2011-12-10 16:45:27 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>
