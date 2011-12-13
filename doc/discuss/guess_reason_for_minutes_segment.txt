@@ -1,0 +1,63 @@
+From: bartuer[gmail] <bartuer@gmail.com>
+Date: December 11, 2011 7:54:57 AM GMT+08:00
+To: bartuer[gmail] <bartuer@gmail.com>
+Subject: Re: 这周日在家写代码
+
+切块如果太大，不又变成progressive download了？流对服务器节省带宽的意义就没有了。
+太小，可能需要频繁的m3u8文件访问，这样客户端的负担其实加重了一些，但这个文件很小，用户根本觉不出来的。
+
+我猜，是国内的web server是Apache类型的，创建一个线程给新的连接，所以线程不能太多（> 10k)，否则内存消耗大，服务器会被塞死。把时间片从10s调整到5分钟，索引的访问量，也就是连接数能降下来几十倍。带宽他付钱马上就能买到，但是把系统从Apache迁移出去要改动的地方可能太多，花很多研发费用也不一定能解决，所以最后的决定是花钱买带宽，而不是解决这个问题，Apple的服务器其实也是Apache，也没有迁移过来，但是他们的服务器是在数据中心运行的，有上十万，百万的这种服务器可用，每个服务器被分配的连接并不多，不会出现这种内存问题，10s的配置仍然运转良好。
+On Dec 11, 2011, at 7:36 AM, bartuer[gmail] wrote:
+不知道是什么原因，可能我们自己碰到问题了就明白是为什么了。
+你可以看一下参数，实际上squeeze的更小。
+
+<Apple_HLS_concise.csv>
+
+<Apple_HLS_concise.html>
+
+<Apple_HLS_detail.csv>
+
+<Apple_HLS_detail.html>
+
+On Dec 10, 2011, at 11:39 PM, Mars Yao wrote:
+正好赶上工作需要，我要看看squeez压缩m3u8的效率，m3u8这种东西会不会由于切块儿太多效率不高？你知道大型视频网站是怎么干的吗？为什么apple的切的那么碎（10秒/个），国内网站的反而每一段都大很多(n分钟/个)？ 
+
+ 
+------------------
+Mars Yao | Managing Director 
+
+T:8610 64759594  F:8610 84726252
+M:+86 18611710457
+E: mars@don-goal.com  
+--------------------------------------------------------------------------------
+DonGoal Co., Ltd  
+Work Hard, Play More
+UNIT 305, BUILDING C, XINGYUANGUOJI, WANGJING, CHAOYANG DISTRICT, BEIJING, 100102, P.R.CHINA
+
+ 
+ 
+ 
+------------------ Original ------------------
+From: "bartuer";
+Date: 2011年12月10日(星期六) 上午7:59
+To: "Mars Yao";
+Subject: 这周日在家写代码
+ 
+昨天在糖糖没找到Final Cut Pro X，下载试用版了，如果还 
+是没法用这个工具，就要逼自己写一个了，最终还是要 
+自己写一个，因为服务器不是X Server。视频编码可能也 
+是一样，需要看懂x264这样的代码。
+
+push了一堆表格及其生成程序, 有空了会生成一个特大表 
+格（200x200之类的)，看看会怎么样，是不是数据库工具 
+就有用了（上周写了一个emacs程序可以用数据库操作特 
+大表格）。做这个工作就会注意到Sorenson的工作细节有 
+许多纰漏，命名的标准不统一，有的地方不合理，还有 
+不少拼错的地方，他们其实并没有特别认真的对待别家 
+的编码器，除了Main Concept的。还有，为什么Compressor只 
+卖50$?
+
+fps对screen record类的视频压缩有重大影响，我把Sorenson  
+Squeeze的教学视频压缩成了一半，仍然是可看的。
+
+
