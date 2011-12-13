@@ -126,7 +126,68 @@
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
             - should make it as automatically as possible
-***** TODO huge file upload and download [0/6]
+***** TODO HLS tool [3/4]
+      SCHEDULED: <2011-12-10 Sat 17:00>
+      :PROPERTIES:
+      :Effort:   8:00
+      :END:
+      - [X] input/output coverage requirement
+            - bandwidth range
+              - cellar
+              - 3G
+              - ADSL
+              - WiFi
+            - bandwidth grain
+              - 2 grade each network
+              - only 1 for WiFi network
+            - device range
+              - iphone
+              - ipad
+              - AppleTV
+              - WebKit browser
+            - multimedia track
+              - video and audio
+              - audio and still image
+            - container
+              - mp4 for progressive download
+              - ts for HLS
+              - hinted mov for QuickTime stream server
+            - input
+              - QuickTime screen record raw
+              - QuickTime screen record export
+      - [X] basic encoding and encoder choosing
+            - video
+              x264 H264 AVR, HandBrake patched version 
+            - audio
+              - Chrome can play mp4 with AAC audio?
+              - iPhone can play m4v with mp3 audio?
+              - choose one most compatible
+              - use faac or lame after decision
+            - dependency
+              - should balance between supported format and complexity
+              - now it is indeed single input and output format
+            - platform
+              - at least *nix
+              - first only Unix Makefile
+              - should works on both 32/64 Mac and 32/64 Linux
+              - if need UI component
+                - migrate to XCode project
+                - use CMake
+      - [X] project plot
+            - dependency
+              - should balance between supported formats and complexity
+              - now it is indeed single input and output format
+            - compiling platform
+              - at least *nix
+              - first only Unix Makefile
+              - should works on both 32/64 Mac and 32/64 Linux
+              - if need UI component
+                - migrate to XCode project
+                - use CMake
+
+      - [ ] segmenter
+            - seems encoder need run by segmenter
+****** TODO huge file upload and download [0/6]
       - [ ] mongrel2 solution
       - [ ] node.js solution
       - [ ] upload client
@@ -184,8 +245,11 @@
             - squeeze
               (link "./data/spfx_single.csv" 3449)
             - handbrake
+            - final cut HLS output
       - [ ] from code
             - http stream
+            - ffmpeg
+            - x264
       - [ ] from document
             - stream media guide
 ***** TODO setup http streaming server [0/4]
@@ -203,6 +267,8 @@
 ***** TODO video effect and transitions [0/2]
       - [ ] filter matrixs in CoreImage library
       - [ ] quartz composer make video transition
+***** TODO research on overlay
+      it is useful to display two part (keyboard, touch) meanwhile
 *** deployment
 ***** TODO main site at bartuer's linode machine
 ***** TODO use Youku as CDN
@@ -213,7 +279,7 @@
       - [X] branch based process
             - now just commit on master is okay
       - [X] not pull request
-***** TODO site server data and document [1/2]
+***** TODO site server data and document [1/1]
       SCHEDULED: <2011-11-26 Sat 13:30>
       CLOCK: [2011-11-26 Sat 13:18]--[2011-11-26 Sat 14:05] =>  0:47
       :PROPERTIES:

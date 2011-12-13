@@ -1,0 +1,32 @@
+source,connection,frame size,aspect,total bit rate,video bit rate,key frames per minute,h264 profile,frames per second
+Apple HLS Guilde,cellular,480x320(for meta data image),,64kpbs,,,,
+Apple HLS Guilde,cellular,480x224,16:9,150kbps,110kbps,30,,12~15
+Apple HLS Guilde,cellular,480x224,16:9,240kbps,200kbps,45,,12~15
+Apple HLS Guilde,cellular,480x224,16:9,440kbps,400kbps,90,,29.97
+Apple HLS Guilde,wifi,640x360,16:9,640kbps,600kbps,90,,29.97
+Apple HLS Guilde,cellular,480x320(for meta data image),,64kbps,,,,
+Apple HLS Guilde,cellular,480x300,4:3,150kbps,110kbps,30,,12~15
+Apple HLS Guilde,cellular,480x300,4:3,240kbps,200kbps,45,,12~15
+Apple HLS Guilde,cellular,480x300,4:3,440kbps,400kbps,90,,29.97
+Apple HLS Guilde,wifi,640x480,4:3,640kbps,600kbps,90,,29.97
+Apple HLS Guilde,wifi,640x360,16:9,1240kbps,1200kbps,90,,29.97
+Apple HLS Guilde,wifi,960x540,16:9,1840kbps,1800kbps,90,,29.97
+Apple HLS Guilde,wifi,1280x720,16:9,2540kbps,1500kbps,90,,29.97
+Apple HLS Guilde,wifi,1280x720,16:9,4540kbps,4500kbps,90,,29.97
+Apple HLS Guilde,wifi,640x480,4:3,1240kbps,1200kbps,90,,29.97
+Apple HLS Guilde,wifi,960x720,4:3,1840kbps,1800kbps,90,,29.97
+Apple HLS Guilde,wifi,9600x720,4:3,2540kbps,1500kbps,90,,29.97
+Apple HLS Guilde,wifi,1280x960,4:3,4540kbps,4500kbps,90,,29.97
+Final cut pro X,,,,2kbps(silence),,,,
+Final cut pro X,cellular low,428x240,16:9,,156kbps,,baseline,23.98
+Final cut pro X,cellular high,428x240,16:9,,275kbps,,baseline,23.98
+Final cut pro X,wifi low,640x360,16:9,,631kbps,,main,23.98
+Final cut pro X,wifi high,640x360,16:9,,834kbps,,main,23.98
+Final cut pro X,broadband low,640x360,16:9,,966kbps,,main,23.98
+Final cut pro X,broadband high,960x540,16:9,,1695kbps,,main,23.98
+Sorenson Squeeze 8,109Kb,384x288,4:3,,131kbps,,baseline,10
+Sorenson Squeeze 8,229Kb,384x288,4:3,,265kbps,,baseline,15
+Sorenson Squeeze 8,480Kb,384x288,4:3,,542kbps,,baseline,30
+Sorenson Squeeze 8,700Kb,480x360,4:3,,681kbps,,baseline,30
+Sorenson Squeeze 8,1100Kb,640x480,4:3,,1015kbps,,main,30
+Sorenson Squeeze 8,1500Kb,640x480,4:3,,1352kbps,,main,30

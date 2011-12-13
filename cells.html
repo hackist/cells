@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-12-10 16:45:27 CST"/>
+<meta name="generated" content="2011-12-12 10:44:50 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -130,13 +130,18 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_4">3.4 video </a>
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
-<li><a href="#sec-3_4_2">3.4.2 huge file upload and download [0/6] </a></li>
+<li><a href="#sec-3_4_2">3.4.2 HLS tool [3/4] </a>
+<ul>
+<li><a href="#sec-3_4_2_1">3.4.2.1 huge file upload and download [0/6] </a></li>
+</ul>
+</li>
 <li><a href="#sec-3_4_3">3.4.3 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
 <li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
 <li><a href="#sec-3_4_5">3.4.5 profile collection [1/3] </a></li>
 <li><a href="#sec-3_4_6">3.4.6 setup http streaming server [0/4] </a></li>
 <li><a href="#sec-3_4_7">3.4.7 automatically script driven capture [1/2]</a></li>
 <li><a href="#sec-3_4_8">3.4.8 video effect and transitions [0/2] </a></li>
+<li><a href="#sec-3_4_9">3.4.9 research on overlay </a></li>
 </ul>
 </li>
 <li><a href="#sec-3_5">3.5 deployment </a>
@@ -149,7 +154,7 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_6">3.6 project maintain </a>
 <ul>
 <li><a href="#sec-3_6_1">3.6.1 github repository [2/2] </a></li>
-<li><a href="#sec-3_6_2">3.6.2 site server data and document [1/2] </a></li>
+<li><a href="#sec-3_6_2">3.6.2 site server data and document [1/1] </a></li>
 <li><a href="#sec-3_6_3">3.6.3 setup working network environment [2/7] </a></li>
 </ul>
 </li>
@@ -660,8 +665,216 @@ should make it as automatically as possible
 </div>
 
 <div id="outline-container-3_4_2" class="outline-4">
-<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h4>
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [3/4] </h4>
 <div class="outline-text-4" id="text-3_4_2">
+
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 17:00</span></span><br/>
+</p><ul>
+<li>
+<b>[X]</b> input/output coverage requirement
+<ul>
+<li>
+bandwidth range
+<ul>
+<li>
+cellar
+</li>
+<li>
+3G
+</li>
+<li>
+ADSL
+</li>
+<li>
+WiFi
+</li>
+</ul>
+</li>
+<li>
+bandwidth grain
+<ul>
+<li>
+2 grade each network
+</li>
+<li>
+only 1 for WiFi network
+</li>
+</ul>
+</li>
+<li>
+device range
+<ul>
+<li>
+iphone
+</li>
+<li>
+ipad
+</li>
+<li>
+AppleTV
+</li>
+<li>
+WebKit browser
+</li>
+</ul>
+</li>
+<li>
+multimedia track
+<ul>
+<li>
+video and audio
+</li>
+<li>
+audio and still image
+</li>
+</ul>
+</li>
+<li>
+container
+<ul>
+<li>
+mp4 for progressive download
+</li>
+<li>
+ts for HLS
+</li>
+<li>
+hinted mov for QuickTime stream server
+</li>
+</ul>
+</li>
+<li>
+input
+<ul>
+<li>
+QuickTime screen record raw
+</li>
+<li>
+QuickTime screen record export
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> basic encoding and encoder choosing
+<ul>
+<li>
+video
+x264 H264 AVR, HandBrake patched version 
+</li>
+<li>
+audio
+<ul>
+<li>
+Chrome can play mp4 with AAC audio?
+</li>
+<li>
+iPhone can play m4v with mp3 audio?
+</li>
+<li>
+choose one most compatible
+</li>
+<li>
+use faac or lame after decision
+</li>
+</ul>
+</li>
+<li>
+dependency
+<ul>
+<li>
+should balance between supported format and complexity
+</li>
+<li>
+now it is indeed single input and output format
+</li>
+</ul>
+</li>
+<li>
+platform
+<ul>
+<li>
+at least *nix
+</li>
+<li>
+first only Unix Makefile
+</li>
+<li>
+should works on both 32/64 Mac and 32/64 Linux
+</li>
+<li>
+if need UI component
+<ul>
+<li>
+migrate to XCode project
+</li>
+<li>
+use CMake
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> project plot
+<ul>
+<li>
+dependency
+<ul>
+<li>
+should balance between supported formats and complexity
+</li>
+<li>
+now it is indeed single input and output format
+</li>
+</ul>
+</li>
+<li>
+compiling platform
+<ul>
+<li>
+at least *nix
+</li>
+<li>
+first only Unix Makefile
+</li>
+<li>
+should works on both 32/64 Mac and 32/64 Linux
+</li>
+<li>
+if need UI component
+<ul>
+<li>
+migrate to XCode project
+</li>
+<li>
+use CMake
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> segmenter
+<ul>
+<li>
+seems encoder need run by segmenter
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-3_4_2_1" class="outline-5">
+<h5 id="sec-3_4_2_1"><span class="section-number-5">3.4.2.1</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h5>
+<div class="outline-text-5" id="text-3_4_2_1">
 
 <ul>
 <li>
@@ -683,6 +896,7 @@ should make it as automatically as possible
 <b>[<span style="visibility:hidden;">X</span>]</b> try new location of linode
 </li>
 </ul>
+</div>
 </div>
 
 </div>
@@ -841,6 +1055,9 @@ squeeze
 <li>
 handbrake
 </li>
+<li>
+final cut HLS output
+</li>
 </ul>
 </li>
 <li>
@@ -848,6 +1065,12 @@ handbrake
 <ul>
 <li>
 http stream
+</li>
+<li>
+ffmpeg
+</li>
+<li>
+x264
 </li>
 </ul>
 </li>
@@ -931,6 +1154,15 @@ have take look at js as system script language on OSX possibility?
 </li>
 </ul>
 </div>
+
+</div>
+
+<div id="outline-container-3_4_9" class="outline-4">
+<h4 id="sec-3_4_9"><span class="section-number-4">3.4.9</span> <span class="todo TODO"> TODO</span> research on overlay </h4>
+<div class="outline-text-4" id="text-3_4_9">
+
+<p>it is useful to display two part (keyboard, touch) meanwhile
+</p></div>
 </div>
 
 </div>
@@ -997,7 +1229,7 @@ now just commit on master is okay
 </div>
 
 <div id="outline-container-3_6_2" class="outline-4">
-<h4 id="sec-3_6_2"><span class="section-number-4">3.6.2</span> <span class="todo TODO"> TODO</span> site server data and document [1/2] </h4>
+<h4 id="sec-3_6_2"><span class="section-number-4">3.6.2</span> <span class="todo TODO"> TODO</span> site server data and document [1/1] </h4>
 <div class="outline-text-4" id="text-3_6_2">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-26 Sat 13:30</span></span><br/>
@@ -1064,7 +1296,7 @@ pin idea here, will setup new one when chance coming
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-12-10 16:45:27 CST</p>
+<p class="date"> Date: 2011-12-12 10:44:50 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>
