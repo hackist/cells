@@ -1,2 +1,2 @@
 #!/bin/sh
-say -o /tmp/h.aif -f $1 && afconvert -v -f m4af -d aac -b 64000 /tmp/h.aif $1.m4a && afinfo $1.m4a; wc $1
+say  --progress -o /tmp/h.aif -f $1 && lame -b 96 -V2 /tmp/h.aif $1.mp3 && afinfo $1.mp3; wc $1

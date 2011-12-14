@@ -214,10 +214,18 @@
                 - use CMake
       - [ ] prepare test data
             - prepare sound first
-            - 5 minutes 800x600 of Mac
+            - progressive download as source of segment
+            - 5 minutes 800x600 of Mac shared screen
               - spotlight usage
               - versions
                 - download full size
+                  hb -i -o -e x264 --x264-preset ultrafast \
+                  --x264-profile baseline \
+                  -x ref=2:bframes=2:subq=6:mixed-refs=0:weightb=0:8x8dct=0:trellis=0 \
+                  --x264-tune zerolatency -r 5 -vfr \
+                  --strict-anamorphic  \
+                  -T -2 -b 183 \
+                  -9 -f mp4 -4 -m
                 - stream iPad size 156k/512
             - 20 seconds 326x496 of iPhone simulator
               - webapp usage

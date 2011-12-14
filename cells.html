@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-12-12 10:44:50 CST"/>
+<meta name="generated" content="2011-12-14 15:40:29 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -130,7 +130,7 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_4">3.4 video </a>
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
-<li><a href="#sec-3_4_2">3.4.2 HLS tool [3/4] </a>
+<li><a href="#sec-3_4_2">3.4.2 HLS tool [1/2] </a>
 <ul>
 <li><a href="#sec-3_4_2_1">3.4.2.1 huge file upload and download [0/6] </a></li>
 </ul>
@@ -665,13 +665,106 @@ should make it as automatically as possible
 </div>
 
 <div id="outline-container-3_4_2" class="outline-4">
-<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [3/4] </h4>
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [1/2] </h4>
 <div class="outline-text-4" id="text-3_4_2">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 17:00</span></span><br/>
 </p><ul>
 <li>
-<b>[X]</b> input/output coverage requirement
+<b>[X]</b> project plot
+<ul>
+<li>
+segmenter in commercial software all has serious limitation
+<ul>
+<li>
+have try 
+<ul>
+<li>
+Apple developer tool
+</li>
+<li>
+Final Cut Pro X
+</li>
+<li>
+Sorenson Squeeze
+</li>
+</ul>
+</li>
+<li>
+OS platform
+</li>
+<li>
+cluster support
+</li>
+<li>
+configure knowledge management
+<ul>
+<li>
+share
+</li>
+<li>
+update
+</li>
+<li>
+tuning
+</li>
+</ul>
+</li>
+<li>
+customize process or work flow
+</li>
+</ul>
+</li>
+<li>
+architecture
+<ul>
+<li>
+facility graphic chip can achieve below 10 times
+<ul>
+<li>
+CUDA of Nvidia
+</li>
+<li>
+GPGPU of AMD
+</li>
+<li>
+video sync of Intel 
+</li>
+<li>
+OpenCL of Apple
+</li>
+</ul>
+</li>
+<li>
+programming to reuse the middle result can achieve about 10 times    
+<ul>
+<li>
+2 screen size x 3 bandwidth x 2 delivery format at least           
+</li>
+<li>
+Final Cut Pro X queue them for encoding on multiple machine        
+</li>
+<li>
+Sorenson seems use middle result
+</li>
+</ul>
+</li>
+<li>
+cluster method indeed can achieve more than 100 times
+<ul>
+<li>
+now network bandwidth is 1000 times higher than normal encoding rate
+</li>
+<li>
+it is much easier to achieve high performance by programming on
+socket than on graphic chip API or OS specific thread model
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+input/output coverage requirement
 <ul>
 <li>
 bandwidth range
@@ -754,10 +847,14 @@ QuickTime screen record export
 </li>
 </ul>
 </li>
+<li>
+preset reference
+(link "data/hls<sub>guild</sub>.csv" 7591)
+</li>
 </ul>
 </li>
 <li>
-<b>[X]</b> basic encoding and encoder choosing
+basic encoding and encoder choosing
 <ul>
 <li>
 video
@@ -819,9 +916,6 @@ use CMake
 </ul>
 </li>
 <li>
-<b>[X]</b> project plot
-<ul>
-<li>
 dependency
 <ul>
 <li>
@@ -833,7 +927,7 @@ now it is indeed single input and output format
 </ul>
 </li>
 <li>
-compiling platform
+compilation platform
 <ul>
 <li>
 at least *nix
@@ -852,7 +946,6 @@ migrate to XCode project
 </li>
 <li>
 use CMake
-
 </li>
 </ul>
 </li>
@@ -861,10 +954,89 @@ use CMake
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> segmenter
+<b>[<span style="visibility:hidden;">X</span>]</b> prepare test data
 <ul>
 <li>
-seems encoder need run by segmenter
+prepare sound first
+</li>
+<li>
+progressive download as source of segment
+</li>
+<li>
+5 minutes 800x600 of Mac shared screen
+<ul>
+<li>
+spotlight usage
+</li>
+<li>
+versions
+<ul>
+<li>
+download full size
+hb -i -o -e x264 &ndash;x264-preset ultrafast \
+&ndash;x264-profile baseline \
+-x ref=2:bframes=2:subq=6:mixed-refs=0:weightb=0:8x8dct=0:trellis=0 \
+&ndash;x264-tune zerolatency -r 5 -vfr \
+&ndash;strict-anamorphic  \
+-T -2 -b 183 \
+-9 -f mp4 -4 -m
+</li>
+<li>
+stream iPad size 156k/512
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+20 seconds 326x496 of iPhone simulator
+<ul>
+<li>
+webapp usage
+</li>
+<li>
+versions 
+<ul>
+<li>
+download full size
+</li>
+<li>
+stream iPhone version 110k/260
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+20 seconds 512x384 of iPad simulator
+<ul>
+<li>
+reuse content of iPhone one
+</li>
+<li>
+versions
+<ul>
+<li>
+download/progressive full size
+</li>
+<li>
+stream iPad size 156k/512
+</li>
+<li>
+stream iPhone size 110k/260
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+download version add meta data
+</li>
+<li>
+add meta data to MpegTS packet
+</li>
+<li>
+script to setup record windows
 </li>
 </ul>
 </li>
@@ -1296,7 +1468,7 @@ pin idea here, will setup new one when chance coming
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-12-12 10:44:50 CST</p>
+<p class="date"> Date: 2011-12-14 15:40:29 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>
