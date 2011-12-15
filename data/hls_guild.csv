@@ -25,8 +25,8 @@ Final cut pro X,wifi high,640x360,16:9,,,834kbps,23.98,,main
 Final cut pro X,broadband low,640x360,16:9,,,966kbps,23.98,,main
 Final cut pro X,broadband high,960x540,16:9,,,1695kbps,23.98,,main
 Sorenson Squeeze 8,109Kb,384x288,4:3,,,131kbps,10,,baseline
-Sorenson Squeeze 8,229Kb,384x288,4:3,,,265kbps,15,,baseline
-Sorenson Squeeze 8,480Kb,384x288,4:3,,,542kbps,30,,baseline
+Sorenson Squeeze 8,229Kb,384x288,4:3,400kbps,96kbps,265kbps,15,,baseline
+Sorenson Squeeze 8,480Kb,384x288,4:3,600kbps,96kbps,542kbps,30,,baseline
 Sorenson Squeeze 8,700Kb,480x360,4:3,,,681kbps,30,,baseline
 Sorenson Squeeze 8,1100Kb,640x480,4:3,,,1015kbps,30,,main
 Sorenson Squeeze 8,1500Kb,640x480,4:3,,,1352kbps,30,,main
