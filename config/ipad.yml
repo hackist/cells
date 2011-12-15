@@ -1,0 +1,59 @@
+temp_dir: '/tmp/'
+segment_prefix: 'ipad'
+index_prefix: 'spotlight_ipad'
+
+# type of logging: STDOUT, FILE
+log_type: 'STDOUT'
+#log_type: 'FILE'
+#log_file: '/tmp/streamer.log'
+# levels: DEBUG, INFO, WARN, ERROR
+log_level: 'DEBUG'
+
+# where the origin video is going to come from
+input_location: '/opt/app/static/cast/spotlight/spotlight_ipad.mp4'
+
+# segment length in seconds
+segment_length: 10 
+
+# this is the URL where the stream (ts) files will end up
+# if this location is the same as the location where the m3u8 
+# index is then leave it blank
+# url_prefix: ''
+url_prefix: 'http://192.168.0.206/cast/'
+
+# how many segments to keep in the index
+index_segment_count: 15
+
+# this command is used for multirate encodings and is what pushes the encoders
+source_command: 'cat %s'
+
+# This is the location of the segmenter
+segmenter_binary: 'live_segmenter'
+
+# the encoding profile to use
+encoding_profile: '256k'
+
+# The upload profile to use
+transfer_profile: 'copy_dev'
+
+#
+# Encoding profiles
+#
+256k:
+  ffmpeg_command: "ffmpeg -er 4 -vbsf h264_mp4toannexb -i %s -f mpegts -acodec copy -vcodec copy - | %s %s %s %s %s"
+  bandwidth: 256000
+
+#
+# Transfer profiles
+#
+
+scp_dev:
+  transfer_type: 'scp'
+  remote_host: '192.168.1.1'
+  user_name: 'root'
+  #password: 'pass'
+  directory: '/web/sites/test.com/html/streamingvideo'
+
+copy_dev:
+  transfer_type: 'copy'
+  directory: '/opt/app/static/cast'

@@ -1,0 +1,1 @@
+afconvert -v -f m4af -d aac -b 64000 $1 $1.m4a  && afinfo $1.m4a

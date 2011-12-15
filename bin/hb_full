@@ -1,0 +1,1 @@
+hb -i $1 -o $2 -e x264 --x264-preset ultrafast  --x264-profile baseline -x ref=2:bframes=2:subq=6:mixed-refs=0:weightb=0:8x8dct=0:trellis=0 --x264-tune zerolatency -r 5 -vfr  --strict-anamorphic -T -2 -b 183  -9 -f mp4 -O -m

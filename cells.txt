@@ -128,7 +128,7 @@
             - should make it as automatically as possible
 ***** TODO HLS tool [3/3]
       SCHEDULED: <2011-12-10 Sat 17:00>
-      CLOCK: [2011-12-16 Fri 03:09]--[2011-12-16 Fri 04:59] =>  1:50
+      CLOCK: [2011-12-16 Fri 07:01]
       :PROPERTIES:
       :Effort:   8:00
       :Clockhistory: 1
@@ -248,6 +248,14 @@
               (git-link "~/local/src/encoder/segmenter/http-stream/"
               "8f210ef91afe0776f290e9d507a3506f57b74845")
                see github.com:hackist/HTTP-Live-Video-Stream-Segmenter-and-Distributor.git
+            - scripts
+              - speed okay
+                - audio generate
+                - audio encode
+                - audio video merge
+                - hls split/packet/index
+                - video encode speed now is about 100fps, but seems
+                  has seen 200fps speed
             - download version add meta data
             - add meta data to MpegTS packet
             - script to setup record windows
