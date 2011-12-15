@@ -126,10 +126,15 @@
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
             - should make it as automatically as possible
-***** TODO HLS tool [1/2]
+***** TODO HLS tool [3/3]
       SCHEDULED: <2011-12-10 Sat 17:00>
+      CLOCK: [2011-12-16 Fri 03:09]--[2011-12-16 Fri 04:59] =>  1:50
       :PROPERTIES:
       :Effort:   8:00
+      :Clockhistory: 1
+      | :Clock1: | [2011-12-16 Fri 03:09]--[2011-12-16 Fri 04:59] =>  1:50 | init |  110 |
+      |          |                                                         |      | 1.83 |
+      #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
       :END:
       - [X] project plot
             - segmenter in commercial software all has serious limitation
@@ -212,7 +217,7 @@
               - if need UI component
                 - migrate to XCode project
                 - use CMake
-      - [ ] prepare test data
+      - [X] prepare test data
             - prepare sound first
             - progressive download as source of segment
             - 5 minutes 800x600 of Mac shared screen
@@ -238,6 +243,11 @@
                 - download/progressive full size
                 - stream iPad size 156k/512
                 - stream iPhone size 110k/260
+      - [X] segmenter script
+            - try http_streams
+              (git-link "~/local/src/encoder/segmenter/http-stream/"
+              "8f210ef91afe0776f290e9d507a3506f57b74845")
+               see github.com:hackist/HTTP-Live-Video-Stream-Segmenter-and-Distributor.git
             - download version add meta data
             - add meta data to MpegTS packet
             - script to setup record windows
