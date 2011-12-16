@@ -383,14 +383,20 @@
       #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
       :END:
       - [X] automatically convert this document
-***** TODO setup working network environment [2/7]
+***** TODO setup working network environment [3/7]
       SCHEDULED: <2011-11-27 Sun 10:00>
       - [X] fast network
       - [X] storage
+      - [X] document browser
+            - access commits links
+              https://github.com/hackist/cells/commits/master
+            - check org doc, (change version number to current version)
+              https://raw.github.com/hackist/cells/v0.1/cells.html
+            - check data, (change version number to current version)
+              https://raw.github.com/hackist/cells/v0.1/data/hls_guild.csv
       - [ ] service finding
             - DNS configure
             - bonjour name convention
-      - [ ] document browser
       - [ ] document edit
       - [ ] notification
       - [ ] iChat server can save conversation?
