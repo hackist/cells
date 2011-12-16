@@ -55,5 +55,5 @@ wowza.com+encoding.com,700,"420x270(not standard aspect, http://dwz.cn/preset )"
 wowza.com+encoding.com,1100,720x406,16:9,1100kbps,128kbps,1000kbps,24,48,
 wowza.com+encoding.com,1300,1024x576,16:9,1300kbps,128kbps,1200kbps,24,48,
 wowza.com+encoding.com,1500,1080x608,16:9,1500kbps,128kbps,1400kbps,24,48,
-hackist,low,640x480,4:3,220kbps,64kbps,156kbps,5,,baseline
-hackist,high,800x600,4:3,250kbps,64kbps,183kbps,5,,baseline
+hackist,low,640x480,4:3,230kbps,64kbps,164kbps,10,,baseline
+hackist,high,800x600,4:3,260kbps,64kbps,192kbps,10,,baseline
