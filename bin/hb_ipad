@@ -1,1 +1,1 @@
-hb -i $1 -o $2 -e x264 --x264-preset ultrafast  --x264-profile baseline  --x264-tune zerolatency -r 5 -vfr  -X 640 -T -2 -b 156 -9 -f mp4 -O -m
+hb -i $1 -o $2 -e x264 --x264-preset ultrafast  --x264-profile baseline  --x264-tune zerolatency -r 15 -vfr  -X 640  -b 156 -9 -f mp4 -O -m
