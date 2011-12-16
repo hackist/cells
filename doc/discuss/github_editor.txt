@@ -1,0 +1,36 @@
+From: bartuer[gmail] <bartuer@gmail.com>
+Date: December 17, 2011 7:49:10 AM GMT+08:00
+To: Mars Yao <mars@don-goal.com>
+Subject: it is possible edit and commit on way
+
+but this feature is not very convenient, just works:
+
+- must edit on branch, can not edit on master
+ I have create a branch for you edit on way with ipad
+ it's name is on_way
+- must login to edit and commit
+ of course
+
+link:
+https://github.com/hackist/cells/edit/on_way/data/hls_guild.csv
+                                ^..I will edit
+
+
+                                     ^..On branch "on_way"
+
+
+                                            ^..For this file
+
+
+
+I have commit one, you can see "change fps from 5 -> 10 will add about 8kbps" commit on branch on_way
+https://github.com/hackist/cells/commits/on_way
+
+It hasn't merge back to master
+https://github.com/hackist/cells/commits/master
+
+Have you notice with such features, you can setup whole blog like site via github host, other can view these pictures, html, pdf, csv, any files indeed, download the whole site in one zip, you can keep any versions and branches of your site, and it is possible edit online, indeed it's editor is not so bad, much much better than many online editor, but people seldom use github this way.
+
+
+
+
