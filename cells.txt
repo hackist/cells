@@ -394,10 +394,11 @@
               https://raw.github.com/hackist/cells/v0.1/cells.html
             - check data, (change version number to current version)
               https://raw.github.com/hackist/cells/v0.1/data/hls_guild.csv
+      - [ ] document edit
+            - github now support online editing, but must work on branch
       - [ ] service finding
             - DNS configure
             - bonjour name convention
-      - [ ] document edit
       - [ ] notification
       - [ ] iChat server can save conversation?
             - can route irc to jabberd?
