@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-12-16 07:19:49 CST"/>
+<meta name="generated" content="2011-12-17 06:19:43 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -130,18 +130,15 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_4">3.4 video </a>
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
-<li><a href="#sec-3_4_2">3.4.2 HLS tool [3/3] </a>
-<ul>
-<li><a href="#sec-3_4_2_1">3.4.2.1 huge file upload and download [0/6] </a></li>
-</ul>
-</li>
-<li><a href="#sec-3_4_3">3.4.3 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
-<li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
-<li><a href="#sec-3_4_5">3.4.5 profile collection [1/3] </a></li>
-<li><a href="#sec-3_4_6">3.4.6 setup http streaming server [0/4] </a></li>
-<li><a href="#sec-3_4_7">3.4.7 automatically script driven capture [1/2]</a></li>
-<li><a href="#sec-3_4_8">3.4.8 video effect and transitions [0/2] </a></li>
-<li><a href="#sec-3_4_9">3.4.9 research on overlay </a></li>
+<li><a href="#sec-3_4_2">3.4.2 HLS tool [0/1] </a></li>
+<li><a href="#sec-3_4_3">3.4.3 huge file upload and download [0/6] </a></li>
+<li><a href="#sec-3_4_4">3.4.4 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
+<li><a href="#sec-3_4_5">3.4.5 reference movie [2/5] </a></li>
+<li><a href="#sec-3_4_6">3.4.6 profile collection [3/3] </a></li>
+<li><a href="#sec-3_4_7">3.4.7 setup http streaming server [4/4] </a></li>
+<li><a href="#sec-3_4_8">3.4.8 automatically script driven capture [1/2]</a></li>
+<li><a href="#sec-3_4_9">3.4.9 video effect and transitions [0/2] </a></li>
+<li><a href="#sec-3_4_10">3.4.10 research on overlay </a></li>
 </ul>
 </li>
 <li><a href="#sec-3_5">3.5 deployment </a>
@@ -665,7 +662,7 @@ should make it as automatically as possible
 </div>
 
 <div id="outline-container-3_4_2" class="outline-4">
-<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [3/3] </h4>
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [0/1] </h4>
 <div class="outline-text-4" id="text-3_4_2">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 17:00</span></span><br/>
@@ -1066,24 +1063,51 @@ has seen 200fps speed
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<b>[X]</b> get performance data
+<ul>
+<li>
+bandwidth
+ab -c 40 -n 300 -e /tmp/ab.csv <a href="http://www.bartuer.com/">http://www.bartuer.com/</a>
+can use full bandwidth with home ADSL
+</li>
+<li>
+latency
+ping -c 5 www.bartuer.com
+about 400ms, could drop to 200ms if migrate to tokyo
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> meta data
+<ul>
 <li>
 download version add meta data
 </li>
 <li>
 add meta data to MpegTS packet
 </li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> build tool chain on server
+<ul>
 <li>
 script to setup record windows
+do it after pin down work flow
 </li>
 </ul>
 </li>
 </ul>
+</div>
 
 </div>
 
-<div id="outline-container-3_4_2_1" class="outline-5">
-<h5 id="sec-3_4_2_1"><span class="section-number-5">3.4.2.1</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h5>
-<div class="outline-text-5" id="text-3_4_2_1">
+<div id="outline-container-3_4_3" class="outline-4">
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h4>
+<div class="outline-text-4" id="text-3_4_3">
 
 <ul>
 <li>
@@ -1106,13 +1130,12 @@ script to setup record windows
 </li>
 </ul>
 </div>
-</div>
 
 </div>
 
-<div id="outline-container-3_4_3" class="outline-4">
-<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="done DONE"> DONE</span> preset of encode according to bandwidth and screen size settings [5/5] </h4>
-<div class="outline-text-4" id="text-3_4_3">
+<div id="outline-container-3_4_4" class="outline-4">
+<h4 id="sec-3_4_4"><span class="section-number-4">3.4.4</span> <span class="done DONE"> DONE</span> preset of encode according to bandwidth and screen size settings [5/5] </h4>
+<div class="outline-text-4" id="text-3_4_4">
 
 <ul>
 <li>
@@ -1225,9 +1248,9 @@ indeed there is no such significant difference there
 
 </div>
 
-<div id="outline-container-3_4_4" class="outline-4">
-<h4 id="sec-3_4_4"><span class="section-number-4">3.4.4</span> <span class="todo TODO"> TODO</span> reference movie [2/4] </h4>
-<div class="outline-text-4" id="text-3_4_4">
+<div id="outline-container-3_4_5" class="outline-4">
+<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> reference movie [2/5] </h4>
+<div class="outline-text-4" id="text-3_4_5">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 14:00</span></span><br/>
 </p><ul>
@@ -1236,6 +1259,10 @@ indeed there is no such significant difference there
 </li>
 <li>
 <b>[X]</b> javascript control
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> try this method m3u8 to m3u8
+(link "~/Movies/screen record/try<sub>http</sub><sub>stream</sub>.m3u8" 1)
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> browser native control
@@ -1248,9 +1275,9 @@ indeed there is no such significant difference there
 
 </div>
 
-<div id="outline-container-3_4_5" class="outline-4">
-<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> profile collection [1/3] </h4>
-<div class="outline-text-4" id="text-3_4_5">
+<div id="outline-container-3_4_6" class="outline-4">
+<h4 id="sec-3_4_6"><span class="section-number-4">3.4.6</span> <span class="done DONE"> DONE</span> profile collection [3/3] </h4>
+<div class="outline-text-4" id="text-3_4_6">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 16:00</span></span><br/>
 </p><ul>
@@ -1270,7 +1297,7 @@ final cut HLS output
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> from code
+<b>[X]</b> from code
 <ul>
 <li>
 http stream
@@ -1284,7 +1311,7 @@ x264
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> from document
+<b>[X]</b> from document
 <ul>
 <li>
 stream media guide
@@ -1296,33 +1323,55 @@ stream media guide
 
 </div>
 
-<div id="outline-container-3_4_6" class="outline-4">
-<h4 id="sec-3_4_6"><span class="section-number-4">3.4.6</span> <span class="todo TODO"> TODO</span> setup http streaming server [0/4] </h4>
-<div class="outline-text-4" id="text-3_4_6">
+<div id="outline-container-3_4_7" class="outline-4">
+<h4 id="sec-3_4_7"><span class="section-number-4">3.4.7</span> <span class="done DONE"> DONE</span> setup http streaming server [4/4] </h4>
+<div class="outline-text-4" id="text-3_4_7">
 
 <ul>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> migrate my server from SF to Tokyo
+<b>[X]</b> migrate my server from SF to Tokyo
+<ul>
+<li>
+it is okay, so do not need migrate now
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> benchmark local and VPS
+and do not know if grab lots of Youtube video later, a
+serve in Tokyo will better than SF
+</li>
+</ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> stream audio first
+<b>[X]</b> benchmark local and VPS
+<ul>
+<li>
+VPS at least support up to 600kbps movie
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> HLS segment
+now movie total bit rate keep in 200~250bps
+</li>
+<li>
+upload speed is about 500kbps
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> stream audio first
+do not need, video stream very well
+</li>
+<li>
+<b>[X]</b> HLS segment
 </li>
 </ul>
 </div>
 
 </div>
 
-<div id="outline-container-3_4_7" class="outline-4">
-<h4 id="sec-3_4_7"><span class="section-number-4">3.4.7</span> <span class="todo TODO"> TODO</span> automatically script driven capture [1/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
-<div class="outline-text-4" id="text-3_4_7">
+<div id="outline-container-3_4_8" class="outline-4">
+<h4 id="sec-3_4_8"><span class="section-number-4">3.4.8</span> <span class="todo ABORT"> ABORT</span> automatically script driven capture [1/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
+<div class="outline-text-4" id="text-3_4_8">
 
-<ul>
+<p>turn down this, not practice
+</p><ul>
 <li>
 <b>[X]</b> is it possible use script driven capture
 <ul>
@@ -1350,9 +1399,9 @@ have take look at js as system script language on OSX possibility?
 
 </div>
 
-<div id="outline-container-3_4_8" class="outline-4">
-<h4 id="sec-3_4_8"><span class="section-number-4">3.4.8</span> <span class="todo TODO"> TODO</span> video effect and transitions [0/2] </h4>
-<div class="outline-text-4" id="text-3_4_8">
+<div id="outline-container-3_4_9" class="outline-4">
+<h4 id="sec-3_4_9"><span class="section-number-4">3.4.9</span> <span class="todo TODO"> TODO</span> video effect and transitions [0/2] </h4>
+<div class="outline-text-4" id="text-3_4_9">
 
 <ul>
 <li>
@@ -1366,9 +1415,9 @@ have take look at js as system script language on OSX possibility?
 
 </div>
 
-<div id="outline-container-3_4_9" class="outline-4">
-<h4 id="sec-3_4_9"><span class="section-number-4">3.4.9</span> <span class="todo TODO"> TODO</span> research on overlay </h4>
-<div class="outline-text-4" id="text-3_4_9">
+<div id="outline-container-3_4_10" class="outline-4">
+<h4 id="sec-3_4_10"><span class="section-number-4">3.4.10</span> <span class="todo TODO"> TODO</span> research on overlay </h4>
+<div class="outline-text-4" id="text-3_4_10">
 
 <p>it is useful to display two part (keyboard, touch) meanwhile
 </p></div>
@@ -1505,7 +1554,7 @@ pin idea here, will setup new one when chance coming
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-12-16 07:19:49 CST</p>
+<p class="date"> Date: 2011-12-17 06:19:43 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>

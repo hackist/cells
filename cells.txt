@@ -126,7 +126,7 @@
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
             - should make it as automatically as possible
-***** TODO HLS tool [3/3]
+***** TODO HLS tool [0/1]
       SCHEDULED: <2011-12-10 Sat 17:00>
       CLOCK: [2011-12-16 Fri 07:01]--[2011-12-16 Fri 07:19] =>  0:18
       :PROPERTIES:
@@ -257,10 +257,20 @@
                 - hls split/packet/index
                 - video encode speed now is about 100fps, but seems
                   has seen 200fps speed
+      - [X] get performance data
+            - bandwidth
+              ab -c 40 -n 300 -e /tmp/ab.csv http://www.bartuer.com/
+              can use full bandwidth with home ADSL
+            - latency
+              ping -c 5 www.bartuer.com
+              about 400ms, could drop to 200ms if migrate to tokyo
+      - [ ] meta data
             - download version add meta data
             - add meta data to MpegTS packet
+      - [ ] build tool chain on server
             - script to setup record windows
-****** TODO huge file upload and download [0/6]
+              do it after pin down work flow
+***** TODO huge file upload and download [0/6]
       - [ ] mongrel2 solution
       - [ ] node.js solution
       - [ ] upload client
@@ -303,13 +313,15 @@
               - how could encoder know video should choose static or
                 motion profile?
                 indeed there is no such significant difference there
-***** TODO reference movie [2/4]
+***** TODO reference movie [2/5]
       SCHEDULED: <2011-11-27 Sun 14:00>
       - [X] take look at QuickTime export format
       - [X] javascript control
+      - [ ] try this method m3u8 to m3u8
+            (link "~/Movies/screen record/try_http_stream.m3u8" 1)
       - [ ] browser native control
       - [ ] page structure
-***** TODO profile collection [1/3] 
+***** DONE profile collection [3/3] 
       SCHEDULED: <2011-12-10 Sat 16:00>
       :PROPERTIES:
       :Effort:   3:00
@@ -319,18 +331,26 @@
               (link "./data/spfx_single.csv" 3449)
             - handbrake
             - final cut HLS output
-      - [ ] from code
+      - [X] from code
             - http stream
             - ffmpeg
             - x264
-      - [ ] from document
+      - [X] from document
             - stream media guide
-***** TODO setup http streaming server [0/4]
-      - [ ] migrate my server from SF to Tokyo
-      - [ ] benchmark local and VPS
-      - [ ] stream audio first
-      - [ ] HLS segment
-***** TODO automatically script driven capture [1/2]               :research:
+***** DONE setup http streaming server [4/4]
+      - [X] migrate my server from SF to Tokyo
+            - it is okay, so do not need migrate now
+            - and do not know if grab lots of Youtube video later, a
+              serve in Tokyo will better than SF
+      - [X] benchmark local and VPS
+            - VPS at least support up to 600kbps movie
+            - now movie total bit rate keep in 200~250bps
+            - upload speed is about 500kbps
+      - [X] stream audio first
+            do not need, video stream very well
+      - [X] HLS segment
+***** ABORT automatically script driven capture [1/2]              :research:
+      turn down this, not practice
       - [X] is it possible use script driven capture
             - can make that script downloadable
             - try it, pretty hard, abandon

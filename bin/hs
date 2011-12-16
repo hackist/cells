@@ -17,9 +17,9 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 
-require File.join(File.dirname(__FILE__), 'hs_transfer.rb')
-require File.join(File.dirname(__FILE__), 'hs_config.rb')
-require File.join(File.dirname(__FILE__), 'hs_encoder.rb')
+require File.join(File.dirname(__FILE__), 'hs_transfer')
+require File.join(File.dirname(__FILE__), 'hs_config')
+require File.join(File.dirname(__FILE__), 'hs_encoder')
 
 # **************************************************************
 #
