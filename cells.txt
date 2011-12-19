@@ -52,10 +52,13 @@
 *** UI design
 ***** TODO video meaning editor UI
 ***** TODO video tag selector UI
-***** TODO image stream viewer
+***** TODO image stream viewer [0/1]
+      - [ ] image stream and sound 1:1 match
+            (link "doc/discuss/first_iphone_hackist_tutorial_movie.txt" 1)
 ***** TODO build desktop application link parts by transition to try video Editor UI
+      why not just use those famous editor?
 *** audio 
-***** HALT combine audio track to video file
+***** ABORT combine audio track to video file
       - ffmpeg has serious lost frames problem, it could combine sound,
         but video quality is damaged
       - seems the problem due to not use x264 properly, Sorenson
@@ -126,7 +129,7 @@
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
             - should make it as automatically as possible
-***** TODO HLS tool [0/1]
+***** TODO HLS tool [4/6]
       SCHEDULED: <2011-12-10 Sat 17:00>
       CLOCK: [2011-12-16 Fri 07:01]--[2011-12-16 Fri 07:19] =>  0:18
       :PROPERTIES:

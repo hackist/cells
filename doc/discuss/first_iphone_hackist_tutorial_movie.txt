@@ -1,0 +1,42 @@
+From: "bartuer[gmail]" <bartuer@gmail.com>
+Date: December 20, 2011 6:37:18 AM GMT+08:00
+To: "Mars Yao" <mars@don-goal.com>
+Subject: Re: first iphone hackist tutorial movie
+
+
+On Dec 19, 2011, at 11:33 PM, Mars Yao wrote:
+技术宅拯救世界!哈哈，Miss P 也成了受益者。
+video是iPhone截图生成的吗？手动匹配到时间线的？可以看明白流程，偶尔不知道点的哪里。
+
+
+编辑每一句话，一图一句，并使其差不多长，生成声音后就可以知道总时长。把这个时间除以截图张数，算出速率，完全没有手动匹配。
+用截图生成录像非常快，瞬间完成，所以很快就能试验出大概合适的值，结果码率v:38kbps a:43kbps。
+
+整个45s的录像和个大jpg差不多，完全下载也很快。
+
+如果计算得更精确些，这个方法可以全部用程序实现的，也很容易调整图的顺序，增加,删除等。这一类的录像处理快，可以作为开发时间线编辑界面的测试基础。
+
+
+这个录像里面有捕捉鼠标点按，感觉不错，咱们试过的录屏软件也好像有这个功能。我试着搞一下。
+http://www.youtube.com/watch?v=KlXu38dPJ40
+
+
+screenium
+
+
+------------------ Original ------------------
+From:  "bartuer"<bartuer@gmail.com>;
+Date:  Mon, Dec 19, 2011 10:24 PM
+To:  "Mars Yao"<mars@don-goal.com>;
+
+Subject:  first iphone hackist tutorial movie
+ 
+http://bartuer.com/shiying/yoga/ical.m4v
+
+She will receive a 4M excel and another excel every Friday, reference these two files to find her agenda, that is unbelievable stupid(see below), so parse that xls, output ics, upload to site, build large table include other teacher's agenda HTML and make it can be accessed when network unavailable.
+
+they can not deliver information, ugly image of that excel,
+
+http://www.yogiyogacenter.com/news_huiyuan/&newsCategoryId=e27835d5-d28a-4a29-a599-d8d198dc1be5&comp_stats=comp-FrontNewsCategory_tree01-1282202331143.html
+
+
