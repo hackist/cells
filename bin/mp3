@@ -1,0 +1,1 @@
+lame -b 96 -V2 /tmp/h.aif $1.mp3 && afinfo $1.mp3

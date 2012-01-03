@@ -52,10 +52,13 @@
 *** UI design
 ***** TODO video meaning editor UI
 ***** TODO video tag selector UI
-***** TODO image stream viewer
+***** TODO image stream viewer [0/1]
+      - [ ] image stream and sound 1:1 match
+            (link "doc/discuss/first_iphone_hackist_tutorial_movie.txt" 1)
 ***** TODO build desktop application link parts by transition to try video Editor UI
+      why not just use those famous editor?
 *** audio 
-***** HALT combine audio track to video file
+***** ABORT combine audio track to video file
       - ffmpeg has serious lost frames problem, it could combine sound,
         but video quality is damaged
       - seems the problem due to not use x264 properly, Sorenson
@@ -126,10 +129,16 @@
             it has document and tutorial
       - [ ] need make video tutorial for self work flow?
             - should make it as automatically as possible
-***** TODO HLS tool [1/2]
+***** TODO HLS tool [4/6]
       SCHEDULED: <2011-12-10 Sat 17:00>
+      CLOCK: [2011-12-16 Fri 07:01]--[2011-12-16 Fri 07:19] =>  0:18
       :PROPERTIES:
       :Effort:   8:00
+      :Clockhistory: 2
+      | :Clock1: | [2011-12-16 Fri 03:09]--[2011-12-16 Fri 04:59] =>  1:50 | init |  110 |
+      | :Clock2: | [2011-12-16 Fri 07:01]--[2011-12-16 Fri 07:19] =>  0:18 | hls  |   18 |
+      |          |                                                         |      | 2.13 |
+      #+TBLFM: $4='(convert-time-to-minutes $2)::@3$4=vsum(@1..@2)/60;%.2f
       :END:
       - [X] project plot
             - segmenter in commercial software all has serious limitation
@@ -212,12 +221,20 @@
               - if need UI component
                 - migrate to XCode project
                 - use CMake
-      - [ ] prepare test data
+      - [X] prepare test data
             - prepare sound first
-            - 5 minutes 800x600 of Mac
+            - progressive download as source of segment
+            - 5 minutes 800x600 of Mac shared screen
               - spotlight usage
               - versions
                 - download full size
+                  hb -i -o -e x264 --x264-preset ultrafast \
+                  --x264-profile baseline \
+                  -x ref=2:bframes=2:subq=6:mixed-refs=0:weightb=0:8x8dct=0:trellis=0 \
+                  --x264-tune zerolatency -r 5 -vfr \
+                  --strict-anamorphic  \
+                  -T -2 -b 183 \
+                  -9 -f mp4 -4 -m
                 - stream iPad size 156k/512
             - 20 seconds 326x496 of iPhone simulator
               - webapp usage
@@ -230,10 +247,33 @@
                 - download/progressive full size
                 - stream iPad size 156k/512
                 - stream iPhone size 110k/260
+      - [X] segmenter script
+            - try http_streams
+              (git-link "~/local/src/encoder/segmenter/http-stream/"
+              "8f210ef91afe0776f290e9d507a3506f57b74845")
+               see github.com:hackist/HTTP-Live-Video-Stream-Segmenter-and-Distributor.git
+            - scripts
+              - speed okay
+                - audio generate
+                - audio encode
+                - audio video merge
+                - hls split/packet/index
+                - video encode speed now is about 100fps, but seems
+                  has seen 200fps speed
+      - [X] get performance data
+            - bandwidth
+              ab -c 40 -n 300 -e /tmp/ab.csv http://www.bartuer.com/
+              can use full bandwidth with home ADSL
+            - latency
+              ping -c 5 www.bartuer.com
+              about 400ms, could drop to 200ms if migrate to tokyo
+      - [ ] meta data
             - download version add meta data
             - add meta data to MpegTS packet
+      - [ ] build tool chain on server
             - script to setup record windows
-****** TODO huge file upload and download [0/6]
+              do it after pin down work flow
+***** TODO huge file upload and download [0/6]
       - [ ] mongrel2 solution
       - [ ] node.js solution
       - [ ] upload client
@@ -276,13 +316,15 @@
               - how could encoder know video should choose static or
                 motion profile?
                 indeed there is no such significant difference there
-***** TODO reference movie [2/4]
+***** TODO reference movie [2/5]
       SCHEDULED: <2011-11-27 Sun 14:00>
       - [X] take look at QuickTime export format
       - [X] javascript control
+      - [ ] try this method m3u8 to m3u8
+            (link "~/Movies/screen record/try_http_stream.m3u8" 1)
       - [ ] browser native control
       - [ ] page structure
-***** TODO profile collection [1/3] 
+***** DONE profile collection [3/3] 
       SCHEDULED: <2011-12-10 Sat 16:00>
       :PROPERTIES:
       :Effort:   3:00
@@ -292,18 +334,26 @@
               (link "./data/spfx_single.csv" 3449)
             - handbrake
             - final cut HLS output
-      - [ ] from code
+      - [X] from code
             - http stream
             - ffmpeg
             - x264
-      - [ ] from document
+      - [X] from document
             - stream media guide
-***** TODO setup http streaming server [0/4]
-      - [ ] migrate my server from SF to Tokyo
-      - [ ] benchmark local and VPS
-      - [ ] stream audio first
-      - [ ] HLS segment
-***** TODO automatically script driven capture [1/2]               :research:
+***** DONE setup http streaming server [4/4]
+      - [X] migrate my server from SF to Tokyo
+            - it is okay, so do not need migrate now
+            - and do not know if grab lots of Youtube video later, a
+              serve in Tokyo will better than SF
+      - [X] benchmark local and VPS
+            - VPS at least support up to 600kbps movie
+            - now movie total bit rate keep in 200~250bps
+            - upload speed is about 500kbps
+      - [X] stream audio first
+            do not need, video stream very well
+      - [X] HLS segment
+***** ABORT automatically script driven capture [1/2]              :research:
+      turn down this, not practice
       - [X] is it possible use script driven capture
             - can make that script downloadable
             - try it, pretty hard, abandon
@@ -336,15 +386,22 @@
       #+TBLFM: $4='(convert-time-to-minutes $2)::@2$4=vsum(@1..@1)/60;%.2f
       :END:
       - [X] automatically convert this document
-***** TODO setup working network environment [2/7]
+***** TODO setup working network environment [3/7]
       SCHEDULED: <2011-11-27 Sun 10:00>
       - [X] fast network
       - [X] storage
+      - [X] document browser
+            - access commits links
+              https://github.com/hackist/cells/commits/master
+            - check org doc, (change version number to current version)
+              https://raw.github.com/hackist/cells/v0.1/cells.html
+            - check data, (change version number to current version)
+              https://raw.github.com/hackist/cells/v0.1/data/hls_guild.csv
+      - [ ] document edit
+            - github now support online editing, but must work on branch
       - [ ] service finding
             - DNS configure
             - bonjour name convention
-      - [ ] document browser
-      - [ ] document edit
       - [ ] notification
       - [ ] iChat server can save conversation?
             - can route irc to jabberd?

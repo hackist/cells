@@ -7,7 +7,7 @@ lang="en" xml:lang="en">
 <title>cells</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-12-12 10:44:50 CST"/>
+<meta name="generated" content="2011-12-20 06:50:06 CST"/>
 <meta name="author" content="bartuer"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -107,7 +107,7 @@ lang="en" xml:lang="en">
 <ul>
 <li><a href="#sec-3_1_1">3.1.1 video meaning editor UI </a></li>
 <li><a href="#sec-3_1_2">3.1.2 video tag selector UI </a></li>
-<li><a href="#sec-3_1_3">3.1.3 image stream viewer </a></li>
+<li><a href="#sec-3_1_3">3.1.3 image stream viewer [0/1] </a></li>
 <li><a href="#sec-3_1_4">3.1.4 build desktop application link parts by transition to try video Editor UI </a></li>
 </ul>
 </li>
@@ -130,18 +130,15 @@ lang="en" xml:lang="en">
 <li><a href="#sec-3_4">3.4 video </a>
 <ul>
 <li><a href="#sec-3_4_1">3.4.1 workflow  [1/2]</a></li>
-<li><a href="#sec-3_4_2">3.4.2 HLS tool [3/4] </a>
-<ul>
-<li><a href="#sec-3_4_2_1">3.4.2.1 huge file upload and download [0/6] </a></li>
-</ul>
-</li>
-<li><a href="#sec-3_4_3">3.4.3 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
-<li><a href="#sec-3_4_4">3.4.4 reference movie [2/4] </a></li>
-<li><a href="#sec-3_4_5">3.4.5 profile collection [1/3] </a></li>
-<li><a href="#sec-3_4_6">3.4.6 setup http streaming server [0/4] </a></li>
-<li><a href="#sec-3_4_7">3.4.7 automatically script driven capture [1/2]</a></li>
-<li><a href="#sec-3_4_8">3.4.8 video effect and transitions [0/2] </a></li>
-<li><a href="#sec-3_4_9">3.4.9 research on overlay </a></li>
+<li><a href="#sec-3_4_2">3.4.2 HLS tool [4/6] </a></li>
+<li><a href="#sec-3_4_3">3.4.3 huge file upload and download [0/6] </a></li>
+<li><a href="#sec-3_4_4">3.4.4 preset of encode according to bandwidth and screen size settings [5/5] </a></li>
+<li><a href="#sec-3_4_5">3.4.5 reference movie [2/5] </a></li>
+<li><a href="#sec-3_4_6">3.4.6 profile collection [3/3] </a></li>
+<li><a href="#sec-3_4_7">3.4.7 setup http streaming server [4/4] </a></li>
+<li><a href="#sec-3_4_8">3.4.8 automatically script driven capture [1/2]</a></li>
+<li><a href="#sec-3_4_9">3.4.9 video effect and transitions [0/2] </a></li>
+<li><a href="#sec-3_4_10">3.4.10 research on overlay </a></li>
 </ul>
 </li>
 <li><a href="#sec-3_5">3.5 deployment </a>
@@ -155,7 +152,7 @@ lang="en" xml:lang="en">
 <ul>
 <li><a href="#sec-3_6_1">3.6.1 github repository [2/2] </a></li>
 <li><a href="#sec-3_6_2">3.6.2 site server data and document [1/1] </a></li>
-<li><a href="#sec-3_6_3">3.6.3 setup working network environment [2/7] </a></li>
+<li><a href="#sec-3_6_3">3.6.3 setup working network environment [3/7] </a></li>
 </ul>
 </li>
 </ul>
@@ -407,9 +404,15 @@ git 图形工具
 </div>
 
 <div id="outline-container-3_1_3" class="outline-4">
-<h4 id="sec-3_1_3"><span class="section-number-4">3.1.3</span> <span class="todo TODO"> TODO</span> image stream viewer </h4>
+<h4 id="sec-3_1_3"><span class="section-number-4">3.1.3</span> <span class="todo TODO"> TODO</span> image stream viewer [0/1] </h4>
 <div class="outline-text-4" id="text-3_1_3">
 
+<ul>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> image stream and sound 1:1 match
+(link "doc/discuss/first<sub>iphone</sub><sub>hackist</sub><sub>tutorial</sub><sub>movie</sub>.txt" 1)
+</li>
+</ul>
 </div>
 
 </div>
@@ -418,7 +421,8 @@ git 图形工具
 <h4 id="sec-3_1_4"><span class="section-number-4">3.1.4</span> <span class="todo TODO"> TODO</span> build desktop application link parts by transition to try video Editor UI </h4>
 <div class="outline-text-4" id="text-3_1_4">
 
-</div>
+<p>why not just use those famous editor?
+</p></div>
 </div>
 
 </div>
@@ -431,7 +435,7 @@ git 图形工具
 </div>
 
 <div id="outline-container-3_2_1" class="outline-4">
-<h4 id="sec-3_2_1"><span class="section-number-4">3.2.1</span> <span class="todo HALT"> HALT</span> combine audio track to video file </h4>
+<h4 id="sec-3_2_1"><span class="section-number-4">3.2.1</span> <span class="todo ABORT"> ABORT</span> combine audio track to video file </h4>
 <div class="outline-text-4" id="text-3_2_1">
 
 <ul>
@@ -665,13 +669,106 @@ should make it as automatically as possible
 </div>
 
 <div id="outline-container-3_4_2" class="outline-4">
-<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [3/4] </h4>
+<h4 id="sec-3_4_2"><span class="section-number-4">3.4.2</span> <span class="todo TODO"> TODO</span> HLS tool [4/6] </h4>
 <div class="outline-text-4" id="text-3_4_2">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 17:00</span></span><br/>
 </p><ul>
 <li>
-<b>[X]</b> input/output coverage requirement
+<b>[X]</b> project plot
+<ul>
+<li>
+segmenter in commercial software all has serious limitation
+<ul>
+<li>
+have try 
+<ul>
+<li>
+Apple developer tool
+</li>
+<li>
+Final Cut Pro X
+</li>
+<li>
+Sorenson Squeeze
+</li>
+</ul>
+</li>
+<li>
+OS platform
+</li>
+<li>
+cluster support
+</li>
+<li>
+configure knowledge management
+<ul>
+<li>
+share
+</li>
+<li>
+update
+</li>
+<li>
+tuning
+</li>
+</ul>
+</li>
+<li>
+customize process or work flow
+</li>
+</ul>
+</li>
+<li>
+architecture
+<ul>
+<li>
+facility graphic chip can achieve below 10 times
+<ul>
+<li>
+CUDA of Nvidia
+</li>
+<li>
+GPGPU of AMD
+</li>
+<li>
+video sync of Intel 
+</li>
+<li>
+OpenCL of Apple
+</li>
+</ul>
+</li>
+<li>
+programming to reuse the middle result can achieve about 10 times    
+<ul>
+<li>
+2 screen size x 3 bandwidth x 2 delivery format at least           
+</li>
+<li>
+Final Cut Pro X queue them for encoding on multiple machine        
+</li>
+<li>
+Sorenson seems use middle result
+</li>
+</ul>
+</li>
+<li>
+cluster method indeed can achieve more than 100 times
+<ul>
+<li>
+now network bandwidth is 1000 times higher than normal encoding rate
+</li>
+<li>
+it is much easier to achieve high performance by programming on
+socket than on graphic chip API or OS specific thread model
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+input/output coverage requirement
 <ul>
 <li>
 bandwidth range
@@ -754,10 +851,14 @@ QuickTime screen record export
 </li>
 </ul>
 </li>
+<li>
+preset reference
+(link "data/hls<sub>guild</sub>.csv" 7591)
+</li>
 </ul>
 </li>
 <li>
-<b>[X]</b> basic encoding and encoder choosing
+basic encoding and encoder choosing
 <ul>
 <li>
 video
@@ -819,9 +920,6 @@ use CMake
 </ul>
 </li>
 <li>
-<b>[X]</b> project plot
-<ul>
-<li>
 dependency
 <ul>
 <li>
@@ -833,7 +931,7 @@ now it is indeed single input and output format
 </ul>
 </li>
 <li>
-compiling platform
+compilation platform
 <ul>
 <li>
 at least *nix
@@ -852,7 +950,6 @@ migrate to XCode project
 </li>
 <li>
 use CMake
-
 </li>
 </ul>
 </li>
@@ -861,20 +958,163 @@ use CMake
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> segmenter
+<b>[X]</b> prepare test data
 <ul>
 <li>
-seems encoder need run by segmenter
+prepare sound first
+</li>
+<li>
+progressive download as source of segment
+</li>
+<li>
+5 minutes 800x600 of Mac shared screen
+<ul>
+<li>
+spotlight usage
+</li>
+<li>
+versions
+<ul>
+<li>
+download full size
+hb -i -o -e x264 &ndash;x264-preset ultrafast \
+&ndash;x264-profile baseline \
+-x ref=2:bframes=2:subq=6:mixed-refs=0:weightb=0:8x8dct=0:trellis=0 \
+&ndash;x264-tune zerolatency -r 5 -vfr \
+&ndash;strict-anamorphic  \
+-T -2 -b 183 \
+-9 -f mp4 -4 -m
+</li>
+<li>
+stream iPad size 156k/512
 </li>
 </ul>
 </li>
 </ul>
+</li>
+<li>
+20 seconds 326x496 of iPhone simulator
+<ul>
+<li>
+webapp usage
+</li>
+<li>
+versions 
+<ul>
+<li>
+download full size
+</li>
+<li>
+stream iPhone version 110k/260
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+20 seconds 512x384 of iPad simulator
+<ul>
+<li>
+reuse content of iPhone one
+</li>
+<li>
+versions
+<ul>
+<li>
+download/progressive full size
+</li>
+<li>
+stream iPad size 156k/512
+</li>
+<li>
+stream iPhone size 110k/260
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> segmenter script
+<ul>
+<li>
+try http<sub>streams</sub>
+(git-link "~/local/src/encoder/segmenter/http-stream/"
+"8f210ef91afe0776f290e9d507a3506f57b74845")
+see github.com:hackist/HTTP-Live-Video-Stream-Segmenter-and-Distributor.git
+</li>
+<li>
+scripts
+<ul>
+<li>
+speed okay
+<ul>
+<li>
+audio generate
+</li>
+<li>
+audio encode
+</li>
+<li>
+audio video merge
+</li>
+<li>
+hls split/packet/index
+</li>
+<li>
+video encode speed now is about 100fps, but seems
+has seen 200fps speed
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> get performance data
+<ul>
+<li>
+bandwidth
+ab -c 40 -n 300 -e /tmp/ab.csv <a href="http://www.bartuer.com/">http://www.bartuer.com/</a>
+can use full bandwidth with home ADSL
+</li>
+<li>
+latency
+ping -c 5 www.bartuer.com
+about 400ms, could drop to 200ms if migrate to tokyo
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> meta data
+<ul>
+<li>
+download version add meta data
+</li>
+<li>
+add meta data to MpegTS packet
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> build tool chain on server
+<ul>
+<li>
+script to setup record windows
+do it after pin down work flow
+</li>
+</ul>
+</li>
+</ul>
+</div>
 
 </div>
 
-<div id="outline-container-3_4_2_1" class="outline-5">
-<h5 id="sec-3_4_2_1"><span class="section-number-5">3.4.2.1</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h5>
-<div class="outline-text-5" id="text-3_4_2_1">
+<div id="outline-container-3_4_3" class="outline-4">
+<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="todo TODO"> TODO</span> huge file upload and download [0/6] </h4>
+<div class="outline-text-4" id="text-3_4_3">
 
 <ul>
 <li>
@@ -897,13 +1137,12 @@ seems encoder need run by segmenter
 </li>
 </ul>
 </div>
-</div>
 
 </div>
 
-<div id="outline-container-3_4_3" class="outline-4">
-<h4 id="sec-3_4_3"><span class="section-number-4">3.4.3</span> <span class="done DONE"> DONE</span> preset of encode according to bandwidth and screen size settings [5/5] </h4>
-<div class="outline-text-4" id="text-3_4_3">
+<div id="outline-container-3_4_4" class="outline-4">
+<h4 id="sec-3_4_4"><span class="section-number-4">3.4.4</span> <span class="done DONE"> DONE</span> preset of encode according to bandwidth and screen size settings [5/5] </h4>
+<div class="outline-text-4" id="text-3_4_4">
 
 <ul>
 <li>
@@ -1016,9 +1255,9 @@ indeed there is no such significant difference there
 
 </div>
 
-<div id="outline-container-3_4_4" class="outline-4">
-<h4 id="sec-3_4_4"><span class="section-number-4">3.4.4</span> <span class="todo TODO"> TODO</span> reference movie [2/4] </h4>
-<div class="outline-text-4" id="text-3_4_4">
+<div id="outline-container-3_4_5" class="outline-4">
+<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> reference movie [2/5] </h4>
+<div class="outline-text-4" id="text-3_4_5">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 14:00</span></span><br/>
 </p><ul>
@@ -1027,6 +1266,10 @@ indeed there is no such significant difference there
 </li>
 <li>
 <b>[X]</b> javascript control
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> try this method m3u8 to m3u8
+(link "~/Movies/screen record/try<sub>http</sub><sub>stream</sub>.m3u8" 1)
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> browser native control
@@ -1039,9 +1282,9 @@ indeed there is no such significant difference there
 
 </div>
 
-<div id="outline-container-3_4_5" class="outline-4">
-<h4 id="sec-3_4_5"><span class="section-number-4">3.4.5</span> <span class="todo TODO"> TODO</span> profile collection [1/3] </h4>
-<div class="outline-text-4" id="text-3_4_5">
+<div id="outline-container-3_4_6" class="outline-4">
+<h4 id="sec-3_4_6"><span class="section-number-4">3.4.6</span> <span class="done DONE"> DONE</span> profile collection [3/3] </h4>
+<div class="outline-text-4" id="text-3_4_6">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-12-10 Sat 16:00</span></span><br/>
 </p><ul>
@@ -1061,7 +1304,7 @@ final cut HLS output
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> from code
+<b>[X]</b> from code
 <ul>
 <li>
 http stream
@@ -1075,7 +1318,7 @@ x264
 </ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> from document
+<b>[X]</b> from document
 <ul>
 <li>
 stream media guide
@@ -1087,33 +1330,55 @@ stream media guide
 
 </div>
 
-<div id="outline-container-3_4_6" class="outline-4">
-<h4 id="sec-3_4_6"><span class="section-number-4">3.4.6</span> <span class="todo TODO"> TODO</span> setup http streaming server [0/4] </h4>
-<div class="outline-text-4" id="text-3_4_6">
+<div id="outline-container-3_4_7" class="outline-4">
+<h4 id="sec-3_4_7"><span class="section-number-4">3.4.7</span> <span class="done DONE"> DONE</span> setup http streaming server [4/4] </h4>
+<div class="outline-text-4" id="text-3_4_7">
 
 <ul>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> migrate my server from SF to Tokyo
+<b>[X]</b> migrate my server from SF to Tokyo
+<ul>
+<li>
+it is okay, so do not need migrate now
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> benchmark local and VPS
+and do not know if grab lots of Youtube video later, a
+serve in Tokyo will better than SF
+</li>
+</ul>
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> stream audio first
+<b>[X]</b> benchmark local and VPS
+<ul>
+<li>
+VPS at least support up to 600kbps movie
 </li>
 <li>
-<b>[<span style="visibility:hidden;">X</span>]</b> HLS segment
+now movie total bit rate keep in 200~250bps
+</li>
+<li>
+upload speed is about 500kbps
+</li>
+</ul>
+</li>
+<li>
+<b>[X]</b> stream audio first
+do not need, video stream very well
+</li>
+<li>
+<b>[X]</b> HLS segment
 </li>
 </ul>
 </div>
 
 </div>
 
-<div id="outline-container-3_4_7" class="outline-4">
-<h4 id="sec-3_4_7"><span class="section-number-4">3.4.7</span> <span class="todo TODO"> TODO</span> automatically script driven capture [1/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
-<div class="outline-text-4" id="text-3_4_7">
+<div id="outline-container-3_4_8" class="outline-4">
+<h4 id="sec-3_4_8"><span class="section-number-4">3.4.8</span> <span class="todo ABORT"> ABORT</span> automatically script driven capture [1/2] &nbsp;&nbsp;&nbsp;<span class="tag"><span class="research">research</span></span></h4>
+<div class="outline-text-4" id="text-3_4_8">
 
-<ul>
+<p>turn down this, not practice
+</p><ul>
 <li>
 <b>[X]</b> is it possible use script driven capture
 <ul>
@@ -1141,9 +1406,9 @@ have take look at js as system script language on OSX possibility?
 
 </div>
 
-<div id="outline-container-3_4_8" class="outline-4">
-<h4 id="sec-3_4_8"><span class="section-number-4">3.4.8</span> <span class="todo TODO"> TODO</span> video effect and transitions [0/2] </h4>
-<div class="outline-text-4" id="text-3_4_8">
+<div id="outline-container-3_4_9" class="outline-4">
+<h4 id="sec-3_4_9"><span class="section-number-4">3.4.9</span> <span class="todo TODO"> TODO</span> video effect and transitions [0/2] </h4>
+<div class="outline-text-4" id="text-3_4_9">
 
 <ul>
 <li>
@@ -1157,9 +1422,9 @@ have take look at js as system script language on OSX possibility?
 
 </div>
 
-<div id="outline-container-3_4_9" class="outline-4">
-<h4 id="sec-3_4_9"><span class="section-number-4">3.4.9</span> <span class="todo TODO"> TODO</span> research on overlay </h4>
-<div class="outline-text-4" id="text-3_4_9">
+<div id="outline-container-3_4_10" class="outline-4">
+<h4 id="sec-3_4_10"><span class="section-number-4">3.4.10</span> <span class="todo TODO"> TODO</span> research on overlay </h4>
+<div class="outline-text-4" id="text-3_4_10">
 
 <p>it is useful to display two part (keyboard, touch) meanwhile
 </p></div>
@@ -1243,7 +1508,7 @@ now just commit on master is okay
 </div>
 
 <div id="outline-container-3_6_3" class="outline-4">
-<h4 id="sec-3_6_3"><span class="section-number-4">3.6.3</span> <span class="todo TODO"> TODO</span> setup working network environment [2/7] </h4>
+<h4 id="sec-3_6_3"><span class="section-number-4">3.6.3</span> <span class="todo TODO"> TODO</span> setup working network environment [3/7] </h4>
 <div class="outline-text-4" id="text-3_6_3">
 
 <p><span class="timestamp-wrapper"><span class="timestamp-kwd">SCHEDULED: </span> <span class="timestamp">2011-11-27 Sun 10:00</span></span><br/>
@@ -1255,6 +1520,31 @@ now just commit on master is okay
 <b>[X]</b> storage
 </li>
 <li>
+<b>[X]</b> document browser
+<ul>
+<li>
+access commits links
+<a href="https://github.com/hackist/cells/commits/master">https://github.com/hackist/cells/commits/master</a>
+</li>
+<li>
+check org doc, (change version number to current version)
+<a href="https://raw.github.com/hackist/cells/v0.1/cells.html">https://raw.github.com/hackist/cells/v0.1/cells.html</a>
+</li>
+<li>
+check data, (change version number to current version)
+<a href="https://raw.github.com/hackist/cells/v0.1/data/hls_guild.csv">https://raw.github.com/hackist/cells/v0.1/data/hls_guild.csv</a>
+</li>
+</ul>
+</li>
+<li>
+<b>[<span style="visibility:hidden;">X</span>]</b> document edit
+<ul>
+<li>
+github now support online editing, but must work on branch
+</li>
+</ul>
+</li>
+<li>
 <b>[<span style="visibility:hidden;">X</span>]</b> service finding
 <ul>
 <li>
@@ -1264,12 +1554,6 @@ DNS configure
 bonjour name convention
 </li>
 </ul>
-</li>
-<li>
-<b>[<span style="visibility:hidden;">X</span>]</b> document browser
-</li>
-<li>
-<b>[<span style="visibility:hidden;">X</span>]</b> document edit
 </li>
 <li>
 <b>[<span style="visibility:hidden;">X</span>]</b> notification
@@ -1296,7 +1580,7 @@ pin idea here, will setup new one when chance coming
 <div id="postamble">
 <p class="author"> Author: bartuer
 </p>
-<p class="date"> Date: 2011-12-12 10:44:50 CST</p>
+<p class="date"> Date: 2011-12-20 06:50:06 CST</p>
 <p class="creator">HTML generated by org-mode 7.01trans in emacs 23</p>
 </div>
 </div>
