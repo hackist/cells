@@ -10,7 +10,7 @@ log_type: 'STDOUT'
 log_level: 'DEBUG'
 
 # where the origin video is going to come from
-input_location: '/opt/app/static/cast/spotlight/spotlight_ipad.mp4'
+input_location: '/tmp/spotlight_ipad.mp4'
 
 # segment length in seconds
 segment_length: 10 
@@ -56,4 +56,4 @@ scp_dev:
 
 copy_dev:
   transfer_type: 'copy'
-  directory: '/opt/app/static/cast'
+  directory: '/tmp/opt/app/static/cast'

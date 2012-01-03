@@ -31,8 +31,8 @@ hsencoder = nil
 
 trap('INT') { hsencoder.stop_encoding if !hsencoder.nil?  }
 
-if ARGV.length != 1
-  puts "Usage: http_streamer.rb <config file>"
+if ARGV.length < 1
+  puts "Usage: find $PWD -name  | xargs hs <config file>"
   exit 1
 end
 
@@ -41,16 +41,20 @@ begin
 rescue
   exit 1
 end
-
 log = HSConfig::log_setup( config )
 
-log.info('HTTP Streamer started')
+(1..ARGV.length-1).each { |i|
+  arg = ARGV[i]
+  config = HSConfig::load( ARGV[0] ) if i > 1
+  
+  config.set('input_location', arg)
+  config.set('segment_prefix', config['segment_prefix'] + '_' + File.basename(arg))
+  config.set('index_prefix', config['index_prefix'] + '_' + File.basename(arg))
+  log.info("HTTP Live Streamer started for #{arg}")
+  hstransfer = HSTransfer::init_and_start_transfer_thread( log, config )
+  hsencoder = HSEncoder.new(log, config, hstransfer)
+  hsencoder.start_encoding
+  hstransfer.stop_transfer_thread
+  log.info("HTTP Live Streamer terminated for #{arg}")
+}
 
-hstransfer = HSTransfer::init_and_start_transfer_thread( log, config )
-
-hsencoder = HSEncoder.new(log, config, hstransfer)
-hsencoder.start_encoding
-
-hstransfer.stop_transfer_thread
-
-log.info('HTTP Streamer terminated')

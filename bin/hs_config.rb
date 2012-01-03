@@ -36,6 +36,10 @@ class HSConfig
     @config[index]
   end
 
+  def set(index,value)
+    @config[index] = value
+  end
+  
   def self.log_setup(config)
     if config['log_type'] == 'FILE'
       log = Logger.new(config['log_file'])

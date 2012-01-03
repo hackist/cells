@@ -94,7 +94,7 @@ class HSEncoder
     raise CommandExecutionException if $?.exitstatus != 0
   end
 
-  def execute_ffmpeg_and_segmenter(command, encoding_profile, encoding_pipes)
+  def execute_packet_and_segmenter(command, encoding_profile, encoding_pipes)
     @log.debug("Executing: #{command}")
 
     Open3.popen3(command) do |stdin, stdout, stderr|
@@ -111,11 +111,11 @@ class HSEncoder
         end
 
         if line =~ /ffmpeg/i 
-          @log.debug("Encoder #{encoding_profile}: #{line}")
+          @log.debug("Packet #{encoding_profile}: #{line}")
         end
   
         if line =~ /error/i
-          @log.error("Encoder #{encoding_profile}: #{line}")
+          @log.error("Packet #{encoding_profile}: #{line}")
         end
       end
     end
@@ -125,13 +125,48 @@ class HSEncoder
     raise CommandExecutionException if $?.exitstatus != 0
   end
 
+  def execute_encode(command, encoding_profile)
+    @log.debug("Executing: #{command}")
+
+    Open3.popen3(command) do |stdin, stdout, stderr|
+      @stop_stdin = stdin
+
+      stdout.each("\r") do |line|
+        @log.info(line)
+      end
+
+      stderr.each("\r") do |line|
+        @log.debug(line)
+      end
+
+    end
+
+    @log.debug("Return code from #{encoding_profile}: #{$?}")
+
+    raise CommandExecutionException if $?.exitstatus != 0
+    
+  end
+  
   def process_encoding(encoding_profile, input_location, encoding_pipes)
     encoding_config = @config[encoding_profile]
 
-    command_ffmpeg = encoding_config['ffmpeg_command'] % [input_location, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
+    @log.debug(encoding_config['encode_command'])
+    if encoding_config['encode_command']
+      command_encode = encoding_config['encode_command'] % [@config['input_location'], "#{@config['input_location']}.#{encoding_profile}.mp4"] if encoding_config['encode_command']      
+      command_packet = encoding_config['packet_command'] % ["#{@config['input_location']}.#{encoding_profile}.mp4", @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
+    else
+      command_encode = nil
+      command_packet = encoding_config['packet_command'] % [input_location, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
+    end
 
     begin
-      execute_ffmpeg_and_segmenter(command_ffmpeg, encoding_profile, encoding_pipes)
+      if encoding_config['encode_command']
+        execute_encode(command_encode, encoding_profile)        
+        execute_packet_and_segmenter(command_packet, encoding_profile, nil)
+      else
+        execute_packet_and_segmenter(command_packet, encoding_profile, encoding_pipes)
+      end
+
     rescue
       @log.error("Encoding error: " + $!)
     end
