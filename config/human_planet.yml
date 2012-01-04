@@ -39,8 +39,7 @@ encoding_profile: ['480p_440k', '640p_800k']
 transfer_profile: 'copy_dev'
 
 # report result to this email address
-# report_mail: 'your@mail.addr'
-report_mail: 'bartuer@gmail.com'
+report_mail: 'your@mail.addr'
 
 #
 # Encoding profiles
