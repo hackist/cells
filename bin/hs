@@ -20,6 +20,7 @@
 require File.join(File.dirname(__FILE__), 'hs_transfer')
 require File.join(File.dirname(__FILE__), 'hs_config')
 require File.join(File.dirname(__FILE__), 'hs_encoder')
+require File.join(File.dirname(__FILE__), 'hs_reporter')
 
 # **************************************************************
 #
@@ -44,6 +45,8 @@ rescue
 end
 log = HSConfig::log_setup( config )
 
+puts "see log at #{config['log_file']}" if config['log_file']
+
 if ARGV.length > 1
   (1..ARGV.length-1).each { |i|
     arg = ARGV[i]
@@ -56,15 +59,17 @@ if ARGV.length > 1
     hsencoder = HSEncoder.new(log, config, hstransfer)
     hsencoder.start_encoding
     hstransfer.stop_transfer_thread
+    hsreporter = HSReporter.new(hstransfer, hsencoder, config, log)
+    hsreporter.report(arg)
     log.info("HTTP Live Streamer terminated for #{arg}")
   }  
 else
-  log.info("HTTP Live Streamer started for #{ARGV[1]}")
+  log.info("HTTP Live Streamer started for #{config['input_location']}")
   hstransfer = HSTransfer::init_and_start_transfer_thread( log, config )
   hsencoder = HSEncoder.new(log, config, hstransfer)
   hsencoder.start_encoding
   hstransfer.stop_transfer_thread
-  log.info("HTTP Live Streamer terminated for #{ARGV[1]}")
+  hsreporter = HSReporter.new(hstransfer, hsencoder, config, log)
+  hsreporter.report(config['input_location'])
+  log.info("HTTP Live Streamer terminated for #{config['input_location']}")
 end
-
-

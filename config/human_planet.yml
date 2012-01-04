@@ -33,11 +33,14 @@ segmenter_binary: 'live_segmenter'
 
 # the encoding profile to use
 # encoding_profile: ['480p_440k', '640p_800k', '960p_1200k']
-encoding_profile: '480p_440k'
+encoding_profile: ['480p_440k', '640p_800k']
 
 # The upload profile to use
 transfer_profile: 'copy_dev'
 
+# report result to this email address
+# report_mail: 'your@mail.addr'
+report_mail: 'bartuer@gmail.com'
 
 #
 # Encoding profiles

@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 #
 # Copyright (c) 2009 Carson McDonald
+# Copyright (c) 2012 Bartuer
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License version 2
@@ -69,7 +70,6 @@ class HSConfig
     unless config['log_file'].match(/~/).nil?
       @config['log_file'] = config['log_file'].gsub(/~/, ENV['HOME'])
     end
-
     log = HSConfig::log_setup(config)
 
     unless config['temp_dir'].match(/~/).nil?

@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 #
 # Copyright (c) 2009 Carson McDonald
+# Copyright (c) 2012 Bartuer
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License version 2
@@ -42,8 +43,13 @@ class HSTransfer
     @transfer_queue = Queue.new
     @log = log
     @config = config
+    @index_url = nil
   end
 
+  def index_url()
+    @index_url
+  end
+  
   def start_transfer_thread
     @transfer_thread = Thread.new do
       @log.info('Transfer thread started');
@@ -111,6 +117,7 @@ class HSTransfer
     end
 
     @log.debug('Transfering multirate index')
+    @index_url = "#{@config['url_prefix']}#{@config["index_prefix"]}_multi.m3u8"
     transfer_file("tmp.index.multi.m3u8", "#{@config["index_prefix"]}_multi.m3u8")
   end
 
@@ -142,7 +149,8 @@ class HSTransfer
     # Transfer the index
     final_index = "%s_%s.m3u8" % [@config['index_prefix'], encoding_profile]
     transfer_file("tmp.index.#{encoding_profile}.m3u8", "#{final_index}")
-
+    @index_url = "#{@config['url_prefix']}#{final_index}" if @index_url.nil?
+    
     # Transfer the video stream
     video_filename = "#{@config['temp_dir']}/#{@config['segment_prefix']}_#{encoding_profile}-%05u.ts" % last_segment.to_i
     dest_video_filename = "#{@config['segment_prefix']}_#{encoding_profile}-%05u.ts" % last_segment.to_i

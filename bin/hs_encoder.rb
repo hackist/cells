@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 #
 # Copyright (c) 2009 Carson McDonald
+# Copyright (c) 2012 Bartuer
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License version 2
@@ -28,8 +29,13 @@ class HSEncoder
     @hs_transfer = hs_transfer
     @log = log
     @config = config
+    @encoded_url = nil
   end
 
+  def encoded_url
+    @encoded_url
+  end
+  
   def start_encoding
     encoding_threads = []
 
@@ -153,8 +159,14 @@ class HSEncoder
     @log.debug(encoding_config['encode_command'])
     if encoding_config['encode_command']
       encoded_filename = "#{File.basename(@config['input_location'])}.#{encoding_profile}.mp4"
-      command_encode = encoding_config['encode_command'] % [@config['input_location'], encoded_filename] if encoding_config['encode_command']      
-      command_packet = encoding_config['packet_command'] % [encoded_filename, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
+      encoded_filepath = "#{@config['copy_dev']['directory']}/#{encoded_filename}"
+      if @encoded_url.nil?
+        @encoded_url = " #{@config['url_prefix']}#{encoded_filename}"
+      else
+        @encoded_url += " #{@config['url_prefix']}#{encoded_filename}" 
+      end
+      command_encode = encoding_config['encode_command'] % [@config['input_location'], encoded_filepath] if encoding_config['encode_command']      
+      command_packet = encoding_config['packet_command'] % [encoded_filepath, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
     else
       command_encode = nil
       command_packet = encoding_config['packet_command'] % [input_location, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
