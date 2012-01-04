@@ -37,7 +37,7 @@ class HSReporter
     @log.info("Reporter index url : #{view_url}")
     @log.info("Reporter address : #{addr}")
     if File.exist?("/usr/bin/osascript")
-      `osascript #{File.join(File.dirname(__FILE__), 'msg.scpt')} #{addr} #{subject} #{download_url} #{view_url}`
+      `osascript #{File.join(File.dirname(__FILE__), 'msg.applescript')} #{addr} #{subject} #{download_url} #{view_url}`
     end
   end  
 end
