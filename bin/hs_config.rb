@@ -66,8 +66,32 @@ class HSConfig
   private 
 
   def sanity_check(config)
+    unless config['log_file'].match(/~/).nil?
+      @config['log_file'] = config['log_file'].gsub(/~/, ENV['HOME'])
+    end
+
     log = HSConfig::log_setup(config)
 
+    unless config['temp_dir'].match(/~/).nil?
+      @config['temp_dir'] = config['temp_dir'].gsub(/~/, ENV['HOME'])
+      log.info("change temp_dir to #{config['temp_dir']}")
+    end
+
+    unless config['copy_dev']['directory'].match(/~/).nil?
+      @config['copy_dev']['directory'] = config['copy_dev']['directory'].gsub(/~/, ENV['HOME'])
+      log.info("change copy directory to #{config['copy_dev']['directory']}")
+    end
+
+    unless config['url_prefix'].match(/localhost~/).nil?
+      @config['url_prefix'] = config['url_prefix'].gsub(/localhost~/, "#{`hostname`.chop}/~#{ENV['USER']}")
+      log.info("change url_prefix to #{config['url_prefix']}")
+    end
+
+    unless config['input_location'].match(/~/).nil?
+      @config['input_location'] = config['input_location'].gsub(/~/, ENV['HOME'])
+      log.info("change input location to #{config['input_location']}")
+    end
+    
     if config['log_type'] == 'FILE' and !File.writable? config['log_file']
       log.error("The given log file can not be written to: #{config['log_file']}")
       raise 

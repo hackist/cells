@@ -152,8 +152,9 @@ class HSEncoder
 
     @log.debug(encoding_config['encode_command'])
     if encoding_config['encode_command']
-      command_encode = encoding_config['encode_command'] % [@config['input_location'], "#{@config['input_location']}.#{encoding_profile}.mp4"] if encoding_config['encode_command']      
-      command_packet = encoding_config['packet_command'] % ["#{@config['input_location']}.#{encoding_profile}.mp4", @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
+      encoded_filename = "#{File.basename(@config['input_location'])}.#{encoding_profile}.mp4"
+      command_encode = encoding_config['encode_command'] % [@config['input_location'], encoded_filename] if encoding_config['encode_command']      
+      command_packet = encoding_config['packet_command'] % [encoded_filename, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]
     else
       command_encode = nil
       command_packet = encoding_config['packet_command'] % [input_location, @config['segmenter_binary'], @config['segment_length'], @config['temp_dir'], @config['segment_prefix'] + '_' + encoding_profile, encoding_profile]

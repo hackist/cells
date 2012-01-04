@@ -39,22 +39,32 @@ end
 begin
   config = HSConfig::load( ARGV[0] )
 rescue
+  puts "config load failed"
   exit 1
 end
 log = HSConfig::log_setup( config )
 
-(1..ARGV.length-1).each { |i|
-  arg = ARGV[i]
-  config = HSConfig::load( ARGV[0] ) if i > 1
-  
-  config.set('input_location', arg)
-  config.set('segment_prefix', config['segment_prefix'] + '_' + File.basename(arg))
-  config.set('index_prefix', config['index_prefix'] + '_' + File.basename(arg))
-  log.info("HTTP Live Streamer started for #{arg}")
+if ARGV.length > 1
+  (1..ARGV.length-1).each { |i|
+    arg = ARGV[i]
+    config = HSConfig::load( ARGV[0] ) if i > 1
+    config.set('input_location', arg)
+    config.set('segment_prefix', config['segment_prefix'] + '_' + File.basename(arg))
+    config.set('index_prefix', config['index_prefix'] + '_' + File.basename(arg))
+    log.info("HTTP Live Streamer started for #{arg}")
+    hstransfer = HSTransfer::init_and_start_transfer_thread( log, config )
+    hsencoder = HSEncoder.new(log, config, hstransfer)
+    hsencoder.start_encoding
+    hstransfer.stop_transfer_thread
+    log.info("HTTP Live Streamer terminated for #{arg}")
+  }  
+else
+  log.info("HTTP Live Streamer started for #{ARGV[1]}")
   hstransfer = HSTransfer::init_and_start_transfer_thread( log, config )
   hsencoder = HSEncoder.new(log, config, hstransfer)
   hsencoder.start_encoding
   hstransfer.stop_transfer_thread
-  log.info("HTTP Live Streamer terminated for #{arg}")
-}
+  log.info("HTTP Live Streamer terminated for #{ARGV[1]}")
+end
+
 

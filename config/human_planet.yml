@@ -1,16 +1,17 @@
-temp_dir: '/tmp/'
+# not change temp_dir to copy_dev[directory], will remove result
+temp_dir: '/tmp'
 segment_prefix: 'human_planet'
 index_prefix: 'human_planet'
 
 # type of logging: STDOUT, FILE
 log_type: 'STDOUT'
-#log_type: 'FILE'
-#log_file: '/tmp/streamer.log'
+log_type: 'FILE'
+log_file: '~/Library/logs/streamer.log'
 # levels: DEBUG, INFO, WARN, ERROR
 log_level: 'DEBUG'
 
 # where the origin video is going to come from
-input_location: '/Users/bartuer/Movies/hp_2min.mov'
+input_location: '~/Movies/hp_30s.mov'
 
 # segment length in seconds
 segment_length: 10 
@@ -19,9 +20,7 @@ segment_length: 10
 # if this location is the same as the location where the m3u8 
 # index is then leave it blank
 # url_prefix: ''
-
-# url_prefix: "http://#{`hostname`}/"
-url_prefix: "http://192.168.0.132/"
+url_prefix: 'http://localhost~/'
 
 # how many segments to keep in the index
 index_segment_count: 15
@@ -33,7 +32,8 @@ source_command: 'cat %s'
 segmenter_binary: 'live_segmenter'
 
 # the encoding profile to use
-encoding_profile: ['480p_440k', '640p_800k', '960p_1200k']
+# encoding_profile: ['480p_440k', '640p_800k', '960p_1200k']
+encoding_profile: '480p_440k'
 
 # The upload profile to use
 transfer_profile: 'copy_dev'
@@ -63,5 +63,4 @@ transfer_profile: 'copy_dev'
 
 copy_dev:
   transfer_type: 'copy'
-  # directory: "#{`$HOME`}/Sites"
-  directory: "/Users/bartuer/Sites"
+  directory: '~/Sites'
